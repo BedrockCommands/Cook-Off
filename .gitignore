@@ -1,0 +1,9 @@
+# Config files
+config.json
+
+# Dependencies
+BP/package-lock.json
+BP/node_modules
+
+# IDE specific files
+.vscode/
