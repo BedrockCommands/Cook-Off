@@ -1,0 +1,23 @@
+{
+    "format_version": 2,
+    "header": {
+        "name": "§l§6Cook-Off! §r§f[B]",
+        "description": "§l\nBy Bedrock Commands Community (BCC)",
+        "uuid": "81039610-d682-4011-b29c-86c7968e71ed",
+        "version":[ 1, 0, 0 ],
+        "min_engine_version": [ 1, 21, 114 ]
+    },
+    "modules": [
+        {
+            "type": "data",
+            "uuid": "3d2980e8-1d39-4b9c-9eca-68db7744052e",
+            "version":[ 1, 0, 0 ]
+        }
+    ],
+    "dependencies": [
+        {
+            "version":[ 1, 0, 0 ],
+            "uuid": "51521161-19e8-41ec-beab-1e9c7d9e8a1d"
+        }
+    ]
+}
