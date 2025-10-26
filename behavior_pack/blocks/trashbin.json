@@ -1,0 +1,20 @@
+{
+	"format_version": "1.21.110",
+	"minecraft:block": {
+		"description": {
+			"identifier": "bcc.cook:trashbin",
+			"menu_category": {
+				"category": "construction"
+			}
+		},
+		"components": {
+			"minecraft:geometry": "geometry.trashbin",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "trashbin"
+				}
+			},
+			"bcc.cook:trashbin": {}
+		}
+	}
+}
