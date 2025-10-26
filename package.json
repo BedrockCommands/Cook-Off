@@ -1,0 +1,24 @@
+{
+  "name": "cook-off",
+  "version": "1.0.0",
+  "description": "For Project Overview, please click **[here](https://bedrockcommands.org/projects/cook-off/)**.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BedrockCommands/Cook-Off.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/BedrockCommands/Cook-Off/issues"
+  },
+  "homepage": "https://github.com/BedrockCommands/Cook-Off#readme",
+  "dependencies": {
+    "@minecraft/server": "^2.2.0"
+  }
+}

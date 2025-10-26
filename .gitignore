@@ -2,8 +2,11 @@
 config.json
 
 # Dependencies
-BP/package-lock.json
-BP/node_modules
+package-lock.json
+node_modules
 
 # IDE specific files
 .vscode/
+
+# user specific config file
+config.json
