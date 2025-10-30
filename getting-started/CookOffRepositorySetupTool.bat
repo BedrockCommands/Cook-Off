@@ -1,8 +1,7 @@
 @echo off
 title Cook Off! Repository Setup Tool
 
-@REM set minecraftBedrockComMojangDirectory=%appdata%\Minecraft Bedrock\Users\Shared\games\com.mojang
-set minecraftBedrockComMojangDirectory=%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang
+set minecraftBedrockComMojangDirectory="%appdata%\Minecraft Bedrock\Users\Shared\games\com.mojang"
 set repositoryDirectory=%CD%\..\
 :: Resolve file path
 pushd "%repositoryDirectory%" >nul
