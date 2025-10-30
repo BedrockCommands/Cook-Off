@@ -1,6 +1,6 @@
 import { system } from "@minecraft/server";
 import SoundManager from "./SoundManager";
-function trashbinInteract(event) {
+function trashBinInteract(event) {
     let player = event.player;
     let playerInventoryContainer = player.getComponent("minecraft:inventory").container;
     let selectedSlotIndex = player.selectedSlotIndex;
@@ -14,7 +14,7 @@ function trashbinInteract(event) {
 }
 system.beforeEvents.startup.subscribe(event => {
     let bcr = event.blockComponentRegistry;
-    bcr.registerCustomComponent("bcc.cook:trashbin", {
-        onPlayerInteract: trashbinInteract
+    bcr.registerCustomComponent("bcc.cook:trash_bin", {
+        onPlayerInteract: trashBinInteract
     });
 });

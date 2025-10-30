@@ -1,7 +1,7 @@
 {
 	"texture_data": {
-		"trashbin": {
-			"textures": "textures/blocks/trashbin"
+		"trash_bin": {
+			"textures": "textures/blocks/trash_bin"
 		}
 	}
 }

@@ -1,14 +1,19 @@
 import { BlockComponentPlayerInteractEvent, system } from "@minecraft/server";
 import SoundManager from "./SoundManager";
 
-function trashbinInteract(event: BlockComponentPlayerInteractEvent) {
+function trashBinInteract(event: BlockComponentPlayerInteractEvent) {
 	let player = event.player;
 	let playerInventoryContainer = player.getComponent("minecraft:inventory").container;
 	let selectedSlotIndex = player.selectedSlotIndex;
 	let selectedSlot = playerInventoryContainer.getSlot(selectedSlotIndex);
 	// Make sure the player has an item in their hand
-	if (!selectedSlot.getItem()) return;
-	selectedSlot.setItem(); // Clear slot
+	let selectedItem = selectedSlot.getItem();
+	if (!selectedItem) return;
+
+	if (selectedItem.typeId == "bcc.cook:pan") {
+		
+	}
+	else selectedSlot.setItem(); // Clear slot
 	SoundManager.playSound("block.decorated_pot.insert", event.block.location, {
 		pitch: 0.6
 	});
@@ -16,7 +21,7 @@ function trashbinInteract(event: BlockComponentPlayerInteractEvent) {
 
 system.beforeEvents.startup.subscribe(event => {
 	let bcr = event.blockComponentRegistry;
-	bcr.registerCustomComponent("bcc.cook:trashbin", {
-		onPlayerInteract: trashbinInteract
+	bcr.registerCustomComponent("bcc.cook:trash_bin", {
+		onPlayerInteract: trashBinInteract
 	})
 });
