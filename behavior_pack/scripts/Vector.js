@@ -1,3 +1,7 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) @brodblox09 & Contributors
+// Contributors: @brodblox09
+// See LICENSE.md file in the root folder, licenses/MIT.md, or https://opensource.org/license/mit
 export default class Vector {
     x;
     y;
@@ -13,9 +17,17 @@ export default class Vector {
     below() {
         return this.add(Vector.down);
     }
+    /**
+     *
+     * @param oV Other vector to add
+     */
     add(oV) {
         return new Vector(this.x + oV.x, this.y + oV.y, this.z + oV.z);
     }
+    /**
+     *
+     * @param oV Other vector to subtract
+     */
     subtract(oV) {
         return new Vector(this.x - oV.x, this.y - oV.y, this.z - oV.z);
     }
