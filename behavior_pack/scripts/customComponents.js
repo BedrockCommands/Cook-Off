@@ -4,6 +4,16 @@
 // See LICENSE.md file in the root folder, licenses/MIT.md, or https://opensource.org/license/mit
 import { system } from "@minecraft/server";
 import SoundManager from "./SoundManager";
+import PlayerInventory from "./PlayerInventory";
+function pickupableInteract(event) {
+    let player = event.player;
+    let block = event.block;
+    let blockItemStack = block.getItemStack(1, true);
+    let inventory = new PlayerInventory(player);
+    inventory.give(blockItemStack);
+    block.setType("minecraft:air");
+    SoundManager.playSound("block.decorated_pot.insert", event.block.location);
+}
 function trashBinInteract(event) {
     let player = event.player;
     let playerInventoryContainer = player.getComponent("minecraft:inventory").container;
@@ -23,6 +33,9 @@ function trashBinInteract(event) {
 }
 system.beforeEvents.startup.subscribe(event => {
     let bcr = event.blockComponentRegistry;
+    bcr.registerCustomComponent("bcc.cook:pickupable", {
+        onPlayerInteract: pickupableInteract
+    });
     bcr.registerCustomComponent("bcc.cook:trash_bin", {
         onPlayerInteract: trashBinInteract
     });

@@ -2,6 +2,9 @@
 	"texture_data": {
 		"trash_bin": {
 			"textures": "textures/blocks/trash_bin"
+		},
+		"frying_pan": {
+			"textures": "textures/blocks/frying_pan"
 		}
 	}
 }
