@@ -10,4 +10,7 @@ export default class Utils {
     static getAllPlayers() {
         return world.getAllPlayers();
     }
+    static permutationWithState(permutation, stateName, value) {
+        return permutation.withState(stateName, value);
+    }
 }
