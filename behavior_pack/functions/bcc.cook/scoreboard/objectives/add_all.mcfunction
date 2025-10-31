@@ -33,3 +33,6 @@ scoreboard objectives add bcc.cook:var dummy
 
 # On Player Join
 scoreboard objectives add bcc.cook:joined dummy
+
+# Item Crate armor stand particle timer
+scoreboard objectives add bcc.cook:InvisNoHandParticle dummy
