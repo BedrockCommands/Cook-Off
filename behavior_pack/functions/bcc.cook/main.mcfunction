@@ -31,5 +31,5 @@ scoreboard players operation .RefreshScoreboardList bcc.cook:events %= .10s bcc.
 execute if score .RefreshScoreboardList bcc.cook:events matches 0 run function bcc.cook/scoreboard/objectives/refresh_list
 
 ## Hub Music
-scoreboard players operation .ReplayhubMusic bcc.cook:events %= .250s bcc.cook:ticks
-execute if score .ReplayhubMusic bcc.cook:events matches 0 run function bcc.cook/hub/replay_music
+scoreboard players operation .ReplayHubMusic bcc.cook:events %= .250s bcc.cook:ticks
+execute if score .ReplayHubMusic bcc.cook:events matches 0 run function bcc.cook/hub/replay_music
