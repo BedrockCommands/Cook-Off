@@ -4,6 +4,7 @@
         "target": "ESNext",
         "moduleResolution": "Node",
         "allowSyntheticDefaultImports": true,
+        "removeComments": false,
         "outDir": "behavior_pack/scripts"
     },
     "include": [
