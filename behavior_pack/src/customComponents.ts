@@ -43,8 +43,4 @@ system.beforeEvents.startup.subscribe(event => {
 	bcr.registerCustomComponent("bcc.cook:trash_bin", {
 		onPlayerInteract: trashBinInteract
 	});
-	// let icr = event.itemComponentRegistry;
-	// icr.registerCustomComponent("bcc.cook:pickupable", {
-
-	// });
 });
