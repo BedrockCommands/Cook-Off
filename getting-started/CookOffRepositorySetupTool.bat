@@ -2,10 +2,10 @@
 title Cook Off! Repository Setup Tool
 
 set minecraftBedrockComMojangDirectory="%appdata%\Minecraft Bedrock\Users\Shared\games\com.mojang"
-set repositoryDirectory=%CD%\..\
+set repositoryDirectory="%CD%"\..\
 :: Resolve file path
-pushd "%repositoryDirectory%" >nul
-set repositoryDirectory=%cd%
+pushd %repositoryDirectory% >nul
+set formattedRepositoryDirectory="%cd%"
 popd
 
 echo Welcome to the Cook Off! repository setup program. This tool need only be run once. At any time, if you would like to stop the program, type end.
@@ -51,7 +51,7 @@ goto setupRepositoryDirectory
 
 :setupRepositoryDirectory
 echo.
-echo This tool assumes its location in the local clone of the Cook Off! repository has been unchanged, and retrieved the folder path of the Cook Off! repository (%repositoryDirectory%). Is this the correct path? (y/n)
+echo This tool assumes its location in the local clone of the Cook Off! repository has been unchanged, and retrieved the folder path of the Cook Off! repository (%formattedRepositoryDirectory%). Is this the correct path? (y/n)
 set /p res=
 
 if _%res%==_end (goto eof)
@@ -68,7 +68,7 @@ goto setupRepositoryDirectory
 
 :changeRepositoryDirectory
 echo What is the absolute folder path of your local clone of the Cook Off! repository?
-set /p minecraftBedrockComMojangDirectory=
+set /p repositoryDirectory=
 goto runSetup
 
 :runSetup
