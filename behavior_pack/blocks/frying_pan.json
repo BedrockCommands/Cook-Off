@@ -1,0 +1,26 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) @brodblox09 & Contributors
+// Contributors: @brodblox09
+// See LICENSE.md file in the root folder, licenses/MIT.md, or https://opensource.org/license/mit
+
+{
+	"format_version": "1.21.110",
+	"minecraft:block": {
+		"description": {
+			"identifier": "bcc.cook:frying_pan",
+			"menu_category": {
+				"category": "construction"
+			}
+		},
+		"components": {
+			"minecraft:geometry": "geometry.frying_pan",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "frying_pan"
+				}
+			},
+			"bcc.cook:frying_pan": {},
+			"tag:bcc.cook:counter_placeable_in_adventure": {}
+		}
+	}
+}
