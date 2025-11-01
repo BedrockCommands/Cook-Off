@@ -6,15 +6,7 @@
 import { Vector3 } from "@minecraft/server";
 
 export default class Vector implements Vector3 {
-    x: number;
-    y: number;
-    z: number;
-
-    constructor(_x: number, _y: number, _z: number) {
-        this.x = _x;
-        this.y = _y;
-        this.z = _z;
-    }
+    constructor(public x: number, public y: number, public z: number) { }
 
     above() {
         return this.add(Vector.up);
