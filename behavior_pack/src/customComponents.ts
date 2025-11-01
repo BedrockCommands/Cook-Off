@@ -8,10 +8,12 @@ import SoundManager from "./SoundManager";
 import PlayerInventory from "./PlayerInventory";
 
 function pickupableInteract(event: BlockComponentPlayerInteractEvent) {
-	let player = event.player;
-	let block = event.block;
-	let blockItemStack = block.getItemStack(1, true);
-	let inventory = new PlayerInventory(player);
+	const player = event.player;
+	const block = event.block;
+	const blockItemStack = block.getItemStack(1, true);
+	const inventory = new PlayerInventory(player);
+	if (block.hasTag("bcc.cook:counter_placeable_in_adventure"))
+			blockItemStack.setCanPlaceOn([ "minecraft:stone" ]); // Replace with bcc.cook:counter once created
 	inventory.give(blockItemStack);
 	block.setType("minecraft:air");
 	SoundManager.playSound("block.decorated_pot.insert", event.block.location);
