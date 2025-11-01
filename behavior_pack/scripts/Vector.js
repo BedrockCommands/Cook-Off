@@ -6,10 +6,10 @@ export default class Vector {
     x;
     y;
     z;
-    constructor(_x, _y, _z) {
-        this.x = _x;
-        this.y = _y;
-        this.z = _z;
+    constructor(x, y, z) {
+        this.x = x;
+        this.y = y;
+        this.z = z;
     }
     above() {
         return this.add(Vector.up);
