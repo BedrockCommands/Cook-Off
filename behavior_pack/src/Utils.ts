@@ -7,8 +7,10 @@ import { Dimension, world, Player, BlockPermutation } from "@minecraft/server";
 import { BlockStateSuperset } from "@minecraft/vanilla-data";
 
 export default class Utils {
+	private static overworld;
+
 	static getOverworld(): Dimension {
-		return world.getDimension("minecraft:overworld");
+		return Utils.overworld || (Utils.overworld = world.getDimension("minecraft:overworld"));
 	}
 
 	static getAllPlayers(): Player[] {
