@@ -17,7 +17,7 @@ export default class Utils {
 		return world.getAllPlayers();
 	}
 
-	static permutationWithState(permutation: BlockPermutation, stateName: string, value: string | number  | boolean | undefined) {
+	static permutationWithState(permutation: BlockPermutation, stateName: string, value: string | number | boolean | undefined): BlockPermutation {
 		return permutation.withState(stateName as keyof BlockStateSuperset, value);
 	}
 }
