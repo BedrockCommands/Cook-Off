@@ -19,7 +19,7 @@
 					"texture": "frying_pan"
 				}
 			},
-			"bcc.cook:pickupable": {},
+			"bcc.cook:frying_pan": {},
 			"tag:bcc.cook:counter_placeable_in_adventure": {}
 		}
 	}
