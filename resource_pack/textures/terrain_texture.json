@@ -1,10 +1,10 @@
 {
 	"texture_data": {
 		"trash_bin": {
-			"textures": "textures/blocks/trash_bin"
+			"textures": "textures/blocks/bcc.cook/trash_bin"
 		},
 		"frying_pan": {
-			"textures": "textures/blocks/frying_pan"
+			"textures": "textures/blocks/bcc.cook/frying_pan"
 		}
 	}
 }
