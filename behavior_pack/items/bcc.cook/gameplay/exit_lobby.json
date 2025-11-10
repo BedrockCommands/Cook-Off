@@ -1,0 +1,16 @@
+{
+    "format_version": "1.21.110",
+    "minecraft:item": {
+        "description": {
+            "identifier": "bcc.cook:exit_lobby",
+            "menu_category": {
+                "category": "items"
+            }
+        },
+        "components": {
+            "bcc.cook:exit_lobby": {},
+            "minecraft:max_stack_size": 1,
+            "minecraft:icon": "stick"
+        }
+    }
+}

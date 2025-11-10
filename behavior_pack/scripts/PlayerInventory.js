@@ -23,6 +23,7 @@ export default class PlayerInventory {
     }
     give(itemStack) {
         let amount = itemStack.amount;
+        // TODO: use container.addItem instead
         for (let i = 0; i < this.container.size; i++) {
             const slot = this.container.getSlot(i);
             if (!slot.hasItem())

@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/BedrockCommands/Cook-Off#readme",
   "dependencies": {
-    "@minecraft/server": "^2.2.0"
+    "@minecraft/server": "^2.3.0",
+    "@minecraft/server-ui": "^2.0.0"
   }
 }

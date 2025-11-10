@@ -1,8 +1,6 @@
 // SPDX-License-Identifier: MIT
 // Copyright (c) @brodblox09 & Contributors
-// Contributors: @brodblox09
+// Contributors: @brodblox09 @jeanmajid
 // See LICENSE.md file in the root folder, licenses/MIT.md, or https://opensource.org/license/mit
-import { world } from "@minecraft/server";
-import "./customComponents";
-world.afterEvents.worldLoad.subscribe(() => {
-});
+// import "./customComponents";
+import "./components/index.js";

@@ -1,8 +1,13 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) @jeanmajid & Contributors
+// Contributors: @jeanmajid
+// See LICENSE.md file in the root folder, licenses/MIT.md, or https://opensource.org/license/mit
+
 {
 	"format_version": 2,
 	"header": {
+		"name": "§l§6Cook-Off! §r§f[RP]",
 		"description":"§l\nBy Bedrock Commands Community (BCC)",
-		"name": "§l§6Cook-Off! §r§f[R]",
 		"uuid": "51521161-19e8-41ec-beab-1e9c7d9e8a1d",
 		"version": [
 			1,
