@@ -1,5 +1,7 @@
 ## Blocks
 tile.bcc.cook:trash_bin.name=Trash Bin
+tile.bcc.cook:storage_crate.name=Storage Crate
 tile.bcc.cook:frying_pan.name=Frying Pan
+
 ## Items
 item.bcc.cook:burger_buns=Burger Buns
