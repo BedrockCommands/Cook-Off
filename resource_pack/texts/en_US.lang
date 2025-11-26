@@ -1,2 +1,3 @@
 tile.bcc.cook:trash_bin.name=Trash Bin
-tile.bcc.cook:frying_pan.name=Frying Pan
+
+item.bcc.cook:frying_pan=Frying Pan
