@@ -18,6 +18,12 @@ export default class PlayerInventory {
     getSelectedItem() {
         return this.container.getItem(this.player.selectedSlotIndex);
     }
+    clearItem(slotIndex) {
+        this.setItem(slotIndex);
+    }
+    setItem(slotIndex, itemStack) {
+        this.container.setItem(slotIndex, itemStack);
+    }
     hasEmptySlot() {
         return this.container.emptySlotsCount !== 0;
     }
