@@ -1,3 +1,7 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) @brodblox09 & Contributors
+// Contributors: @brodblox09
+// See LICENSE.md file in the root folder, licenses/MIT.md, or https://opensource.org/license/mit
 import { system } from "@minecraft/server";
 import Vector from "./Vector.js";
 import { BlockDataManager } from "./blockData/blockDataManager.js";
