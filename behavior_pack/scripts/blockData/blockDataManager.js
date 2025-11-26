@@ -9,6 +9,16 @@ export class BlockDataManager {
         BlockDataManager.clearBlockData(block);
         return blockItemStack;
     }
+    static getBlockDataFromItemStack(itemStack, defaultValue) {
+        const blockDataRaw = itemStack.getDynamicProperty(blockDataItemDynamicPropertyId);
+        if (!blockDataRaw)
+            return defaultValue;
+        return JSON.parse(blockDataRaw);
+    }
+    static setItemStackBlockData(itemStack, data) {
+        const blockDataRaw = JSON.stringify(data);
+        itemStack.setDynamicProperty(blockDataItemDynamicPropertyId, blockDataRaw);
+    }
     static getBlockData(block, defaultValue) {
         const blockLocation = Vector.from(block.location);
         return BlockDataManager.getBlockDataByLocation(blockLocation, defaultValue);
@@ -17,12 +27,6 @@ export class BlockDataManager {
         const blockDataKey = BlockDataManager.getBlockDataKey(location);
         const blockData = BlockDataManager.getAllBlockData()[blockDataKey] ?? defaultValue;
         return blockData;
-    }
-    static getBlockDataFromItemStack(itemStack, defaultValue) {
-        const blockDataRaw = itemStack.getDynamicProperty(blockDataItemDynamicPropertyId);
-        if (!blockDataRaw)
-            return defaultValue;
-        return JSON.parse(blockDataRaw);
     }
     static setBlockData(block, data) {
         const blockLocation = Vector.from(block);

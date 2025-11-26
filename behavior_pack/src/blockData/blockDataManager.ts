@@ -12,6 +12,17 @@ export class BlockDataManager {
 		return blockItemStack;
 	}
 
+	public static getBlockDataFromItemStack<BlockDataReturnType extends BlockData = BlockData>(itemStack: ItemStack, defaultValue: BlockDataReturnType): BlockDataReturnType {
+		const blockDataRaw = itemStack.getDynamicProperty(blockDataItemDynamicPropertyId) as string;
+		if (!blockDataRaw) return defaultValue;
+		return JSON.parse(blockDataRaw);
+	}
+
+	public static setItemStackBlockData(itemStack: ItemStack, data: BlockData): void {
+		const blockDataRaw = JSON.stringify(data);
+		itemStack.setDynamicProperty(blockDataItemDynamicPropertyId, blockDataRaw);
+	}
+
 	public static getBlockData<BlockDataReturnType extends BlockData = BlockData>(block: Block, defaultValue: BlockDataReturnType): BlockDataReturnType {
 		const blockLocation = Vector.from(block.location);
 		return BlockDataManager.getBlockDataByLocation(blockLocation, defaultValue);
@@ -21,12 +32,6 @@ export class BlockDataManager {
 		const blockDataKey = BlockDataManager.getBlockDataKey(location);
 		const blockData = BlockDataManager.getAllBlockData()[blockDataKey] ?? defaultValue;
 		return blockData as BlockDataReturnType;
-	}
-
-	public static getBlockDataFromItemStack<BlockDataReturnType extends BlockData = BlockData>(itemStack: ItemStack, defaultValue: BlockDataReturnType): BlockDataReturnType {
-		const blockDataRaw = itemStack.getDynamicProperty(blockDataItemDynamicPropertyId) as string;
-		if (!blockDataRaw) return defaultValue;
-		return JSON.parse(blockDataRaw);
 	}
 
 	public static setBlockData(block: Block, data: BlockData): void {
