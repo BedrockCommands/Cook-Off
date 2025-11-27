@@ -26,6 +26,10 @@ ComponentManager.registerBlockComponent("bcc.cook:frying_pan" /* BlockId.fryingP
         const blockItemStack = inventory.getSelectedItem();
         const blockData = BlockDataManager.getBlockDataFromItemStack(blockItemStack, getDefaultFryingPanBlockData());
         BlockDataManager.setBlockData(block, blockData);
+    },
+    onPlayerBreak: (event) => {
+        const block = event.block;
+        BlockDataManager.clearBlockData(block);
     }
 });
 function addSelectedItemToFryingPan(block, selectedSlot) {

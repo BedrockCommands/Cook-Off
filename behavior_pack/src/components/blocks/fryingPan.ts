@@ -31,6 +31,10 @@ ComponentManager.registerBlockComponent(BlockId.fryingPan, {
 		const blockItemStack = inventory.getSelectedItem();
 		const blockData = BlockDataManager.getBlockDataFromItemStack(blockItemStack, getDefaultFryingPanBlockData());
 		BlockDataManager.setBlockData(block, blockData);
+	},
+	onPlayerBreak: (event) => {
+		const block = event.block;
+		BlockDataManager.clearBlockData(block);
 	}
 });
 
