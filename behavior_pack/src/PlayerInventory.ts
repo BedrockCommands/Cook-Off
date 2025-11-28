@@ -23,7 +23,15 @@ export default class PlayerInventory {
 		return this.container.getItem(this.player.selectedSlotIndex);
 	}
 
-	public hasEmptySlot() {
+	public clearItem(slotIndex: number): void {
+		this.setItem(slotIndex);
+	}
+
+	public setItem(slotIndex: number, itemStack?: ItemStack): void {
+		this.container.setItem(slotIndex, itemStack);
+	}
+
+	public hasEmptySlot(): boolean {
 		return this.container.emptySlotsCount !== 0;
 	}
 
