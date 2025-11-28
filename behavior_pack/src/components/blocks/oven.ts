@@ -5,7 +5,6 @@
 import { ComponentManager } from "../componentManager"
 import PlayerInventory from "../../PlayerInventory"
 import { BlockId } from "../../constants/blockId"
-import SoundManager from "../../SoundManager"
 ComponentManager.registerBlockComponent(BlockId.oven, {
     onPlayerInteract: (event) => {
         const player = event.player

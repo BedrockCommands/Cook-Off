@@ -19,7 +19,7 @@
 					"texture": "stove"
 				}
 			},
-            "bcc.cook:stove_behavior": {}
+            "bcc.cook:stove": {}
 		}
 	}
 }

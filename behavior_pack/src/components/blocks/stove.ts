@@ -7,7 +7,7 @@ import PlayerInventory from "../../PlayerInventory"
 import Utils from "../../Utils"
 import SoundManager from "../../SoundManager"
 import { BlockId } from "../../constants/blockId"
-import { world } from "@minecraft/server"
+import { Dimension, ItemStack } from "@minecraft/server"
 ComponentManager.registerBlockComponent(BlockId.stove, {
 
     onPlayerInteract: (event) => {
@@ -27,7 +27,6 @@ ComponentManager.registerBlockComponent(BlockId.stove, {
             return
         }
 
-        /**@type {import("@minecraft/server").ItemStack} */
         const selectedItem = inventory.getSelectedItem()
         const itemId = selectedItem.typeId
 
@@ -43,7 +42,6 @@ ComponentManager.registerBlockComponent(BlockId.stove, {
             return
         }
 
-        /**@type {import("@minecraft/server").Dimension} */
         overworld.setBlockType(blockAbove, itemId)
         SoundManager.playSound(canPlaceOnStove[itemId].sound, player.location)
         // if an item that is placeble on the stove is in hand, place that item on the stove.
