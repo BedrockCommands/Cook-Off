@@ -5,6 +5,9 @@
 		},
 		"frying_pan": {
 			"textures": "textures/blocks/bcc.cook/frying_pan"
+		},
+		"storage_crate": {
+			"textures": "textures/blocks/bcc.cook/storage_crate"
 		}
 	}
 }
