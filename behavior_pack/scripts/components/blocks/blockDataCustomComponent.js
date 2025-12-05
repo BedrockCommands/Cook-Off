@@ -10,7 +10,7 @@ export class BlockDataCustomComponent {
         const blockItemStack = inventory.getSelectedItem();
         if (blockItemStack === undefined)
             return;
-        const blockData = BlockDataManager.getBlockDataFromItemStack(blockItemStack) ?? this.getDefaultBlockData();
+        const blockData = this.getBlockDataFromItemStack(blockItemStack) ?? this.getDefaultBlockData();
         this.setBlockData(block, blockData);
     };
     onPlayerBreak = (event) => {
@@ -25,5 +25,8 @@ export class BlockDataCustomComponent {
     };
     clearBlockData = (block) => {
         BlockDataManager.clearBlockData(block);
+    };
+    getBlockDataFromItemStack = (itemStack) => {
+        return BlockDataManager.getBlockDataFromItemStack(itemStack);
     };
 }

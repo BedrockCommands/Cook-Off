@@ -3,6 +3,7 @@
 // Contributors: @jeanmajid
 // See LICENSE.md file in the root folder, licenses/MIT.md, or https://opensource.org/license/mit
 import { ComponentManager } from "./componentManager";
+import "./blocks/bowl.js";
 import "./blocks/fryingPan.js";
 import "./blocks/pot.js";
 import "./blocks/storageCrate.js";

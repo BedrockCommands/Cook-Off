@@ -9,6 +9,9 @@
 		"pot": {
 			"textures": "textures/blocks/bcc.cook/pot"
 		},
+		"bowl": {
+			"textures": "textures/blocks/bcc.cook/bowl"
+		},
 		"storage_crate": {
 			"textures": "textures/blocks/bcc.cook/storage_crate"
 		}
