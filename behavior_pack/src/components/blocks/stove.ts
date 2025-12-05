@@ -7,6 +7,13 @@ import PlayerInventory from "../../PlayerInventory";
 import Utils from "../../Utils";
 import SoundManager from "../../SoundManager";
 import { BlockId } from "../../constants/blockId";
+import Vector from "../../Vector";
+
+const canPlaceOnStove = {
+    "bcc.cook:frying_pan": { sound: "sound of placing frying pan" },
+    "bcc.cook:pot": { sound: "sound of placing pot" }
+};
+
 ComponentManager.registerBlockComponent(BlockId.stove, {
 
     onPlayerInteract: (event) => {
@@ -34,7 +41,8 @@ ComponentManager.registerBlockComponent(BlockId.stove, {
             return;
         }
 
-        const blockAbove = addVectors(event.block.location, {x:0,y:1,z:0});
+        const blockLocation = event.block.location;
+        const blockAbove = new Vector(blockLocation.x,blockLocation.y,blockLocation.z).above();
 
         if (!overworld.getBlock(blockAbove).isAir) {
             // play a sound here
@@ -47,13 +55,3 @@ ComponentManager.registerBlockComponent(BlockId.stove, {
         // remove item from hand
     },
 });
-
-
-const canPlaceOnStove = {
-    "bcc.cook:frying_pan": { sound: "sound of placing frying pan" },
-    "bcc.cook:pot": { sound: "sound of placing pot" }
-};
-
-function addVectors(a, b) {
-    return { x: a.x + b.x, y: a.y + b.y, z: a.z + b.z };
-}
