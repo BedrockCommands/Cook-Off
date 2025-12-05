@@ -4,4 +4,3 @@
 // See LICENSE.md file in the root folder, licenses/MIT.md, or https://opensource.org/license/mit
 
 import "./components/index.js";
-import "./adminTools.js";

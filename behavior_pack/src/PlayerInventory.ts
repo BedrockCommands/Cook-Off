@@ -31,6 +31,10 @@ export default class PlayerInventory {
 		this.container.setItem(slotIndex, itemStack);
 	}
 
+	public getItem(slotIndex: number): ItemStack {
+		return this.container.getItem(slotIndex);
+	}
+
 	public hasEmptySlot(): boolean {
 		return this.container.emptySlotsCount !== 0;
 	}
