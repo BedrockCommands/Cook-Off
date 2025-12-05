@@ -10,6 +10,8 @@ import { getDefaultFryingPanBlockData } from "../../blockData/fryingPan";
 ComponentManager.registerBlockComponent("bcc.cook:frying_pan" /* BlockId.fryingPan */, {
     onPlayerInteract: (event) => {
         const player = event.player;
+        if (player === undefined)
+            return;
         const block = event.block;
         const inventory = new PlayerInventory(player);
         const selectedSlot = inventory.getSelectedSlot();
@@ -21,9 +23,13 @@ ComponentManager.registerBlockComponent("bcc.cook:frying_pan" /* BlockId.fryingP
     },
     beforeOnPlayerPlace: (event) => {
         const player = event.player;
+        if (player === undefined)
+            return;
         const block = event.block;
         const inventory = new PlayerInventory(player);
         const blockItemStack = inventory.getSelectedItem();
+        if (blockItemStack === undefined)
+            return;
         const blockData = BlockDataManager.getBlockDataFromItemStack(blockItemStack, getDefaultFryingPanBlockData());
         BlockDataManager.setBlockData(block, blockData);
     },
@@ -34,9 +40,11 @@ ComponentManager.registerBlockComponent("bcc.cook:frying_pan" /* BlockId.fryingP
 });
 function addSelectedItemToFryingPan(block, selectedSlot) {
     const selectedItem = selectedSlot.getItem();
-    if (!selectedItem.hasTag("bcc.cook:fryable"))
+    if (selectedItem === undefined || !selectedItem.hasTag("bcc.cook:fryable"))
         return;
     const blockData = BlockDataManager.getBlockData(block, getDefaultFryingPanBlockData());
+    if (blockData === undefined)
+        return;
     blockData.items.push(selectedItem.typeId);
     BlockDataManager.setBlockData(block, blockData);
     selectedSlot.setItem(undefined); // Clear slot

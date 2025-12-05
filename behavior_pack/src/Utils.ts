@@ -8,7 +8,7 @@ import { ActionFormData } from "@minecraft/server-ui";
 import { BlockStateSuperset } from "@minecraft/vanilla-data";
 
 export default class Utils {
-	private static overworld;
+	private static overworld: Dimension;
 
 	static getOverworld(): Dimension {
 		return Utils.overworld || (Utils.overworld = world.getDimension("minecraft:overworld"));

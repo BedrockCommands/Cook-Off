@@ -13,6 +13,7 @@ import PlayerInventory from "../../PlayerInventory";
 ComponentManager.registerBlockComponent(BlockId.trashBin, {
     onPlayerInteract: (event) => {
         const player = event.player;
+		if (player === undefined) return;
 		const inventory = new PlayerInventory(player);
         const selectedSlot = inventory.getSelectedSlot();
         // Make sure the player has an item in their hand
