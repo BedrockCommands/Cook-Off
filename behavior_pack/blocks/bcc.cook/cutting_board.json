@@ -6,7 +6,7 @@
 	"format_version": "1.21.110",
 	"minecraft:block": {
 		"description": {
-			"identifier": "bcc.cook:oven",
+			"identifier": "bcc.cook:cutting_board",
 			"menu_category": {
 				"category": "construction"
 			},
@@ -20,13 +20,13 @@
 			}
 		},
 		"components": {
-			"minecraft:geometry": "geometry.oven",
+			"minecraft:geometry": "geometry.cutting_board",
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "oven"
+					"texture": "cutting_board"
 				}
 			},
-			"bcc.cook:oven": {}
+			"bcc.cook:cutting_board": {}
 		},
 		"permutations": [
 			{

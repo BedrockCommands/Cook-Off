@@ -5,7 +5,7 @@
 import { ComponentManager } from "../componentManager";
 import PlayerInventory from "../../PlayerInventory";
 import { BlockId } from "../../constants/blockId";
-ComponentManager.registerBlockComponent(BlockId.oven, {
+ComponentManager.registerBlockComponent(BlockId.sink, {
     onPlayerInteract: (event) => {
         const player = event.player;
         const inventory = new PlayerInventory(player);
@@ -13,6 +13,8 @@ ComponentManager.registerBlockComponent(BlockId.oven, {
         if (!selectedSlot.hasItem()) {
             return;
         }
-        // If an item that is placeble in the oven is in hand, place that item "in" the oven.
+
+
+
     },
 });

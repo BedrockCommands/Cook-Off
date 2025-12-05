@@ -11,6 +11,12 @@
 		},
 		"oven": {
 			"textures": "textures/blocks/bcc.cook/oven"
+		},
+		"cutting_board": {
+			"textures": "textures/blocks/bcc.cook/cutting_board"
+		},
+		"sink": {
+			"textures": "textures/blocks/bcc.cook/sink"
 		}
 	}
 }

@@ -21,7 +21,6 @@ ComponentManager.registerBlockComponent("bcc.cook:stove" /* BlockId.stove */, {
             // play a sound here
             return;
         }
-        /**@type {import("@minecraft/server").ItemStack} */
         const selectedItem = inventory.getSelectedItem();
         const itemId = selectedItem.typeId;
         if (!canPlaceOnStove[itemId]) {
@@ -33,7 +32,6 @@ ComponentManager.registerBlockComponent("bcc.cook:stove" /* BlockId.stove */, {
             // play a sound here
             return;
         }
-        /**@type {import("@minecraft/server").Dimension} */
         overworld.setBlockType(blockAbove, itemId);
         SoundManager.playSound(canPlaceOnStove[itemId].sound, player.location);
         // if an item that is placeble on the stove is in hand, place that item on the stove.

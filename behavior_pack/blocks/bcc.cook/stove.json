@@ -2,7 +2,6 @@
 // Copyright (c) @TheeMonster395 & Contributors
 // Contributors: @TheeMonster395
 // See LICENSE.md file in the root folder, licenses/MIT.md, or https://opensource.org/license/mit
-
 {
 	"format_version": "1.21.110",
 	"minecraft:block": {
@@ -10,6 +9,14 @@
 			"identifier": "bcc.cook:stove",
 			"menu_category": {
 				"category": "construction"
+			},
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": [
+						"minecraft:facing_direction"
+					],
+					"y_rotation_offset": 180
+				}
 			}
 		},
 		"components": {
@@ -19,7 +26,57 @@
 					"texture": "stove"
 				}
 			},
-            "bcc.cook:stove": {}
-		}
+			"bcc.cook:stove": {}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_state('minecraft:facing_direction') == 'north'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:facing_direction') == 'west'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:facing_direction') == 'south'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:facing_direction') == 'east'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							270,
+							0
+						]
+					}
+				}
+			}
+		]
 	}
 }
