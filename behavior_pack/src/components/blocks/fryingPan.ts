@@ -3,14 +3,13 @@
 // Contributors: @brodblox09 @jeanmajid
 // See LICENSE.md file in the root folder, licenses/MIT.md, or https://opensource.org/license/mit
 
-import { Block, BlockComponentPlayerInteractEvent, ContainerSlot, ItemStack, Player } from "@minecraft/server";
+import { Block, ContainerSlot, Player } from "@minecraft/server";
 import { BlockDataManager } from "../../blockData/blockDataManager";
 import { ComponentManager } from "../componentManager";
 import PlayerInventory from "../../PlayerInventory";
 import SoundManager from "../../SoundManager";
 import { BlockId } from "../../constants/blockId";
-import Vector from "../../Vector";
-import { FryingPanBlockData, getDefaultFryingPanBlockData } from "../../blockData/fryingPan";
+import { getDefaultFryingPanBlockData } from "../../blockData/fryingPan";
 
 ComponentManager.registerBlockComponent(BlockId.fryingPan, {
     onPlayerInteract: (event) => {
