@@ -1,0 +1,11 @@
+{
+	"format_version": "1.21.110",
+	"minecraft:item": {
+		"description": {
+			"identifier": "bcc.cook:burger_buns"
+		},
+		"components": {
+			"minecraft:icon": "burger_buns"
+		}
+	}
+}

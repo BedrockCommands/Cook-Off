@@ -2,6 +2,9 @@
 	"texture_data": {
 		"frying_pan": {
 			"textures": "textures/items/bcc.cook/frying_pan"
+    },
+		"burger_buns": {
+			"textures": "textures/items/bcc.cook/burger_buns.png"
 		}
 	}
 }

@@ -6,6 +6,7 @@
 import { ComponentManager } from "./componentManager";
 
 import "./blocks/fryingPan.js";
+import "./blocks/storageCrate.js";
 import "./blocks/trashBin.js";
 
 import "./items/cancelGame.js";
