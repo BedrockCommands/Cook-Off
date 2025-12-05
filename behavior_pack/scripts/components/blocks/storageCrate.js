@@ -9,6 +9,8 @@ const itemPickupSoundId = "random.pop";
 ComponentManager.registerBlockComponent("bcc.cook:storage_crate" /* BlockId.storageCrate */, {
     onPlayerInteract: (event, p) => {
         const player = event.player;
+        if (player === undefined)
+            return;
         const playerInventoryContainer = player.getComponent("minecraft:inventory").container;
         const selectedSlotIndex = player.selectedSlotIndex;
         const selectedSlot = playerInventoryContainer.getSlot(selectedSlotIndex);

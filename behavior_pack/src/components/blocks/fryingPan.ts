@@ -3,36 +3,61 @@
 // Contributors: @brodblox09 @jeanmajid
 // See LICENSE.md file in the root folder, licenses/MIT.md, or https://opensource.org/license/mit
 
-import { BlockComponentPlayerInteractEvent } from "@minecraft/server";
+import { Block, ContainerSlot, Player } from "@minecraft/server";
+import { BlockDataManager } from "../../blockData/blockDataManager";
 import { ComponentManager } from "../componentManager";
 import PlayerInventory from "../../PlayerInventory";
 import SoundManager from "../../SoundManager";
 import { BlockId } from "../../constants/blockId";
+import { getDefaultFryingPanBlockData } from "../../blockData/fryingPan";
 
 ComponentManager.registerBlockComponent(BlockId.fryingPan, {
     onPlayerInteract: (event) => {
         const player = event.player;
+		if (player === undefined) return;
+		const block = event.block;
         const inventory = new PlayerInventory(player);
         const selectedSlot = inventory.getSelectedSlot();
         if (!selectedSlot.hasItem()) {
-            // If player's hand is empty, pick up frying pan
-            pickupableInteract(event);
+            pickupFryingPan(player, block);
             return;
         }
-        const selectedItem = selectedSlot.getItem();
-        const block = event.block;
-        // When implemented: Add the currently selected item to the frying pan and remove it from the player
+        addSelectedItemToFryingPan(block, selectedSlot);
     },
+	beforeOnPlayerPlace: (event) => {
+		const player = event.player;
+		if (player === undefined) return;
+		const block = event.block;
+		const inventory = new PlayerInventory(player);
+		const blockItemStack = inventory.getSelectedItem();
+		if (blockItemStack === undefined) return;
+		const blockData = BlockDataManager.getBlockDataFromItemStack(blockItemStack, getDefaultFryingPanBlockData());
+		BlockDataManager.setBlockData(block, blockData);
+	},
+	onPlayerBreak: (event) => {
+		const block = event.block;
+		BlockDataManager.clearBlockData(block);
+	}
 });
 
-function pickupableInteract(event: BlockComponentPlayerInteractEvent) {
-    const player = event.player;
-    const block = event.block;
-    const blockItemStack = block.getItemStack(1, true);
+function addSelectedItemToFryingPan(block: Block, selectedSlot: ContainerSlot) {
+	const selectedItem = selectedSlot.getItem();
+	if (selectedItem === undefined || !selectedItem.hasTag("bcc.cook:fryable")) return;
+	const blockData = BlockDataManager.getBlockData(block, getDefaultFryingPanBlockData());
+	if (blockData === undefined) return;
+	blockData.items.push(selectedItem.typeId);
+	BlockDataManager.setBlockData(block, blockData);
+	selectedSlot.setItem(undefined); // Clear slot
+}
+
+function pickupFryingPan(player: Player, block: Block) {
+	// block.getItemStack() returns the original block item and not the redefined block item for some reason
+	// and we need the redefined block item since that one is not stackable
+    const blockItemStack = BlockDataManager.getItemFromBlockWithData(block);
     const inventory = new PlayerInventory(player);
     if (block.hasTag("bcc.cook:counter_placeable_in_adventure"))
-            blockItemStack.setCanPlaceOn([ "minecraft:stone" ]); // Replace with bcc.cook:counter once created
+        blockItemStack.setCanPlaceOn([ "minecraft:stone" ]); // Replace with bcc.cook:counter once created
     inventory.give(blockItemStack);
     block.setType("minecraft:air");
-    SoundManager.playSound("block.decorated_pot.insert", event.block.location);
+    SoundManager.playSound("block.decorated_pot.insert", block.location);
 }

@@ -14,4 +14,8 @@ import "./items/exitLobby.js";
 import "./items/mapSelector.js";
 import "./items/statsViewer.js";
 
+import "./items/adminTools.js";
+import "./items/adminTools/getBlockData.js";
+import "./items/adminTools/getItemBlockData.js";
+
 ComponentManager.finalize();
