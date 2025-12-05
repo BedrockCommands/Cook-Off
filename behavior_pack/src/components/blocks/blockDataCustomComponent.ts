@@ -1,4 +1,4 @@
-import { Block, BlockComponentPlayerBreakEvent, BlockComponentPlayerPlaceBeforeEvent, BlockCustomComponent, BlockEvent } from "@minecraft/server";
+import { Block, BlockComponentPlayerBreakEvent, BlockComponentPlayerPlaceBeforeEvent, BlockCustomComponent, BlockEvent, ItemStack } from "@minecraft/server";
 import PlayerInventory from "../../PlayerInventory";
 import { BlockData, BlockDataManager } from "../../blockData/blockDataManager";
 
@@ -10,7 +10,7 @@ export abstract class BlockDataCustomComponent<T extends BlockData> implements B
 		const inventory = new PlayerInventory(player);
 		const blockItemStack = inventory.getSelectedItem();
 		if (blockItemStack === undefined) return;
-		const blockData = BlockDataManager.getBlockDataFromItemStack<T>(blockItemStack) ?? this.getDefaultBlockData();
+		const blockData = this.getBlockDataFromItemStack(blockItemStack) ?? this.getDefaultBlockData();
 		this.setBlockData(block, blockData);
 	}
 
@@ -29,6 +29,10 @@ export abstract class BlockDataCustomComponent<T extends BlockData> implements B
 
 	clearBlockData = (block: Block): void => {
 		BlockDataManager.clearBlockData(block);
+	}
+
+	getBlockDataFromItemStack = (itemStack: ItemStack): T | undefined => {
+		return BlockDataManager.getBlockDataFromItemStack<T>(itemStack);
 	}
 
 	abstract getDefaultBlockData(): T;
