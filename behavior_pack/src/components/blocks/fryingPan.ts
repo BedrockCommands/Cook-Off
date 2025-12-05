@@ -44,7 +44,7 @@ function addSelectedItemToFryingPan(block: Block, selectedSlot: ContainerSlot) {
 	const blockData = BlockDataManager.getBlockData(block, getDefaultFryingPanBlockData());
 	blockData.items.push(selectedItem.typeId);
 	BlockDataManager.setBlockData(block, blockData);
-	selectedSlot.setItem();
+	selectedSlot.setItem(undefined); // Clear slot
 }
 
 function pickupFryingPan(player: Player, block: Block) {

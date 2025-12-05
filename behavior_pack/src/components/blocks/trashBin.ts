@@ -25,7 +25,7 @@ ComponentManager.registerBlockComponent(BlockId.trashBin, {
 			// by using a tag like "bcc.cook:holds_trashable" or similar
 			BlockDataManager.setItemStackBlockData(selectedItem, getDefaultFryingPanBlockData());
 			selectedSlot.setItem(selectedItem);
-        } else selectedSlot.setItem(); // Clear slot
+        } else selectedSlot.setItem(undefined); // Clear slot
         SoundManager.playSound("block.decorated_pot.insert", event.block.location, {
             pitch: 0.6,
         });

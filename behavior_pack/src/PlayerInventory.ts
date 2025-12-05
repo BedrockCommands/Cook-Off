@@ -24,7 +24,7 @@ export default class PlayerInventory {
 	}
 
 	public clearItem(slotIndex: number): void {
-		this.setItem(slotIndex);
+		this.setItem(slotIndex, undefined); // Clear slot
 	}
 
 	public setItem(slotIndex: number, itemStack?: ItemStack): void {
