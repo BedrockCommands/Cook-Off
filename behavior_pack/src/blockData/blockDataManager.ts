@@ -6,37 +6,37 @@
 import Vector from "../Vector";
 import { Block, ItemStack, world } from "@minecraft/server";
 
-const blockDataItemDynamicPropertyId = "blockData";
+const BlockDataDynamicPropertyId = "blockData";
 
 export class BlockDataManager {
+
 	public static getItemFromBlockWithData(block: Block): ItemStack {
 		const blockItemStack = new ItemStack(block.typeId);
 		const blockData = BlockDataManager.getBlockData(block, {});
-		blockItemStack.setDynamicProperty(blockDataItemDynamicPropertyId, JSON.stringify(blockData));
+		blockItemStack.setDynamicProperty(BlockDataDynamicPropertyId, JSON.stringify(blockData));
 		BlockDataManager.clearBlockData(block);
 		return blockItemStack;
 	}
 
-	public static getBlockDataFromItemStack<BlockDataReturnType extends BlockData = BlockData>(itemStack: ItemStack, defaultValue: BlockDataReturnType): BlockDataReturnType {
-		const blockDataRaw = itemStack.getDynamicProperty(blockDataItemDynamicPropertyId) as string;
-		if (!blockDataRaw) return defaultValue;
+	public static getBlockDataFromItemStack<BlockDataReturnType extends BlockData = BlockData>(itemStack: ItemStack, defaultValue?: BlockDataReturnType): BlockDataReturnType {
+		const blockDataRaw = itemStack.getDynamicProperty(BlockDataDynamicPropertyId) as string;
+		if (!blockDataRaw) return defaultValue; // returns undefined if no default value is provided
 		return JSON.parse(blockDataRaw);
 	}
 
 	public static setItemStackBlockData(itemStack: ItemStack, data: BlockData): void {
 		const blockDataRaw = JSON.stringify(data);
-		itemStack.setDynamicProperty(blockDataItemDynamicPropertyId, blockDataRaw);
+		itemStack.setDynamicProperty(BlockDataDynamicPropertyId, blockDataRaw);
 	}
 
-	public static getBlockData<BlockDataReturnType extends BlockData = BlockData>(block: Block, defaultValue: BlockDataReturnType): BlockDataReturnType {
+	public static getBlockData<BlockDataReturnType extends BlockData = BlockData>(block: Block, defaultValue?: BlockDataReturnType): BlockDataReturnType {
 		const blockLocation = Vector.from(block.location);
 		return BlockDataManager.getBlockDataByLocation(blockLocation, defaultValue);
 	}
 
-	public static getBlockDataByLocation<BlockDataReturnType extends BlockData = BlockData>(location: Vector, defaultValue: BlockDataReturnType): BlockDataReturnType {
+	public static getBlockDataByLocation<BlockDataReturnType extends BlockData = BlockData>(location: Vector, defaultValue?: BlockDataReturnType): BlockDataReturnType {
 		const blockDataKey = BlockDataManager.getBlockDataKey(location);
-		const blockData = BlockDataManager.getAllBlockData()[blockDataKey] ?? defaultValue;
-		return blockData as BlockDataReturnType;
+		return BlockDataManager.getData(blockDataKey) as BlockDataReturnType ?? defaultValue; // If there is no block data at that location and no default value is provided, undefined is returned
 	}
 
 	public static setBlockData(block: Block, data: BlockData): void {
@@ -46,9 +46,7 @@ export class BlockDataManager {
 
 	public static setBlockDataByLocation(location: Vector, data: BlockData): void {
 		const blockDataKey = BlockDataManager.getBlockDataKey(location);
-		const allBlockData = BlockDataManager.getAllBlockData();
-		allBlockData[blockDataKey] = data;
-		BlockDataManager.setAllBlockData(allBlockData);
+		BlockDataManager.setData(blockDataKey, data);
 	}
 
 	public static clearBlockData(block: Block): void {
@@ -58,31 +56,29 @@ export class BlockDataManager {
 
 	public static clearBlockDataByLocation(location: Vector): void {
 		const blockDataKey = BlockDataManager.getBlockDataKey(location);
-		const allBlockData = BlockDataManager.getAllBlockData();
-		delete allBlockData[blockDataKey];
-		BlockDataManager.setAllBlockData(allBlockData);
+		BlockDataManager.setData(blockDataKey, undefined); // Clear the block data at that location
 	}
 
-	private static getAllBlockData(): AllBlockData {
-		let allBlockDataUnparsed = world.getDynamicProperty("allBlockData") as string;
-		if (!allBlockDataUnparsed) {
-			allBlockDataUnparsed = "{}";
-			world.setDynamicProperty("allBlockData", allBlockDataUnparsed);
-			return {};
+	private static getData(key: BlockDataKey): BlockData | undefined {
+		const stringifiedData = world.getDynamicProperty(key) as string | undefined;
+		if (!stringifiedData) return undefined;
+		return JSON.parse(stringifiedData) as BlockData;
+	}
+
+	private static setData(key: BlockDataKey, data: BlockData) {
+		if (!data) {
+			world.setDynamicProperty(key, undefined);
+			return;
 		}
-		return JSON.parse(allBlockDataUnparsed);
-	}
-
-	private static setAllBlockData(allBlockData: AllBlockData): void {
-		world.setDynamicProperty("allBlockData", JSON.stringify(allBlockData));
+		const stringifiedData = JSON.stringify(data);
+		world.setDynamicProperty(key, stringifiedData);
 	}
 
 	private static getBlockDataKey(location: Vector): BlockDataKey {
-		return location.getCenter().toString();
+		return `${BlockDataDynamicPropertyId}:${location.getCenter().toString()}` as BlockDataKey;
 	}
 }
 
-type BlockDataKey = string;
-type AllBlockData = Record<BlockDataKey, BlockData>;
+type BlockDataKey = string & { readonly __tag: "BlockDataKey" };
 
-export interface BlockData {}
+export type BlockData = Record<string, any>;
