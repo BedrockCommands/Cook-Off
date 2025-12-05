@@ -39,7 +39,7 @@ function addSelectedItemToFryingPan(block, selectedSlot) {
     const blockData = BlockDataManager.getBlockData(block, getDefaultFryingPanBlockData());
     blockData.items.push(selectedItem.typeId);
     BlockDataManager.setBlockData(block, blockData);
-    selectedSlot.setItem();
+    selectedSlot.setItem(undefined); // Clear slot
 }
 function pickupFryingPan(player, block) {
     // block.getItemStack() returns the original block item and not the redefined block item for some reason

@@ -24,7 +24,7 @@ ComponentManager.registerBlockComponent("bcc.cook:trash_bin" /* BlockId.trashBin
             selectedSlot.setItem(selectedItem);
         }
         else
-            selectedSlot.setItem(); // Clear slot
+            selectedSlot.setItem(undefined); // Clear slot
         SoundManager.playSound("block.decorated_pot.insert", event.block.location, {
             pitch: 0.6,
         });

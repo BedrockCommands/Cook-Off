@@ -27,13 +27,17 @@ system.afterEvents.scriptEventReceive.subscribe(event => {
 });
 function getBlockData(player) {
     const block = player.getBlockFromViewDirection().block;
-    console.warn(JSON.stringify(BlockDataManager.getBlockDataByLocation(Vector.from(block.location), {})));
+    console.warn(JSON.stringify(BlockDataManager.getBlockDataByLocation(Vector.from(block.location))));
 }
 AdminToolRegistry.registerTool("bcc.cook:getBlockData", getBlockData);
 function getSelectedItemBlockData(player) {
     const inventory = new PlayerInventory(player);
     const selectedItem = inventory.getSelectedItem();
-    const blockDataRaw = selectedItem.getDynamicProperty("blockData");
-    console.warn(blockDataRaw);
+    if (!selectedItem) {
+        console.warn("No item selected.");
+        return;
+    }
+    const blockData = BlockDataManager.getBlockDataFromItemStack(selectedItem);
+    console.warn(JSON.stringify(blockData));
 }
 AdminToolRegistry.registerTool("bcc.cook:getSelectedItemBlockData", getSelectedItemBlockData);
