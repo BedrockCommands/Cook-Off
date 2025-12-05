@@ -12,15 +12,15 @@ export class BlockDataManager {
 
 	public static getItemFromBlockWithData(block: Block): ItemStack {
 		const blockItemStack = new ItemStack(block.typeId);
-		const blockData = BlockDataManager.getBlockData(block, {});
+		const blockData = BlockDataManager.getBlockData(block) ?? {};
 		blockItemStack.setDynamicProperty(BlockDataDynamicPropertyId, JSON.stringify(blockData));
 		BlockDataManager.clearBlockData(block);
 		return blockItemStack;
 	}
 
-	public static getBlockDataFromItemStack<BlockDataReturnType extends BlockData = BlockData>(itemStack: ItemStack, defaultValue?: BlockDataReturnType): BlockDataReturnType | undefined {
+	public static getBlockDataFromItemStack<BlockDataReturnType extends BlockData = BlockData>(itemStack: ItemStack): BlockDataReturnType | undefined {
 		const blockDataRaw = itemStack.getDynamicProperty(BlockDataDynamicPropertyId) as string;
-		if (!blockDataRaw) return defaultValue; // returns undefined if no default value is provided
+		if (!blockDataRaw) return undefined;
 		return JSON.parse(blockDataRaw);
 	}
 
@@ -29,14 +29,14 @@ export class BlockDataManager {
 		itemStack.setDynamicProperty(BlockDataDynamicPropertyId, blockDataRaw);
 	}
 
-	public static getBlockData<BlockDataReturnType extends BlockData = BlockData>(block: Block, defaultValue?: BlockDataReturnType): BlockDataReturnType | undefined {
+	public static getBlockData<BlockDataReturnType extends BlockData = BlockData>(block: Block): BlockDataReturnType | undefined {
 		const blockLocation = Vector.from(block.location);
-		return BlockDataManager.getBlockDataByLocation(blockLocation, defaultValue);
+		return BlockDataManager.getBlockDataByLocation(blockLocation);
 	}
 
-	public static getBlockDataByLocation<BlockDataReturnType extends BlockData = BlockData>(location: Vector, defaultValue?: BlockDataReturnType): BlockDataReturnType | undefined {
+	public static getBlockDataByLocation<BlockDataReturnType extends BlockData = BlockData>(location: Vector): BlockDataReturnType | undefined {
 		const blockDataKey = BlockDataManager.getBlockDataKey(location);
-		return BlockDataManager.getData(blockDataKey) as BlockDataReturnType ?? defaultValue; // If there is no block data at that location and no default value is provided, undefined is returned
+		return BlockDataManager.getData(blockDataKey) as BlockDataReturnType;
 	}
 
 	public static setBlockData(block: Block, data?: BlockData): void {
