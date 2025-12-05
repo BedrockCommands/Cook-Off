@@ -8,28 +8,28 @@ const BlockDataDynamicPropertyId = "blockData";
 export class BlockDataManager {
     static getItemFromBlockWithData(block) {
         const blockItemStack = new ItemStack(block.typeId);
-        const blockData = BlockDataManager.getBlockData(block, {});
+        const blockData = BlockDataManager.getBlockData(block) ?? {};
         blockItemStack.setDynamicProperty(BlockDataDynamicPropertyId, JSON.stringify(blockData));
         BlockDataManager.clearBlockData(block);
         return blockItemStack;
     }
-    static getBlockDataFromItemStack(itemStack, defaultValue) {
+    static getBlockDataFromItemStack(itemStack) {
         const blockDataRaw = itemStack.getDynamicProperty(BlockDataDynamicPropertyId);
         if (!blockDataRaw)
-            return defaultValue; // returns undefined if no default value is provided
+            return undefined;
         return JSON.parse(blockDataRaw);
     }
     static setItemStackBlockData(itemStack, data) {
         const blockDataRaw = JSON.stringify(data);
         itemStack.setDynamicProperty(BlockDataDynamicPropertyId, blockDataRaw);
     }
-    static getBlockData(block, defaultValue) {
+    static getBlockData(block) {
         const blockLocation = Vector.from(block.location);
-        return BlockDataManager.getBlockDataByLocation(blockLocation, defaultValue);
+        return BlockDataManager.getBlockDataByLocation(blockLocation);
     }
-    static getBlockDataByLocation(location, defaultValue) {
+    static getBlockDataByLocation(location) {
         const blockDataKey = BlockDataManager.getBlockDataKey(location);
-        return BlockDataManager.getData(blockDataKey) ?? defaultValue; // If there is no block data at that location and no default value is provided, undefined is returned
+        return BlockDataManager.getData(blockDataKey);
     }
     static setBlockData(block, data) {
         const blockLocation = Vector.from(block);
