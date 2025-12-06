@@ -8,6 +8,7 @@ import { BlockId } from "../../constants/blockId";
 ComponentManager.registerBlockComponent(BlockId.cuttingBoard, {
     onPlayerInteract: (event) => {
         const player = event.player;
+		if (player === undefined) return;
         const inventory = new PlayerInventory(player);
         const selectedSlot = inventory.getSelectedSlot();
         if (!selectedSlot.hasItem()) {

@@ -9,7 +9,7 @@ import SoundManager from "../../SoundManager";
 import { BlockId } from "../../constants/blockId";
 import Vector from "../../Vector";
 
-const canPlaceOnStove = {
+const canPlaceOnStove: Record<string, { sound: string }> = {
     "bcc.cook:frying_pan": { sound: "sound of placing frying pan" },
     "bcc.cook:pot": { sound: "sound of placing pot" }
 };
@@ -19,6 +19,7 @@ ComponentManager.registerBlockComponent(BlockId.stove, {
     onPlayerInteract: (event) => {
         const overworld = Utils.getOverworld();
         const player = event.player;
+		if (player === undefined) return;
         const inventory = new PlayerInventory(player);
         const selectedSlot = inventory.getSelectedSlot();
         const faceInteractedWith = event.face;
@@ -34,6 +35,7 @@ ComponentManager.registerBlockComponent(BlockId.stove, {
         }
 
         const selectedItem = inventory.getSelectedItem();
+		if (selectedItem === undefined) return;
         const itemId = selectedItem.typeId;
 
         if (!canPlaceOnStove[itemId]) {
@@ -42,9 +44,11 @@ ComponentManager.registerBlockComponent(BlockId.stove, {
         }
 
         const blockLocation = event.block.location;
-        const blockAbove = new Vector(blockLocation.x,blockLocation.y,blockLocation.z).above();
+        const blockAboveLocation = new Vector(blockLocation.x,blockLocation.y,blockLocation.z).above();
+		const blockAbove = overworld.getBlock(blockAboveLocation);
+		if (blockAbove === undefined) return;
 
-        if (!overworld.getBlock(blockAbove).isAir) {
+        if (!blockAbove.isAir) {
             // play a sound here
             return;
         }
