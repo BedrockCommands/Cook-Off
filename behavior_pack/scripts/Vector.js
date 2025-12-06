@@ -11,11 +11,21 @@ export default class Vector {
         this.y = y;
         this.z = z;
     }
+    clone() {
+        return new Vector(this.x, this.y, this.z);
+    }
     above() {
         return this.add(Vector.up);
     }
     below() {
         return this.add(Vector.down);
+    }
+    getCenter() {
+        let centered = this.clone();
+        centered.x = Math.floor(centered.x) + 0.5;
+        centered.y = Math.floor(centered.y) + 0.5;
+        centered.z = Math.floor(centered.z) + 0.5;
+        return centered;
     }
     /**
      *
@@ -23,6 +33,11 @@ export default class Vector {
      */
     add(oV) {
         return new Vector(this.x + oV.x, this.y + oV.y, this.z + oV.z);
+    }
+    distanceTo(oV) {
+        return Math.sqrt((this.x - oV.x) ** 2 +
+            (this.y - oV.y) ** 2 +
+            (this.z - oV.z) ** 2);
     }
     /**
      *
@@ -39,4 +54,5 @@ export default class Vector {
     }
     static up = new Vector(0, 1, 0);
     static down = new Vector(0, -1, 0);
+    static zero = new Vector(0, 0, 0);
 }

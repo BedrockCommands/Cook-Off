@@ -6,6 +6,12 @@
 		"frying_pan": {
 			"textures": "textures/blocks/bcc.cook/frying_pan"
 		},
+		"pot": {
+			"textures": "textures/blocks/bcc.cook/pot"
+		},
+		"bowl": {
+			"textures": "textures/blocks/bcc.cook/bowl"
+		},
 		"stove": {
 			"textures": "textures/blocks/bcc.cook/stove"
 		},

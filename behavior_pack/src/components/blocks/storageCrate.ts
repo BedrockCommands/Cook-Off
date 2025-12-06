@@ -18,7 +18,8 @@ interface StorageCrateCustomBlockComponentParameters {
 ComponentManager.registerBlockComponent(BlockId.storageCrate, {
 	onPlayerInteract: (event, p) => {
 		const player = event.player;
-		const playerInventoryContainer = player.getComponent("minecraft:inventory").container;
+		if (player === undefined) return;
+		const playerInventoryContainer = player.getComponent("minecraft:inventory")!.container;
 		const selectedSlotIndex = player.selectedSlotIndex;
 		const selectedSlot = playerInventoryContainer.getSlot(selectedSlotIndex);
 		// Ensure the player does not have an item in their hand

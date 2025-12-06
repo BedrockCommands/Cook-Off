@@ -15,6 +15,8 @@ ComponentManager.registerBlockComponent("bcc.cook:stove" /* BlockId.stove */, {
     onPlayerInteract: (event) => {
         const overworld = Utils.getOverworld();
         const player = event.player;
+        if (player === undefined)
+            return;
         const inventory = new PlayerInventory(player);
         const selectedSlot = inventory.getSelectedSlot();
         const faceInteractedWith = event.face;
@@ -27,14 +29,19 @@ ComponentManager.registerBlockComponent("bcc.cook:stove" /* BlockId.stove */, {
             return;
         }
         const selectedItem = inventory.getSelectedItem();
+        if (selectedItem === undefined)
+            return;
         const itemId = selectedItem.typeId;
         if (!canPlaceOnStove[itemId]) {
             // play a sound here
             return;
         }
         const blockLocation = event.block.location;
-        const blockAbove = new Vector(blockLocation.x, blockLocation.y, blockLocation.z).above();
-        if (!overworld.getBlock(blockAbove).isAir) {
+        const blockAboveLocation = new Vector(blockLocation.x, blockLocation.y, blockLocation.z).above();
+        const blockAbove = overworld.getBlock(blockAboveLocation);
+        if (blockAbove === undefined)
+            return;
+        if (!blockAbove.isAir) {
             // play a sound here
             return;
         }
