@@ -7,6 +7,8 @@ import PlayerInventory from "../../PlayerInventory";
 ComponentManager.registerBlockComponent("bcc.cook:cutting_board" /* BlockId.cuttingBoard */, {
     onPlayerInteract: (event) => {
         const player = event.player;
+        if (player === undefined)
+            return;
         const inventory = new PlayerInventory(player);
         const selectedSlot = inventory.getSelectedSlot();
         if (!selectedSlot.hasItem()) {

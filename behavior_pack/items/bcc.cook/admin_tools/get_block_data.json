@@ -2,13 +2,13 @@
     "format_version": "1.21.110",
     "minecraft:item": {
         "description": {
-            "identifier": "bcc.cook:admin_tools",
+            "identifier": "bcc.cook:get_block_data",
             "menu_category": {
                 "category": "items"
             }
         },
         "components": {
-            "bcc.cook:admin_tools": {},
+            "bcc.cook:get_block_data": {},
             "minecraft:max_stack_size": 1,
             "minecraft:icon": "stick"
         }

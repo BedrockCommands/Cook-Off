@@ -3,5 +3,6 @@ export const enum ItemId {
     exitLobby = "bcc.cook:exit_lobby",
     mapSelector = "bcc.cook:map_selector",
     statsViewer = "bcc.cook:stats_viewer",
-	adminTools = "bcc.cook:admin_tools"
+	getBlockData = "bcc.cook:get_block_data",
+	getItemBlockData = "bcc.cook:get_item_block_data"
 }
