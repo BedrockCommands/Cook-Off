@@ -3,10 +3,10 @@
 // Contributors: @brodblox09 @jeanmajid
 // See LICENSE.md file in the root folder, licenses/MIT.md, or https://opensource.org/license/mit
 import { ComponentManager } from "../componentManager";
-import SoundManager from "../../SoundManager";
+import { SoundManager } from "../../SoundManager";
 import { BlockDataManager } from "../../blockData/blockDataManager";
 import { getDefaultFryingPanBlockData } from "../../blockData/fryingPan";
-import PlayerInventory from "../../PlayerInventory";
+import { PlayerInventory } from "../../PlayerInventory";
 ComponentManager.registerBlockComponent("bcc.cook:trash_bin" /* BlockId.trashBin */, {
     onPlayerInteract: (event) => {
         const player = event.player;

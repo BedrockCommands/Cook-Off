@@ -1,7 +1,7 @@
-import PlayerInventory from "../../../PlayerInventory";
+import { PlayerInventory } from "../../../PlayerInventory";
 import { BlockDataManager } from "../../../blockData/blockDataManager";
 import { ModalFormData } from "@minecraft/server-ui";
-import Utils from "../../../Utils";
+import { Utils } from "../../../Utils";
 import { ComponentManager } from "../../componentManager";
 const ToolName = "Get Item Block Data";
 ComponentManager.registerItemComponent("bcc.cook:get_item_block_data" /* ItemId.getItemBlockData */, {

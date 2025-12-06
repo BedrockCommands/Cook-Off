@@ -1,5 +1,5 @@
 import { Block, BlockComponentPlayerInteractEvent, BlockCustomComponent, Player } from "@minecraft/server";
-import PlayerInventory from "../../PlayerInventory";
+import { PlayerInventory } from "../../PlayerInventory";
 
 export interface IPickupableCustomComponent extends BlockCustomComponent {
 	onPlayerInteract: (event: BlockComponentPlayerInteractEvent) => void,

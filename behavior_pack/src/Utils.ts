@@ -7,7 +7,7 @@ import { Dimension, world, Player, BlockPermutation } from "@minecraft/server";
 import { ActionFormData } from "@minecraft/server-ui";
 import { BlockStateSuperset } from "@minecraft/vanilla-data";
 
-export default class Utils {
+export class Utils {
 	private static overworld: Dimension;
 
 	static getOverworld(): Dimension {

@@ -1,4 +1,4 @@
-import PlayerInventory from "../../PlayerInventory";
+import { PlayerInventory } from "../../PlayerInventory";
 export class PickupableCustomComponent {
     onPlayerInteract = (event) => {
         const player = event.player;

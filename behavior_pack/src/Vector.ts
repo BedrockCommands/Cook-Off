@@ -5,7 +5,7 @@
 
 import { Vector3 } from "@minecraft/server";
 
-export default class Vector implements Vector3 {
+export class Vector implements Vector3 {
     constructor(public x: number, public y: number, public z: number) {}
 
 	clone() {

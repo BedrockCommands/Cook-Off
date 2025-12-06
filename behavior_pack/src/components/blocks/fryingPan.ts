@@ -5,8 +5,8 @@
 
 import { Block, BlockComponentPlayerInteractEvent, ContainerSlot, Player } from "@minecraft/server";
 import { ComponentManager } from "../componentManager";
-import PlayerInventory from "../../PlayerInventory";
-import SoundManager from "../../SoundManager";
+import { PlayerInventory } from "../../PlayerInventory";
+import { SoundManager } from "../../SoundManager";
 import { BlockId } from "../../constants/blockId";
 import { FryingPanBlockData, getDefaultFryingPanBlockData } from "../../blockData/fryingPan";
 import { PickupableBlockDataCustomComponent } from "./pickupableBlockDataCustomComponent";

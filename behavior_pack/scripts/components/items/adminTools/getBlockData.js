@@ -1,6 +1,6 @@
-import Vector from "../../../Vector";
+import { Vector } from "../../../Vector";
 import { BlockDataManager } from "../../../blockData/blockDataManager";
-import Utils from "../../../Utils";
+import { Utils } from "../../../Utils";
 import { ComponentManager } from "../../componentManager";
 const ToolName = "Get Block Data";
 ComponentManager.registerItemComponent("bcc.cook:get_block_data" /* ItemId.getBlockData */, {

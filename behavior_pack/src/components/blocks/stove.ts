@@ -3,11 +3,11 @@
 // Contributors: @TheeMonster395
 // See LICENSE.md file in the root folder, licenses/MIT.md, or https://opensource.org/license/mit
 import { ComponentManager } from "../componentManager";
-import PlayerInventory from "../../PlayerInventory";
-import Utils from "../../Utils";
-import SoundManager from "../../SoundManager";
+import { PlayerInventory } from "../../PlayerInventory";
+import { Utils } from "../../Utils";
+import { SoundManager } from "../../SoundManager";
 import { BlockId } from "../../constants/blockId";
-import Vector from "../../Vector";
+import { Vector } from "../../Vector";
 
 const canPlaceOnStove: Record<string, { sound: string }> = {
     "bcc.cook:frying_pan": { sound: "sound of placing frying pan" },

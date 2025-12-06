@@ -1,7 +1,7 @@
 import { ItemComponentUseEvent, Player } from "@minecraft/server";
-import Vector from "../../../Vector";
+import { Vector } from "../../../Vector";
 import { BlockDataManager } from "../../../blockData/blockDataManager";
-import Utils from "../../../Utils";
+import { Utils } from "../../../Utils";
 import { ComponentManager } from "../../componentManager";
 import { ItemId } from "../../../constants/itemId";
 
