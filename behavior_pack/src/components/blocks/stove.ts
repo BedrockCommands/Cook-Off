@@ -4,7 +4,7 @@
 // See LICENSE.md file in the root folder, licenses/MIT.md, or https://opensource.org/license/mit
 import { ComponentManager } from "../componentManager";
 import { PlayerInventory } from "../../PlayerInventory";
-import { Utils } from "../../Utils";
+import { getOverworld } from "../../Utils";
 import { SoundManager } from "../../SoundManager";
 import { BlockId } from "../../constants/blockId";
 import { Vector } from "../../Vector";
@@ -17,7 +17,7 @@ const canPlaceOnStove: Record<string, { sound: string }> = {
 ComponentManager.registerBlockComponent(BlockId.stove, {
 
     onPlayerInteract: (event) => {
-        const overworld = Utils.getOverworld();
+        const overworld = getOverworld();
         const player = event.player;
 		if (player === undefined) return;
         const inventory = new PlayerInventory(player);

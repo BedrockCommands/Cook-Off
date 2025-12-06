@@ -1,7 +1,7 @@
 import { PlayerInventory } from "../../../PlayerInventory";
 import { BlockDataManager } from "../../../blockData/blockDataManager";
 import { ModalFormData } from "@minecraft/server-ui";
-import { Utils } from "../../../Utils";
+import { showTextDisplayForm } from "../../../Utils";
 import { ComponentManager } from "../../componentManager";
 const ToolName = "Get Item Block Data";
 ComponentManager.registerItemComponent("bcc.cook:get_item_block_data" /* ItemId.getItemBlockData */, {
@@ -17,11 +17,11 @@ ComponentManager.registerItemComponent("bcc.cook:get_item_block_data" /* ItemId.
             const inventory = new PlayerInventory(player);
             const itemStack = inventory.getItem(slotIndex);
             if (itemStack === undefined) {
-                Utils.showTextDisplayForm(ToolName, "There is no item in that slot.", player);
+                showTextDisplayForm(ToolName, "There is no item in that slot.", player);
                 return;
             }
             const blockData = BlockDataManager.getBlockDataFromItemStack(itemStack);
-            Utils.showTextDisplayForm(ToolName, JSON.stringify(blockData) ?? "No block data.", player);
+            showTextDisplayForm(ToolName, JSON.stringify(blockData) ?? "No block data.", player);
         });
     }
 });

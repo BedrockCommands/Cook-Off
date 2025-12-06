@@ -2,7 +2,7 @@
 // Copyright (c) @brodblox09 & Contributors
 // Contributors: @brodblox09
 // See LICENSE.md file in the root folder, licenses/MIT.md, or https://opensource.org/license/mit
-import { Utils } from "./Utils";
+import { getOverworld } from "./Utils";
 export class PlayerInventory {
     player;
     inventoryComponent;
@@ -51,7 +51,7 @@ export class PlayerInventory {
         const slotIndex = this.container.firstEmptySlot();
         // slotIndex === undefined if there is no empty slot. In that case, spawn an item stack as an entity.
         if (slotIndex === undefined)
-            Utils.getOverworld().spawnItem(remainingItemStack, this.player.location);
+            getOverworld().spawnItem(remainingItemStack, this.player.location);
         else
             this.container.setItem(slotIndex, remainingItemStack);
     }

@@ -2,7 +2,7 @@ import { ItemComponentUseEvent } from "@minecraft/server";
 import { PlayerInventory } from "../../../PlayerInventory";
 import { BlockDataManager } from "../../../blockData/blockDataManager";
 import { ModalFormData } from "@minecraft/server-ui";
-import { Utils } from "../../../Utils";
+import { showTextDisplayForm } from "../../../Utils";
 import { ComponentManager } from "../../componentManager";
 import { ItemId } from "../../../constants/itemId";
 
@@ -21,11 +21,11 @@ ComponentManager.registerItemComponent(ItemId.getItemBlockData, {
 			const inventory = new PlayerInventory(player);
 			const itemStack = inventory.getItem(slotIndex);
 			if (itemStack === undefined) {
-				Utils.showTextDisplayForm(ToolName, "There is no item in that slot.", player);
+				showTextDisplayForm(ToolName, "There is no item in that slot.", player);
 				return;
 			}
 			const blockData = BlockDataManager.getBlockDataFromItemStack(itemStack);
-			Utils.showTextDisplayForm(ToolName, JSON.stringify(blockData) ?? "No block data.", player);
+			showTextDisplayForm(ToolName, JSON.stringify(blockData) ?? "No block data.", player);
 		});
 	}
 });

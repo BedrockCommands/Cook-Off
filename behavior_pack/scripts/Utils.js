@@ -4,21 +4,19 @@
 // See LICENSE.md file in the root folder, licenses/MIT.md, or https://opensource.org/license/mit
 import { world } from "@minecraft/server";
 import { ActionFormData } from "@minecraft/server-ui";
-export class Utils {
-    static overworld;
-    static getOverworld() {
-        return Utils.overworld || (Utils.overworld = world.getDimension("minecraft:overworld"));
-    }
-    static getAllPlayers() {
-        return world.getAllPlayers();
-    }
-    static permutationWithState(permutation, stateName, value) {
-        return permutation.withState(stateName, value);
-    }
-    static showTextDisplayForm(title, text, player) {
-        new ActionFormData()
-            .title(title)
-            .body(text)
-            .show(player);
-    }
+let overworld;
+export function getOverworld() {
+    return overworld || (overworld = world.getDimension("minecraft:overworld"));
+}
+export function getAllPlayers() {
+    return world.getAllPlayers();
+}
+export function permutationWithState(permutation, stateName, value) {
+    return permutation.withState(stateName, value);
+}
+export function showTextDisplayForm(title, text, player) {
+    new ActionFormData()
+        .title(title)
+        .body(text)
+        .show(player);
 }
