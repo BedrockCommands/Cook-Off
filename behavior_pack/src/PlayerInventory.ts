@@ -11,7 +11,7 @@ export default class PlayerInventory {
 	public container: Container;
 
 	public constructor(public player: Player) {
-		this.inventoryComponent = player.getComponent("minecraft:inventory");
+		this.inventoryComponent = player.getComponent("minecraft:inventory")!;
 		this.container = this.inventoryComponent.container;
 	}
 
@@ -19,11 +19,23 @@ export default class PlayerInventory {
 		return this.container.getSlot(this.player.selectedSlotIndex);
 	}
 
-	public getSelectedItem(): ItemStack {
+	public getSelectedItem(): ItemStack | undefined {
 		return this.container.getItem(this.player.selectedSlotIndex);
 	}
 
-	public hasEmptySlot() {
+	public clearItem(slotIndex: number): void {
+		this.setItem(slotIndex, undefined); // Clear slot
+	}
+
+	public setItem(slotIndex: number, itemStack?: ItemStack): void {
+		this.container.setItem(slotIndex, itemStack);
+	}
+
+	public getItem(slotIndex: number): ItemStack | undefined {
+		return this.container.getItem(slotIndex);
+	}
+
+	public hasEmptySlot(): boolean {
 		return this.container.emptySlotsCount !== 0;
 	}
 
