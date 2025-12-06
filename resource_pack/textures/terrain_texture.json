@@ -9,8 +9,20 @@
 		"pot": {
 			"textures": "textures/blocks/bcc.cook/pot"
 		},
+		"stove": {
+			"textures": "textures/blocks/bcc.cook/stove"
+		},
+		"oven": {
+			"textures": "textures/blocks/bcc.cook/oven"
+		},
+		"cutting_board": {
+			"textures": "textures/blocks/bcc.cook/cutting_board"
+		},
+		"sink": {
+			"textures": "textures/blocks/bcc.cook/sink"
+    },
 		"storage_crate": {
 			"textures": "textures/blocks/bcc.cook/storage_crate"
 		}
-	}
+  }
 }

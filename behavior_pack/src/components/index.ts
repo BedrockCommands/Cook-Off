@@ -9,6 +9,10 @@ import "./blocks/fryingPan.js";
 import "./blocks/pot.js";
 import "./blocks/storageCrate.js";
 import "./blocks/trashBin.js";
+import "./blocks/stove.js";
+import "./blocks/oven.js";
+import "./blocks/cutting_board.js";
+import "./blocks/sink.js";
 
 import "./items/cancelGame.js";
 import "./items/exitLobby.js";
