@@ -1,4 +1,4 @@
-import { PlayerInventory } from "../../PlayerInventory";
+import { PlayerInventory } from "../../utils/playerInventory";
 import { BlockDataManager } from "../../blockData/blockDataManager";
 export class BlockDataCustomComponent {
     beforeOnPlayerPlace = (event) => {

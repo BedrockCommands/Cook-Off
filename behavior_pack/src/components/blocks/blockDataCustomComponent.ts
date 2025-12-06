@@ -1,5 +1,5 @@
 import { Block, BlockComponentPlayerBreakEvent, BlockComponentPlayerPlaceBeforeEvent, BlockCustomComponent, BlockEvent, ItemStack } from "@minecraft/server";
-import { PlayerInventory } from "../../PlayerInventory";
+import { PlayerInventory } from "../../utils/playerInventory";
 import { BlockData, BlockDataManager } from "../../blockData/blockDataManager";
 
 export abstract class BlockDataCustomComponent<T extends BlockData> implements BlockCustomComponent {

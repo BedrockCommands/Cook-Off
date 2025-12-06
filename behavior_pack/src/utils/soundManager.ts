@@ -4,7 +4,7 @@
 // See LICENSE.md file in the root folder, licenses/MIT.md, or https://opensource.org/license/mit
 
 import { Vector3, WorldSoundOptions } from "@minecraft/server";
-import { getOverworld } from "./Utils";
+import { getOverworld } from "./general";
 
 export class SoundManager {
 	static playSound(soundId: string, location: Vector3, soundOptions?: WorldSoundOptions) {

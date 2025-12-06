@@ -1,8 +1,8 @@
 import { ItemComponentUseEvent } from "@minecraft/server";
-import { PlayerInventory } from "../../../PlayerInventory";
+import { PlayerInventory } from "../../../utils/playerInventory";
 import { BlockDataManager } from "../../../blockData/blockDataManager";
 import { ModalFormData } from "@minecraft/server-ui";
-import { showTextDisplayForm } from "../../../Utils";
+import { showTextDisplayForm } from "../../../utils/general";
 import { ComponentManager } from "../../componentManager";
 import { ItemId } from "../../../constants/itemId";
 

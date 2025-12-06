@@ -4,7 +4,7 @@
 // See LICENSE.md file in the root folder, licenses/MIT.md, or https://opensource.org/license/mit
 
 import { Container, ContainerSlot, EntityInventoryComponent, ItemStack, Player } from "@minecraft/server";
-import { getOverworld } from "./Utils";
+import { getOverworld } from "./general";
 
 export class PlayerInventory {
 	private inventoryComponent: EntityInventoryComponent;

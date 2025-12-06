@@ -3,8 +3,8 @@
 // Contributors: @brodblox09 @jeanmajid
 // See LICENSE.md file in the root folder, licenses/MIT.md, or https://opensource.org/license/mit
 import { ComponentManager } from "../componentManager";
-import { PlayerInventory } from "../../PlayerInventory";
-import { SoundManager } from "../../SoundManager";
+import { PlayerInventory } from "../../utils/playerInventory";
+import { SoundManager } from "../../utils/soundManager";
 import { getDefaultFryingPanBlockData } from "../../blockData/fryingPan";
 import { PickupableBlockDataCustomComponent } from "./pickupableBlockDataCustomComponent";
 const FryingPanPickupSoundId = "block.decorated_pot.insert";

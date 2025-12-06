@@ -2,7 +2,7 @@ import { Block, BlockComponentPlayerInteractEvent, Player } from "@minecraft/ser
 import { BlockData, BlockDataManager } from "../../blockData/blockDataManager";
 import { BlockDataCustomComponent } from "./blockDataCustomComponent";
 import { IPickupableCustomComponent } from "./pickupableCustomComponent";
-import { PlayerInventory } from "../../PlayerInventory";
+import { PlayerInventory } from "../../utils/playerInventory";
 
 export abstract class PickupableBlockDataCustomComponent<T extends BlockData> extends BlockDataCustomComponent<T> implements IPickupableCustomComponent {
 	onPlayerInteract = (event: BlockComponentPlayerInteractEvent) => {
