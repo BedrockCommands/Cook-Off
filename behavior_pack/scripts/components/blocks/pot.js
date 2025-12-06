@@ -1,8 +1,8 @@
 import { getDefaultPotBlockData } from "../../blockData/pot";
 import { ComponentManager } from "../componentManager";
 import { PickupableBlockDataCustomComponent } from "./pickupableBlockDataCustomComponent";
-import SoundManager from "../../SoundManager";
-import PlayerInventory from "../../PlayerInventory";
+import { SoundManager } from "../../utils/soundManager";
+import { PlayerInventory } from "../../utils/playerInventory";
 const PotPickupSoundId = "block.decorated_pot.insert";
 class PotCustomComponent extends PickupableBlockDataCustomComponent {
     getDefaultBlockData = () => {

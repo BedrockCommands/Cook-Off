@@ -1,11 +1,11 @@
 import { Block, BlockComponentPlayerInteractEvent, Player } from "@minecraft/server";
 import { BlockId } from "../../constants/blockId";
 import { ComponentManager } from "../componentManager";
-import PlayerInventory from "../../PlayerInventory";
+import { PlayerInventory } from "../../utils/playerInventory";
 import { PickupableCustomComponent } from "./pickupableCustomComponent";
 import { BlockDataManager } from "../../blockData/blockDataManager";
 import { PotBlockData } from "../../blockData/pot";
-import SoundManager from "../../SoundManager";
+import { SoundManager } from "../../utils/soundManager";
 
 const BowlPickupSoundId = "block.decorated_pot.insert";
 

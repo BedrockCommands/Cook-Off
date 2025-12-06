@@ -3,8 +3,8 @@ import { getDefaultPotBlockData, PotBlockData } from "../../blockData/pot";
 import { BlockId } from "../../constants/blockId";
 import { ComponentManager } from "../componentManager";
 import { PickupableBlockDataCustomComponent } from "./pickupableBlockDataCustomComponent";
-import SoundManager from "../../SoundManager";
-import PlayerInventory from "../../PlayerInventory";
+import { SoundManager } from "../../utils/soundManager";
+import { PlayerInventory } from "../../utils/playerInventory";
 
 const PotPickupSoundId = "block.decorated_pot.insert";
 

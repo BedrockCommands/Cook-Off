@@ -3,7 +3,7 @@
 // Contributors: @TheeMonster395
 // See LICENSE.md file in the root folder, licenses/MIT.md, or https://opensource.org/license/mit
 import { ComponentManager } from "../componentManager";
-import PlayerInventory from "../../PlayerInventory";
+import { PlayerInventory } from "../../utils/playerInventory";
 ComponentManager.registerBlockComponent("bcc.cook:oven" /* BlockId.oven */, {
     onPlayerInteract: (event) => {
         const player = event.player;

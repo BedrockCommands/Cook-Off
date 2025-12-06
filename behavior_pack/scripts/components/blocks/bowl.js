@@ -1,8 +1,8 @@
 import { ComponentManager } from "../componentManager";
-import PlayerInventory from "../../PlayerInventory";
+import { PlayerInventory } from "../../utils/playerInventory";
 import { PickupableCustomComponent } from "./pickupableCustomComponent";
 import { BlockDataManager } from "../../blockData/blockDataManager";
-import SoundManager from "../../SoundManager";
+import { SoundManager } from "../../utils/soundManager";
 const BowlPickupSoundId = "block.decorated_pot.insert";
 class BowlCustomComponent extends PickupableCustomComponent {
     onPlayerInteract = (event) => {

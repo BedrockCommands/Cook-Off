@@ -4,9 +4,9 @@
 // See LICENSE.md file in the root folder, licenses/MIT.md, or https://opensource.org/license/mit
 
 import { Container, ContainerSlot, EntityInventoryComponent, ItemStack, Player } from "@minecraft/server";
-import Utils from "./Utils";
+import { getOverworld } from "./general";
 
-export default class PlayerInventory {
+export class PlayerInventory {
 	private inventoryComponent: EntityInventoryComponent;
 	public container: Container;
 
@@ -58,7 +58,7 @@ export default class PlayerInventory {
 
 		const slotIndex = this.container.firstEmptySlot();
 		// slotIndex === undefined if there is no empty slot. In that case, spawn an item stack as an entity.
-		if (slotIndex === undefined) Utils.getOverworld().spawnItem(remainingItemStack, this.player.location);
+		if (slotIndex === undefined) getOverworld().spawnItem(remainingItemStack, this.player.location);
 		else this.container.setItem(slotIndex, remainingItemStack);
 	}
 }

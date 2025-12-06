@@ -2,7 +2,7 @@
 // Copyright (c) @brodblox09 & Contributors
 // Contributors: @brodblox09
 // See LICENSE.md file in the root folder, licenses/MIT.md, or https://opensource.org/license/mit
-import { getOverworld } from "./Utils";
+import { getOverworld } from "./general";
 export class PlayerInventory {
     player;
     inventoryComponent;

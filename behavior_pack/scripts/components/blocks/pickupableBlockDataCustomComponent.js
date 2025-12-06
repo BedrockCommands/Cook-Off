@@ -1,6 +1,6 @@
 import { BlockDataManager } from "../../blockData/blockDataManager";
 import { BlockDataCustomComponent } from "./blockDataCustomComponent";
-import PlayerInventory from "../../PlayerInventory";
+import { PlayerInventory } from "../../utils/playerInventory";
 export class PickupableBlockDataCustomComponent extends BlockDataCustomComponent {
     onPlayerInteract = (event) => {
         const player = event.player;
