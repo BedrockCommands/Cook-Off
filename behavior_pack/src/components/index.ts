@@ -5,7 +5,9 @@
 
 import { ComponentManager } from "./componentManager";
 
+import "./blocks/bowl.js";
 import "./blocks/fryingPan.js";
+import "./blocks/pot.js";
 import "./blocks/storageCrate.js";
 import "./blocks/trashBin.js";
 
@@ -13,5 +15,9 @@ import "./items/cancelGame.js";
 import "./items/exitLobby.js";
 import "./items/mapSelector.js";
 import "./items/statsViewer.js";
+
+import "./items/adminTools.js";
+import "./items/adminTools/getBlockData.js";
+import "./items/adminTools/getItemBlockData.js";
 
 ComponentManager.finalize();

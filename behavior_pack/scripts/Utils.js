@@ -3,6 +3,7 @@
 // Contributors: @brodblox09
 // See LICENSE.md file in the root folder, licenses/MIT.md, or https://opensource.org/license/mit
 import { world } from "@minecraft/server";
+import { ActionFormData } from "@minecraft/server-ui";
 export default class Utils {
     static overworld;
     static getOverworld() {
@@ -13,5 +14,11 @@ export default class Utils {
     }
     static permutationWithState(permutation, stateName, value) {
         return permutation.withState(stateName, value);
+    }
+    static showTextDisplayForm(title, text, player) {
+        new ActionFormData()
+            .title(title)
+            .body(text)
+            .show(player);
     }
 }

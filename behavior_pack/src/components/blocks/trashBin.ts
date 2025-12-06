@@ -6,13 +6,16 @@
 import { ComponentManager } from "../componentManager";
 import SoundManager from "../../SoundManager";
 import { BlockId } from "../../constants/blockId";
+import { BlockDataManager } from "../../blockData/blockDataManager";
+import { getDefaultFryingPanBlockData } from "../../blockData/fryingPan";
+import PlayerInventory from "../../PlayerInventory";
 
 ComponentManager.registerBlockComponent(BlockId.trashBin, {
     onPlayerInteract: (event) => {
         const player = event.player;
-        const playerInventoryContainer = player.getComponent("minecraft:inventory").container;
-        const selectedSlotIndex = player.selectedSlotIndex;
-        const selectedSlot = playerInventoryContainer.getSlot(selectedSlotIndex);
+		if (player === undefined) return;
+		const inventory = new PlayerInventory(player);
+        const selectedSlot = inventory.getSelectedSlot();
         // Make sure the player has an item in their hand
         const selectedItem = selectedSlot.getItem();
         if (!selectedItem) return;
@@ -20,7 +23,10 @@ ComponentManager.registerBlockComponent(BlockId.trashBin, {
         if (selectedItem.typeId === BlockId.fryingPan) {
             // Keep the frying pan, but clear the contents of it
             // This behavior may need to be generalized to any item that can hold food
-        } else selectedSlot.setItem(); // Clear slot
+			// by using a tag like "bcc.cook:holds_trashable" or similar
+			BlockDataManager.setItemStackBlockData(selectedItem, getDefaultFryingPanBlockData());
+			selectedSlot.setItem(selectedItem);
+        } else selectedSlot.setItem(undefined); // Clear slot
         SoundManager.playSound("block.decorated_pot.insert", event.block.location, {
             pitch: 0.6,
         });
