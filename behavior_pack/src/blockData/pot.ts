@@ -11,4 +11,4 @@ export interface PotBlockData extends BlockData {
 
 export function getDefaultPotBlockData(): PotBlockData {
 	return { items: [] };
-};
+}

@@ -11,4 +11,4 @@ export interface FryingPanBlockData extends BlockData {
 
 export function getDefaultFryingPanBlockData(): FryingPanBlockData {
 	return { items: [] };
-};
+}
