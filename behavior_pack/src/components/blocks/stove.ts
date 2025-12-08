@@ -1,0 +1,61 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) @TheeMonster395 & Contributors
+// Contributors: @TheeMonster395
+// See LICENSE.md file in the root folder, licenses/MIT.md, or https://opensource.org/license/mit
+import { ComponentManager } from "../componentManager";
+import { PlayerInventory } from "../../utils/playerInventory";
+import { getOverworld } from "../../utils/general";
+import { SoundManager } from "../../utils/soundManager";
+import { BlockId } from "../../constants/blockId";
+import { Vector } from "../../utils/vector";
+
+const canPlaceOnStove: Record<string, { sound: string }> = {
+    "bcc.cook:frying_pan": { sound: "sound of placing frying pan" },
+    "bcc.cook:pot": { sound: "sound of placing pot" }
+};
+
+ComponentManager.registerBlockComponent(BlockId.stove, {
+
+    onPlayerInteract: (event) => {
+        const overworld = getOverworld();
+        const player = event.player;
+		if (player === undefined) return;
+        const inventory = new PlayerInventory(player);
+        const selectedSlot = inventory.getSelectedSlot();
+        const faceInteractedWith = event.face;
+
+        if (faceInteractedWith !== "Up") {
+            //play a sound here
+            return;
+        }
+
+        if (!selectedSlot.hasItem()) {
+            // play a sound here
+            return;
+        }
+
+        const selectedItem = inventory.getSelectedItem();
+		if (selectedItem === undefined) return;
+        const itemId = selectedItem.typeId;
+
+        if (!canPlaceOnStove[itemId]) {
+            // play a sound here
+            return;
+        }
+
+        const blockLocation = event.block.location;
+        const blockAboveLocation = new Vector(blockLocation.x,blockLocation.y,blockLocation.z).above();
+		const blockAbove = overworld.getBlock(blockAboveLocation);
+		if (blockAbove === undefined) return;
+
+        if (!blockAbove.isAir) {
+            // play a sound here
+            return;
+        }
+
+        overworld.setBlockType(blockAbove, itemId);
+        SoundManager.playSound(canPlaceOnStove[itemId].sound, player.location);
+        // if an item that is placeble on the stove is in hand, place that item on the stove.
+        // remove item from hand
+    },
+});

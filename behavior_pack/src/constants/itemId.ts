@@ -1,6 +1,47 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) @jeanmajid & Contributors
+// Contributors: @jeanmajid
+// See LICENSE.md file in the root folder, licenses/MIT.md, or https://opensource.org/license/mit
+
 export const enum ItemId {
     cancelGame = "bcc.cook:cancel_game",
     exitLobby = "bcc.cook:exit_lobby",
     mapSelector = "bcc.cook:map_selector",
-    statsViewer = "bcc.cook:stats_viewer"
+    statsViewer = "bcc.cook:stats_viewer",
+    getBlockData = "bcc.cook:get_block_data",
+    getItemBlockData = "bcc.cook:get_item_block_data",
+    boba = "bcc.cook:boba",
+    bottleOfSoySauce = "bcc.cook:bottle_of_soy_sauce",
+    bottleOfVinegar = "bcc.cook:bottle_of_vinegar",
+    burgerBun = "bcc.cook:burger_bun",
+    cabbage = "bcc.cook:cabbage",
+    cabbageLeaf = "bcc.cook:cabbage_leaf",
+    carrot = "bcc.cook:carrot",
+    celery = "bcc.cook:celery",
+    cheese = "bcc.cook:cheese",
+    cheeseSlice = "bcc.cook:cheese_slice",
+    choppedGarlic = "bcc.cook:chopped_garlic",
+    cookedBeefPatty = "bcc.cook:cooked_beef_patty",
+    cookedChickenBits = "bcc.cook:cooked_chicken_bits",
+    cookedNoodle = "bcc.cook:cooked_noodle",
+    cookedOnionRings = "bcc.cook:cooked_onion_rings",
+    cookedRice = "bcc.cook:cooked_rice",
+    dicedCarrot = "bcc.cook:diced_carrot",
+    dicedCelery = "bcc.cook:diced_celery",
+    dough = "bcc.cook:dough",
+    driedNoodle = "bcc.cook:dried_noodle",
+    egg = "bcc.cook:egg",
+    garlic = "bcc.cook:garlic",
+    lettuce = "bcc.cook:lettuce",
+    lettuceLeaf = "bcc.cook:lettuce_leaf",
+    milk = "bcc.cook:milk",
+    onion = "bcc.cook:onion",
+    onionRings = "bcc.cook:onion_rings",
+    rawBeefPatty = "bcc.cook:raw_beef_patty",
+    rawChickenBits = "bcc.cook:raw_chicken_bits",
+    rawMeatballs = "bcc.cook:raw_meatballs",
+    rawRice = "bcc.cook:raw_rice",
+    tapiocaPearls = "bcc.cook:tapioca_pearls",
+    tomato = "bcc.cook:tomato",
+    tomatoSlice = "bcc.cook:tomato_slice",
 }

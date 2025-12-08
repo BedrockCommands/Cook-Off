@@ -2,8 +2,8 @@
 // Copyright (c) @brodblox09 & Contributors
 // Contributors: @brodblox09
 // See LICENSE.md file in the root folder, licenses/MIT.md, or https://opensource.org/license/mit
-import Utils from "./Utils";
-export default class PlayerInventory {
+import { getOverworld } from "./Utils";
+export class PlayerInventory {
     player;
     inventoryComponent;
     container;
@@ -17,6 +17,15 @@ export default class PlayerInventory {
     }
     getSelectedItem() {
         return this.container.getItem(this.player.selectedSlotIndex);
+    }
+    clearItem(slotIndex) {
+        this.setItem(slotIndex, undefined); // Clear slot
+    }
+    setItem(slotIndex, itemStack) {
+        this.container.setItem(slotIndex, itemStack);
+    }
+    getItem(slotIndex) {
+        return this.container.getItem(slotIndex);
     }
     hasEmptySlot() {
         return this.container.emptySlotsCount !== 0;
@@ -42,7 +51,7 @@ export default class PlayerInventory {
         const slotIndex = this.container.firstEmptySlot();
         // slotIndex === undefined if there is no empty slot. In that case, spawn an item stack as an entity.
         if (slotIndex === undefined)
-            Utils.getOverworld().spawnItem(remainingItemStack, this.player.location);
+            getOverworld().spawnItem(remainingItemStack, this.player.location);
         else
             this.container.setItem(slotIndex, remainingItemStack);
     }

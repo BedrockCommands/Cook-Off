@@ -1,0 +1,15 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) @jeanmajid & Contributors
+// Contributors: @jeanmajid
+// See LICENSE.md file in the root folder, licenses/MIT.md, or https://opensource.org/license/mit
+{
+    "format_version": "1.21.110",
+    "minecraft:item": {
+        "description": {
+            "identifier": "bcc.cook:raw_chicken_bits"
+        },
+        "components": {
+            "minecraft:icon": "raw_chicken_bits"
+        }
+    }
+}

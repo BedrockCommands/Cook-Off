@@ -1,0 +1,18 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) @TheeMonster395 & Contributors
+// Contributors: @TheeMonster395
+// See LICENSE.md file in the root folder, licenses/MIT.md, or https://opensource.org/license/mit
+import { ComponentManager } from "../componentManager";
+import { PlayerInventory } from "../../utils/playerInventory";
+ComponentManager.registerBlockComponent("bcc.cook:sink" /* BlockId.sink */, {
+    onPlayerInteract: (event) => {
+        const player = event.player;
+        if (player === undefined)
+            return;
+        const inventory = new PlayerInventory(player);
+        const selectedSlot = inventory.getSelectedSlot();
+        if (!selectedSlot.hasItem()) {
+            return;
+        }
+    },
+});

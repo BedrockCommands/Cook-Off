@@ -5,7 +5,8 @@
         "moduleResolution": "Node",
         "allowSyntheticDefaultImports": true,
         "removeComments": false,
-        "outDir": "behavior_pack/scripts"
+        "outDir": "behavior_pack/scripts",
+		"strict": true
     },
     "include": [
         "behavior_pack/src/**/*.ts"

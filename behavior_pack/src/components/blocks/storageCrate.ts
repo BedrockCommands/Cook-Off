@@ -4,7 +4,7 @@
 // See LICENSE.md file in the root folder, licenses/MIT.md, or https://opensource.org/license/mit
 
 import { ComponentManager } from "../componentManager";
-import SoundManager from "../../SoundManager";
+import { SoundManager } from "../../utils/soundManager";
 import { BlockId } from "../../constants/blockId";
 import { ItemStack } from "@minecraft/server";
 
@@ -18,7 +18,8 @@ interface StorageCrateCustomBlockComponentParameters {
 ComponentManager.registerBlockComponent(BlockId.storageCrate, {
 	onPlayerInteract: (event, p) => {
 		const player = event.player;
-		const playerInventoryContainer = player.getComponent("minecraft:inventory").container;
+		if (player === undefined) return;
+		const playerInventoryContainer = player.getComponent("minecraft:inventory")!.container;
 		const selectedSlotIndex = player.selectedSlotIndex;
 		const selectedSlot = playerInventoryContainer.getSlot(selectedSlotIndex);
 		// Ensure the player does not have an item in their hand
