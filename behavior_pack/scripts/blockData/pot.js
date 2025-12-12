@@ -5,4 +5,3 @@
 export function getDefaultPotBlockData() {
     return { items: [] };
 }
-;
