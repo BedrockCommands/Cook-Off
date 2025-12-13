@@ -39,6 +39,9 @@
 		"serving_station.brick": {
 			"textures": "textures/blocks/bcc.cook/serving_station.brick"
 		},
+		"shelf": {
+			"textures": "textures/blocks/bcc.cook/shelf"
+		},
 		"sink.brick": {
 			"textures": "textures/blocks/bcc.cook/sink.brick"
 		},
