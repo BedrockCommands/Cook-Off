@@ -114,6 +114,9 @@
 		"pot": {
 			"textures": "textures/items/bcc.cook/pot"
 		},
+		"rice_paper": {
+			"textures": "textures/bcc.cook/ingredients/rice_paper"
+		},
 		"rice.cooked": {
 			"textures": "textures/bcc.cook/ingredients/rice.cooked"
 		},
