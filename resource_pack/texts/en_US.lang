@@ -20,3 +20,8 @@ item.bcc.cook:pot=Pot
 ## Admin Tools
 item.bcc.cook:get_block_data=Get Block Data
 item.bcc.cook:get_item_block_data=Get Item Block Data
+
+## Item Groups
+bcc.cook:itemGroup.name.ingredients=Ingredients
+bcc.cook:itemGroup.name.adminTools=Admin Tools
+bcc.cook:itemGroup.name.storageCrates=Storage Crates
