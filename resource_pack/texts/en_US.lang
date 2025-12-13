@@ -58,6 +58,8 @@ item.bcc.cook:rice_paper=Rice Paper
 item.bcc.cook:tapioca_pearls=Tapioca Pearls
 item.bcc.cook:tomato=Tomato
 item.bcc.cook:tomato_slice=Tomato Slice
+item.bcc.cook:fish_slice.cooked=Cooked Fish Slice
+item.bcc.cook:fish_slice.raw=Raw Fish Slice
 
 ## Admin Tools
 item.bcc.cook:get_block_data=Get Block Data

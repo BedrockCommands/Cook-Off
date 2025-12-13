@@ -75,6 +75,12 @@
 		"fire_extinguisher": {
 			"textures": "textures/items/bcc.cook/fire_extinguisher"
 		},
+		"fish_slice.cooked": {
+			"textures": "textures/bcc.cook/ingredients/fish_slice.cooked"
+		},
+		"fish_slice.raw": {
+			"textures": "textures/bcc.cook/ingredients/fish_slice.raw"
+		},
 		"frying_pan": {
 			"textures": "textures/items/bcc.cook/frying_pan"
 		},
