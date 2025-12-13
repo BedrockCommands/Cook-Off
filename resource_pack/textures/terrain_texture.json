@@ -18,8 +18,8 @@
 		"pot": {
 			"textures": "textures/blocks/bcc.cook/pot"
 		},
-		"sink": {
-			"textures": "textures/blocks/bcc.cook/sink"
+		"brick_sink": {
+			"textures": "textures/blocks/bcc.cook/brick_sink"
 		},
 		"storage_crate": {
 			"textures": "textures/blocks/bcc.cook/storage_crate"

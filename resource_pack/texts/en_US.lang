@@ -4,7 +4,7 @@ tile.bcc.cook:frying_pan.name=Frying Pan
 tile.bcc.cook:stove.name=Stove
 tile.bcc.cook:oven.name=Oven
 tile.bcc.cook:cutting_board.name=Cutting Board
-tile.bcc.cook:sink.name=Sink
+tile.bcc.cook:brick_sink.name=Brick Sink
 tile.bcc.cook:pot.name=Pot
 tile.bcc.cook:bowl.name=Bowl
 
