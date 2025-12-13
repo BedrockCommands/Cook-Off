@@ -9,6 +9,9 @@
 		"cutting_board": {
 			"textures": "textures/blocks/bcc.cook/cutting_board"
 		},
+		"fridge": {
+			"textures": "textures/blocks/bcc.cook/fridge"
+		},
 		"frying_pan": {
 			"textures": "textures/blocks/bcc.cook/frying_pan"
 		},
