@@ -23,7 +23,8 @@
 			"minecraft:material_instances": {
 				"*": {
 					"texture": "frying_pan",
-					"render_method": "alpha_test"
+					"render_method": "alpha_test",
+					"ambient_occlusion": false
 				}
 			},
 			"bcc.cook:frying_pan": {},
