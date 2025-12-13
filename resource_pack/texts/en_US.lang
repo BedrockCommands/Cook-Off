@@ -14,9 +14,47 @@ tile.bcc.cook:storage_crate.open.name=Open Storage Crate
 tile.bcc.cook:storage_crate.burger_buns.name=Burger Buns Storage Crate
 
 ## Items
-item.bcc.cook:burger_buns=Burger Buns
 item.bcc.cook:frying_pan=Frying Pan
 item.bcc.cook:pot=Pot
+
+## Ingredients
+item.bcc.cook:boba=Boba
+item.bcc.cook:bottle_of_soy_sauce=Bottle of Soy Sauce
+item.bcc.cook:bottle_of_vinegar=Bottle of Vinegar
+item.bcc.cook:burger_buns=Burger Buns
+item.bcc.cook:cabbage=Cabbage
+item.bcc.cook:cabbage_leaf=Cabbage Leaf
+item.bcc.cook:carrot=Carrot
+item.bcc.cook:celery=Celery
+item.bcc.cook:cheese=Cheese
+item.bcc.cook:cheese_slice=Cheese Slice
+item.bcc.cook:chopped_garlic=Chopped Garlic
+item.bcc.cook:cooked_beef_patty=Cooked Beef Patty
+item.bcc.cook:cooked_chicken_bits=Cooked Chicken Bits
+item.bcc.cook:cooked_meatballs=Cooked Meatballs
+## Make this plural?
+item.bcc.cook:cooked_noodle=Cooked Noodle
+item.bcc.cook:cooked_onion_rings=Cooked Onion Rings
+item.bcc.cook:cooked_rice=Cooked Rice
+item.bcc.cook:diced_carrot=Diced Carrot
+item.bcc.cook:diced_celery=Diced Celery
+item.bcc.cook:dough=Dough
+## Make this plural?
+item.bcc.cook:dried_noodle=Dried Noodle
+item.bcc.cook:egg=Egg
+item.bcc.cook:garlic=Garlic
+item.bcc.cook:lettuce=Lettuce
+item.bcc.cook:lettuce_leaf=Lettuce Leaf
+item.bcc.cook:milk=Milk
+item.bcc.cook:onion=Onion
+item.bcc.cook:onion_rings=Onion Rings
+item.bcc.cook:raw_beef_patty=Raw Beef Patty
+item.bcc.cook:raw_chicken_bits=Raw Chicken Bits
+item.bcc.cook:raw_meatballs=Raw Meatballs
+item.bcc.cook:raw_rice=Raw Rice
+item.bcc.cook:tapioca_pearls=Tapioca Pearls
+item.bcc.cook:tomato=Tomato
+item.bcc.cook:tomato_slice=Tomato Slice
 
 ## Admin Tools
 item.bcc.cook:get_block_data=Get Block Data
