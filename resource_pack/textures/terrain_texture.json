@@ -21,6 +21,9 @@
 		"brick_sink": {
 			"textures": "textures/blocks/bcc.cook/brick_sink"
 		},
+		"brick_counter": {
+			"textures": "textures/blocks/bcc.cook/brick_counter"
+		},
 		"pizza_board": {
 			"textures": "textures/blocks/bcc.cook/pizza_board"
 		},
