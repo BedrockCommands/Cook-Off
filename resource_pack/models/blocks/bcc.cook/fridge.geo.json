@@ -16,12 +16,7 @@
 			},
 			"bones": [
 				{
-					"name": "bone2",
-					"pivot": [0, 0, 0]
-				},
-				{
 					"name": "bawah2",
-					"parent": "bone2",
 					"pivot": [0, 0, 0],
 					"rotation": [0, -90, 0],
 					"cubes": [
@@ -38,7 +33,7 @@
 							}
 						},
 						{
-							"origin": [-9, 21, -8],
+							"origin": [-9, 0, -8],
 							"size": [2, 11, 16],
 							"uv": {
 								"north": {"uv": [62, 32], "uv_size": [-2, 11]},
@@ -53,12 +48,11 @@
 				},
 				{
 					"name": "atas2",
-					"parent": "bone2",
-					"pivot": [0, 16, -8],
+					"pivot": [0, 0, -8],
 					"rotation": [0, -90, 0],
 					"cubes": [
 						{
-							"origin": [-1, 0, -16],
+							"origin": [-1, -4, -16],
 							"size": [2, 20, 16],
 							"uv": {
 								"north": {"uv": [18, 52], "uv_size": [-2, 20]},
@@ -70,7 +64,7 @@
 							}
 						},
 						{
-							"origin": [1, 16, -16],
+							"origin": [1, 0, -16],
 							"size": [15, 16, 16],
 							"uv": {
 								"north": {"uv": [63, 16], "uv_size": [-15, 16]},
