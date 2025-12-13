@@ -7,7 +7,7 @@
 	"format_version": "1.21.110",
 	"minecraft:block": {
 		"description": {
-			"identifier": "bcc.cook:storage_crate.fish.raw",
+			"identifier": "bcc.cook:storage_crate.fish_slice.raw",
 			"menu_category": {
 				"category": "construction",
 				"group": "bcc.cook:itemGroup.name.storageCrates"
