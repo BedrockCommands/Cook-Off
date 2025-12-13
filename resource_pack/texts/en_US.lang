@@ -1,7 +1,8 @@
 ## Blocks
 tile.bcc.cook:trash_bin.name=Trash Bin
 tile.bcc.cook:frying_pan.name=Frying Pan
-tile.bcc.cook:stove.name=Stove
+tile.bcc.cook:stove.dark_gray.name=Dark Gray Stove
+tile.bcc.cook:stove.metal.name=Metal Stove
 tile.bcc.cook:oven.name=Oven
 tile.bcc.cook:chopping_board.name=Chopping Board
 tile.bcc.cook:cutting_board.name=Cutting Board

@@ -48,14 +48,14 @@
 		"storage_crate": {
 			"textures": "textures/blocks/bcc.cook/storage_crate"
 		},
-		"stove": {
-			"textures": "textures/blocks/bcc.cook/stove"
+		"stove.dark_gray": {
+			"textures": "textures/blocks/bcc.cook/stove.dark_gray"
 		},
-		"stove.off": {
-			"textures": "textures/blocks/bcc.cook/stove.off"
+		"stove.metal.off": {
+			"textures": "textures/blocks/bcc.cook/stove.metal.off"
 		},
-		"stove.on": {
-			"textures": "textures/blocks/bcc.cook/stove.on"
+		"stove.metal.on": {
+			"textures": "textures/blocks/bcc.cook/stove.metal.on"
 		},
 		"trash_bin": {
 			"textures": "textures/blocks/bcc.cook/trash_bin"
