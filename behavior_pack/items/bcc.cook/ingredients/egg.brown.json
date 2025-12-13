@@ -6,14 +6,14 @@
     "format_version": "1.21.110",
     "minecraft:item": {
         "description": {
-            "identifier": "bcc.cook:egg",
+            "identifier": "bcc.cook:egg.brown",
 			"menu_category": {
 				"category": "items",
 				"group": "bcc.cook:itemGroup.name.ingredients"
 			}
         },
         "components": {
-            "minecraft:icon": "egg"
+            "minecraft:icon": "egg.brown"
         }
     }
 }

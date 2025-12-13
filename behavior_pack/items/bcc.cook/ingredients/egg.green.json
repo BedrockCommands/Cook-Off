@@ -1,0 +1,19 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) @jeanmajid & Contributors
+// Contributors: @jeanmajid
+// See LICENSE.md file in the root folder, licenses/MIT.md, or https://opensource.org/license/mit
+{
+    "format_version": "1.21.110",
+    "minecraft:item": {
+        "description": {
+            "identifier": "bcc.cook:egg.green",
+			"menu_category": {
+				"category": "items",
+				"group": "bcc.cook:itemGroup.name.ingredients"
+			}
+        },
+        "components": {
+            "minecraft:icon": "egg.green"
+        }
+    }
+}

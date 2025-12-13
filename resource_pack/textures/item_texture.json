@@ -18,6 +18,21 @@
 		"cabbage_leaf": {
 			"textures": "textures/bcc.cook/ingredients/cabbage_leaf"
 		},
+		"carrot": {
+			"textures": "textures/bcc.cook/ingredients/carrot"
+		},
+		"egg.white": {
+			"textures": "textures/bcc.cook/ingredients/egg.white"
+		},
+		"egg.green": {
+			"textures": "textures/bcc.cook/ingredients/egg.green"
+		},
+		"egg.brown": {
+			"textures": "textures/bcc.cook/ingredients/egg.brown"
+		},
+		"egg.chocolate": {
+			"textures": "textures/bcc.cook/ingredients/egg.chocolate"
+		},
 		"celery": {
 			"textures": "textures/bcc.cook/ingredients/celery"
 		},
