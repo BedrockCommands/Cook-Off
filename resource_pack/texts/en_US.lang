@@ -14,6 +14,7 @@ tile.bcc.cook:oak_wood_cabinet.name=Oak Wood Cabinet
 tile.bcc.cook:pot.name=Pot
 tile.bcc.cook:bowl.name=Bowl
 tile.bcc.cook:plate.name=Plate
+tile.bcc.cook:fridge.name=Fridge
 
 ## Storage Crates
 tile.bcc.cook:storage_crate.closed.name=Closed Storage Crate
