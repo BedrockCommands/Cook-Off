@@ -30,22 +30,22 @@
 		"chopped_garlic": {
 			"textures": "textures/bcc.cook/ingredients/garlic.diced"
 		},
-		"cooked_beef_patty": {
+		"beef_patty.cooked": {
 			"textures": "textures/bcc.cook/ingredients/beef_patty.cooked"
 		},
-		"cooked_chicken_bits": {
+		"chicken_bits.cooked": {
 			"textures": "textures/bcc.cook/ingredients/chicken_bits.cooked"
 		},
-		"cooked_meatballs": {
+		"meatballs.cooked": {
 			"textures": "textures/bcc.cook/ingredients/meatballs.cooked"
 		},
-		"cooked_noodle": {
+		"noodles.cooked": {
 			"textures": "textures/bcc.cook/ingredients/noodles.cooked"
 		},
-		"cooked_onion_rings": {
+		"onion_rings.cooked": {
 			"textures": "textures/bcc.cook/ingredients/onion_ring.cooked" // Make texture file plural?
 		},
-		"cooked_rice": {
+		"rice.cooked": {
 			"textures": "textures/bcc.cook/ingredients/rice.cooked"
 		},
 		"diced_carrot": {
@@ -57,7 +57,7 @@
 		"dough": {
 			"textures": "textures/bcc.cook/ingredients/dough"
 		},
-		"dried_noodle": {
+		"noodles.raw": {
 			"textures": "textures/bcc.cook/ingredients/noodles.raw"
 		},
 		"frying_pan": {
@@ -84,16 +84,16 @@
 		"pot": {
 			"textures": "textures/items/bcc.cook/pot"
 		},
-		"raw_beef_patty": {
+		"beef_patty.raw": {
 			"textures": "textures/bcc.cook/ingredients/beef_patty.raw"
 		},
-		"raw_chicken_bits": {
+		"chicken_bits.raw": {
 			"textures": "textures/bcc.cook/ingredients/chicken_bits.raw"
 		},
-		"raw_meatballs": {
+		"meatballs.raw": {
 			"textures": "textures/bcc.cook/ingredients/meatballs.raw"
 		},
-		"raw_rice": {
+		"rice.raw": {
 			"textures": "textures/bcc.cook/ingredients/rice.raw"
 		},
 		"tapioca_pearls": {

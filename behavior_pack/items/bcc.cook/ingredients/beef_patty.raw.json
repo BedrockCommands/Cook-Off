@@ -6,14 +6,14 @@
     "format_version": "1.21.110",
     "minecraft:item": {
         "description": {
-            "identifier": "bcc.cook:raw_meatballs",
+            "identifier": "bcc.cook:beef_patty.raw",
 			"menu_category": {
 				"category": "items",
 				"group": "bcc.cook:itemGroup.name.ingredients"
 			}
         },
         "components": {
-            "minecraft:icon": "raw_meatballs"
+            "minecraft:icon": "beef_patty.raw"
         }
     }
 }
