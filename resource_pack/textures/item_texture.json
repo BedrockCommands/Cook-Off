@@ -1,5 +1,11 @@
 {
 	"texture_data": {
+		"beef_patty.cooked": {
+			"textures": "textures/bcc.cook/ingredients/beef_patty.cooked"
+		},
+		"beef_patty.raw": {
+			"textures": "textures/bcc.cook/ingredients/beef_patty.raw"
+		},
 		"boba": {
 			"textures": "textures/bcc.cook/ingredients/boba"
 		},
@@ -21,18 +27,6 @@
 		"carrot": {
 			"textures": "textures/bcc.cook/ingredients/carrot"
 		},
-		"egg.white": {
-			"textures": "textures/bcc.cook/ingredients/egg.white"
-		},
-		"egg.green": {
-			"textures": "textures/bcc.cook/ingredients/egg.green"
-		},
-		"egg.brown": {
-			"textures": "textures/bcc.cook/ingredients/egg.brown"
-		},
-		"egg.chocolate": {
-			"textures": "textures/bcc.cook/ingredients/egg.chocolate"
-		},
 		"celery": {
 			"textures": "textures/bcc.cook/ingredients/celery"
 		},
@@ -42,14 +36,11 @@
 		"cheese_slice": {
 			"textures": "textures/bcc.cook/ingredients/cheese_slice"
 		},
-		"chopped_garlic": {
-			"textures": "textures/bcc.cook/ingredients/garlic.diced"
-		},
-		"beef_patty.cooked": {
-			"textures": "textures/bcc.cook/ingredients/beef_patty.cooked"
-		},
 		"chicken_bits.cooked": {
 			"textures": "textures/bcc.cook/ingredients/chicken_bits.cooked"
+		},
+		"chicken_bits.raw": {
+			"textures": "textures/bcc.cook/ingredients/chicken_bits.raw"
 		},
 		"chicken.cooked": {
 			"textures": "textures/bcc.cook/ingredients/chicken.cooked"
@@ -57,17 +48,8 @@
 		"chicken.raw": {
 			"textures": "textures/bcc.cook/ingredients/chicken.raw"
 		},
-		"meatballs.cooked": {
-			"textures": "textures/bcc.cook/ingredients/meatballs.cooked"
-		},
-		"noodles.cooked": {
-			"textures": "textures/bcc.cook/ingredients/noodles.cooked"
-		},
-		"onion_rings.cooked": {
-			"textures": "textures/bcc.cook/ingredients/onion_ring.cooked" // Make texture file plural?
-		},
-		"rice.cooked": {
-			"textures": "textures/bcc.cook/ingredients/rice.cooked"
+		"chopped_garlic": {
+			"textures": "textures/bcc.cook/ingredients/garlic.diced"
 		},
 		"diced_carrot": {
 			"textures": "textures/bcc.cook/ingredients/diced_carrot"
@@ -78,8 +60,17 @@
 		"dough": {
 			"textures": "textures/bcc.cook/ingredients/dough"
 		},
-		"noodles.raw": {
-			"textures": "textures/bcc.cook/ingredients/noodles.raw"
+		"egg.brown": {
+			"textures": "textures/bcc.cook/ingredients/egg.brown"
+		},
+		"egg.chocolate": {
+			"textures": "textures/bcc.cook/ingredients/egg.chocolate"
+		},
+		"egg.green": {
+			"textures": "textures/bcc.cook/ingredients/egg.green"
+		},
+		"egg.white": {
+			"textures": "textures/bcc.cook/ingredients/egg.white"
 		},
 		"frying_pan": {
 			"textures": "textures/items/bcc.cook/frying_pan"
@@ -93,8 +84,20 @@
 		"lettuce_leaf": {
 			"textures": "textures/bcc.cook/ingredients/lettuce_leaf"
 		},
+		"meatballs.cooked": {
+			"textures": "textures/bcc.cook/ingredients/meatballs.cooked"
+		},
+		"meatballs.raw": {
+			"textures": "textures/bcc.cook/ingredients/meatballs.raw"
+		},
 		"milk": {
 			"textures": "textures/bcc.cook/ingredients/milk"
+		},
+		"noodles.cooked": {
+			"textures": "textures/bcc.cook/ingredients/noodles.cooked"
+		},
+		"noodles.raw": {
+			"textures": "textures/bcc.cook/ingredients/noodles.raw"
 		},
 		"onion": {
 			"textures": "textures/bcc.cook/ingredients/onion"
@@ -102,17 +105,14 @@
 		"onion_rings": {
 			"textures": "textures/bcc.cook/ingredients/onion_ring.raw" // Make texture file plural?
 		},
+		"onion_rings.cooked": {
+			"textures": "textures/bcc.cook/ingredients/onion_ring.cooked" // Make texture file plural?
+		},
 		"pot": {
 			"textures": "textures/items/bcc.cook/pot"
 		},
-		"beef_patty.raw": {
-			"textures": "textures/bcc.cook/ingredients/beef_patty.raw"
-		},
-		"chicken_bits.raw": {
-			"textures": "textures/bcc.cook/ingredients/chicken_bits.raw"
-		},
-		"meatballs.raw": {
-			"textures": "textures/bcc.cook/ingredients/meatballs.raw"
+		"rice.cooked": {
+			"textures": "textures/bcc.cook/ingredients/rice.cooked"
 		},
 		"rice.raw": {
 			"textures": "textures/bcc.cook/ingredients/rice.raw"
