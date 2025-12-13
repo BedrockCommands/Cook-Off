@@ -51,6 +51,12 @@
 		"chicken_bits.cooked": {
 			"textures": "textures/bcc.cook/ingredients/chicken_bits.cooked"
 		},
+		"chicken.cooked": {
+			"textures": "textures/bcc.cook/ingredients/chicken.cooked"
+		},
+		"chicken.raw": {
+			"textures": "textures/bcc.cook/ingredients/chicken.raw"
+		},
 		"meatballs.cooked": {
 			"textures": "textures/bcc.cook/ingredients/meatballs.cooked"
 		},
