@@ -18,7 +18,14 @@
 			}
 		},
 		"components": {
-			"minecraft:geometry": "geometry.oak_wood_counter",
+			"minecraft:geometry": {
+				"identifier": "geometry.oak_wood_counter",
+				"bone_visibility": {
+					"left6": false,
+					"middle_c5": true,
+					"right6": false
+				}
+			},
 			"minecraft:material_instances": {
 				"*": {
 					"texture": "oak_wood_counter"
