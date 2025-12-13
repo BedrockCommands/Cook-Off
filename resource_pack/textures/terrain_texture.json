@@ -51,11 +51,11 @@
 		"stove.dark_gray": {
 			"textures": "textures/blocks/bcc.cook/stove.dark_gray"
 		},
-		"stove.metal.off": {
-			"textures": "textures/blocks/bcc.cook/stove.metal.off"
+		"stove.white.off": {
+			"textures": "textures/blocks/bcc.cook/stove.white.off"
 		},
-		"stove.metal.on": {
-			"textures": "textures/blocks/bcc.cook/stove.metal.on"
+		"stove.white.on": {
+			"textures": "textures/blocks/bcc.cook/stove.white.on"
 		},
 		"trash_bin": {
 			"textures": "textures/blocks/bcc.cook/trash_bin"

@@ -6,7 +6,7 @@
 	"format_version": "1.21.110",
 	"minecraft:block": {
 		"description": {
-			"identifier": "bcc.cook:stove.metal",
+			"identifier": "bcc.cook:stove.white",
 			"menu_category": {
 				"category": "construction"
 			},
@@ -21,10 +21,10 @@
 			}
 		},
 		"components": {
-			"minecraft:geometry": "geometry.stove.metal",
+			"minecraft:geometry": "geometry.stove.white",
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "stove.metal.off",
+					"texture": "stove.white.off",
 					"render_method": "alpha_test_single_sided_to_opaque"
 				}
 			},
@@ -36,7 +36,7 @@
 				"components": {
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "stove.metal.on",
+							"texture": "stove.white.on",
 							"render_method": "alpha_test_single_sided_to_opaque"
 						}
 					}
