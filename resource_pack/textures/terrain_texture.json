@@ -6,6 +6,18 @@
 		"burger_buns": {
 			"textures": "textures/bcc.cook/ingredients/burger_buns"
 		},
+		"cabinet.oak_wood": {
+			"textures": "textures/blocks/bcc.cook/cabinet.oak_wood"
+		},
+		"chopping_board": {
+			"textures": "textures/blocks/bcc.cook/chopping_board"
+		},
+		"counter.brick": {
+			"textures": "textures/blocks/bcc.cook/counter.brick"
+		},
+		"counter.oak_wood": {
+			"textures": "textures/blocks/bcc.cook/counter.oak_wood"
+		},
 		"cutting_board": {
 			"textures": "textures/blocks/bcc.cook/cutting_board"
 		},
@@ -15,38 +27,26 @@
 		"oven": {
 			"textures": "textures/blocks/bcc.cook/oven"
 		},
+		"pizza_board": {
+			"textures": "textures/blocks/bcc.cook/pizza_board"
+		},
+		"plate": {
+			"textures": "textures/blocks/bcc.cook/plate"
+		},
 		"pot": {
 			"textures": "textures/blocks/bcc.cook/pot"
-		},
-		"sink.brick": {
-			"textures": "textures/blocks/bcc.cook/sink.brick"
-		},
-		"counter.brick": {
-			"textures": "textures/blocks/bcc.cook/counter.brick"
 		},
 		"serving_station.brick": {
 			"textures": "textures/blocks/bcc.cook/serving_station.brick"
 		},
-		"counter.oak_wood": {
-			"textures": "textures/blocks/bcc.cook/counter.oak_wood"
-		},
-		"cabinet.oak_wood": {
-			"textures": "textures/blocks/bcc.cook/cabinet.oak_wood"
-		},
-		"chopping_board": {
-			"textures": "textures/blocks/bcc.cook/chopping_board"
-		},
-		"pizza_board": {
-			"textures": "textures/blocks/bcc.cook/pizza_board"
+		"sink.brick": {
+			"textures": "textures/blocks/bcc.cook/sink.brick"
 		},
 		"storage_crate": {
 			"textures": "textures/blocks/bcc.cook/storage_crate"
 		},
 		"stove": {
 			"textures": "textures/blocks/bcc.cook/stove"
-		},
-		"plate": {
-			"textures": "textures/blocks/bcc.cook/plate"
 		},
 		"trash_bin": {
 			"textures": "textures/blocks/bcc.cook/trash_bin"
