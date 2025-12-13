@@ -4,10 +4,10 @@
 			"textures": "textures/blocks/bcc.cook/bowl"
 		},
 		"burger_buns.icon": {
-			"textures": "textures/bcc.cook/ingredients/burger_buns"
+			"textures": "textures/bcc.cook/ingredient_icons/burger_buns"
 		},
 		"tomato.icon": {
-			"textures": "textures/bcc.cook/ingredients/tomato"
+			"textures": "textures/bcc.cook/ingredient_icons/tomato"
 		},
 		"cabinet.oak_wood": {
 			"textures": "textures/blocks/bcc.cook/cabinet.oak_wood"
