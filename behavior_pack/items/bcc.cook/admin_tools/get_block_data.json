@@ -4,7 +4,8 @@
         "description": {
             "identifier": "bcc.cook:get_block_data",
             "menu_category": {
-                "category": "items"
+                "category": "items",
+				"group": "bcc.cook:itemGroup.name.adminTools"
             }
         },
         "components": {
