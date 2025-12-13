@@ -2,15 +2,16 @@
 // Copyright (c) @brodblox09 & Contributors
 // Contributors: @brodblox09
 // See LICENSE.md file in the root folder, licenses/MIT.md, or https://opensource.org/license/mit
-
 {
 	"format_version": "1.21.110",
 	"minecraft:block": {
 		"description": {
-			"identifier": "bcc.cook:storage_crate.burger_buns",
+			"identifier": "bcc.cook:stove.white",
 			"menu_category": {
-				"category": "construction",
-				"group": "bcc.cook:itemGroup.name.storageCrates"
+				"category": "construction"
+			},
+			"states": {
+				"bcc.cook:on": [ false, true ]
 			},
 			"traits": {
 				"minecraft:placement_direction": {
@@ -20,22 +21,27 @@
 			}
 		},
 		"components": {
-			"minecraft:geometry": "geometry.storage_crate.item",
+			"minecraft:geometry": "geometry.stove.white",
 			"minecraft:material_instances": {
-				"item": {
-					"texture": "burger_buns.icon",
-					"render_method": "alpha_test"
-				},
 				"*": {
-					"texture": "storage_crate.item",
-					"render_method": "alpha_test"
+					"texture": "stove.white.off",
+					"render_method": "alpha_test_single_sided_to_opaque"
 				}
 			},
-			"bcc.cook:storage_crate": {
-				"itemId": "bcc.cook:burger_buns"
-			}
+			"bcc.cook:stove": {}
 		},
 		"permutations": [
+			{
+				"condition": "q.block_state('bcc.cook:on') == true",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "stove.white.on",
+							"render_method": "alpha_test_single_sided_to_opaque"
+						}
+					}
+				}
+			},
 			{
                 "condition": "query.block_state('minecraft:cardinal_direction') == 'north'",
                 "components": {

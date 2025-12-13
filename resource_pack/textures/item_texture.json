@@ -1,142 +1,142 @@
 {
 	"texture_data": {
 		"beef_patty.cooked": {
-			"textures": "textures/bcc.cook/ingredients/beef_patty.cooked"
+			"textures": "textures/bcc.cook/ingredient_icons/beef_patty.cooked"
 		},
 		"beef_patty.raw": {
-			"textures": "textures/bcc.cook/ingredients/beef_patty.raw"
+			"textures": "textures/bcc.cook/ingredient_icons/beef_patty.raw"
 		},
 		"boba": {
-			"textures": "textures/bcc.cook/ingredients/boba"
+			"textures": "textures/bcc.cook/ingredient_icons/boba"
 		},
 		"bottle_of_soy_sauce": {
-			"textures": "textures/bcc.cook/ingredients/bottle_of_soy_sauce"
+			"textures": "textures/bcc.cook/ingredient_icons/bottle_of_soy_sauce"
 		},
 		"bottle_of_vinegar": {
-			"textures": "textures/bcc.cook/ingredients/bottle_of_vinegar"
+			"textures": "textures/bcc.cook/ingredient_icons/bottle_of_vinegar"
 		},
 		"burger_buns": {
-			"textures": "textures/bcc.cook/ingredients/burger_buns"
+			"textures": "textures/bcc.cook/ingredient_icons/burger_buns"
 		},
 		"cabbage": {
-			"textures": "textures/bcc.cook/ingredients/cabbage"
+			"textures": "textures/bcc.cook/ingredient_icons/cabbage"
 		},
 		"cabbage_leaf": {
-			"textures": "textures/bcc.cook/ingredients/cabbage_leaf"
+			"textures": "textures/bcc.cook/ingredient_icons/cabbage_leaf"
 		},
 		"carrot": {
-			"textures": "textures/bcc.cook/ingredients/carrot"
+			"textures": "textures/bcc.cook/ingredient_icons/carrot"
 		},
 		"celery": {
-			"textures": "textures/bcc.cook/ingredients/celery"
+			"textures": "textures/bcc.cook/ingredient_icons/celery"
 		},
 		"cheese": {
-			"textures": "textures/bcc.cook/ingredients/cheese"
+			"textures": "textures/bcc.cook/ingredient_icons/cheese"
 		},
 		"cheese_slice": {
-			"textures": "textures/bcc.cook/ingredients/cheese_slice"
+			"textures": "textures/bcc.cook/ingredient_icons/cheese_slice"
 		},
 		"chicken_bits.cooked": {
-			"textures": "textures/bcc.cook/ingredients/chicken_bits.cooked"
+			"textures": "textures/bcc.cook/ingredient_icons/chicken_bits.cooked"
 		},
 		"chicken_bits.raw": {
-			"textures": "textures/bcc.cook/ingredients/chicken_bits.raw"
+			"textures": "textures/bcc.cook/ingredient_icons/chicken_bits.raw"
 		},
 		"chicken.cooked": {
-			"textures": "textures/bcc.cook/ingredients/chicken.cooked"
+			"textures": "textures/bcc.cook/ingredient_icons/chicken.cooked"
 		},
 		"chicken.raw": {
-			"textures": "textures/bcc.cook/ingredients/chicken.raw"
+			"textures": "textures/bcc.cook/ingredient_icons/chicken.raw"
 		},
 		"chopped_garlic": {
-			"textures": "textures/bcc.cook/ingredients/garlic.diced"
+			"textures": "textures/bcc.cook/ingredient_icons/garlic.diced"
 		},
 		"diced_carrot": {
-			"textures": "textures/bcc.cook/ingredients/diced_carrot"
+			"textures": "textures/bcc.cook/ingredient_icons/diced_carrot"
 		},
 		"diced_celery": {
-			"textures": "textures/bcc.cook/ingredients/diced_celery"
+			"textures": "textures/bcc.cook/ingredient_icons/diced_celery"
 		},
 		"dough": {
-			"textures": "textures/bcc.cook/ingredients/dough"
+			"textures": "textures/bcc.cook/ingredient_icons/dough"
 		},
 		"egg.brown": {
-			"textures": "textures/bcc.cook/ingredients/egg.brown"
+			"textures": "textures/bcc.cook/ingredient_icons/egg.brown"
 		},
 		"egg.chocolate": {
-			"textures": "textures/bcc.cook/ingredients/egg.chocolate"
+			"textures": "textures/bcc.cook/ingredient_icons/egg.chocolate"
 		},
 		"egg.green": {
-			"textures": "textures/bcc.cook/ingredients/egg.green"
+			"textures": "textures/bcc.cook/ingredient_icons/egg.green"
 		},
 		"egg.white": {
-			"textures": "textures/bcc.cook/ingredients/egg.white"
+			"textures": "textures/bcc.cook/ingredient_icons/egg.white"
 		},
 		"fire_extinguisher": {
 			"textures": "textures/items/bcc.cook/fire_extinguisher"
 		},
 		"fish_slice.cooked": {
-			"textures": "textures/bcc.cook/ingredients/fish_slice.cooked"
+			"textures": "textures/bcc.cook/ingredient_icons/fish_slice.cooked"
 		},
 		"fish_slice.raw": {
-			"textures": "textures/bcc.cook/ingredients/fish_slice.raw"
+			"textures": "textures/bcc.cook/ingredient_icons/fish_slice.raw"
 		},
 		"frying_pan": {
 			"textures": "textures/items/bcc.cook/frying_pan"
 		},
 		"garlic": {
-			"textures": "textures/bcc.cook/ingredients/garlic"
+			"textures": "textures/bcc.cook/ingredient_icons/garlic"
 		},
 		"lettuce": {
-			"textures": "textures/bcc.cook/ingredients/lettuce"
+			"textures": "textures/bcc.cook/ingredient_icons/lettuce"
 		},
 		"lettuce_leaf": {
-			"textures": "textures/bcc.cook/ingredients/lettuce_leaf"
+			"textures": "textures/bcc.cook/ingredient_icons/lettuce_leaf"
 		},
 		"meatballs.cooked": {
-			"textures": "textures/bcc.cook/ingredients/meatballs.cooked"
+			"textures": "textures/bcc.cook/ingredient_icons/meatballs.cooked"
 		},
 		"meatballs.raw": {
-			"textures": "textures/bcc.cook/ingredients/meatballs.raw"
+			"textures": "textures/bcc.cook/ingredient_icons/meatballs.raw"
 		},
 		"milk": {
-			"textures": "textures/bcc.cook/ingredients/milk"
+			"textures": "textures/bcc.cook/ingredient_icons/milk"
 		},
 		"noodles.cooked": {
-			"textures": "textures/bcc.cook/ingredients/noodles.cooked"
+			"textures": "textures/bcc.cook/ingredient_icons/noodles.cooked"
 		},
 		"noodles.raw": {
-			"textures": "textures/bcc.cook/ingredients/noodles.raw"
+			"textures": "textures/bcc.cook/ingredient_icons/noodles.raw"
 		},
 		"onion": {
-			"textures": "textures/bcc.cook/ingredients/onion"
+			"textures": "textures/bcc.cook/ingredient_icons/onion"
 		},
 		"onion_rings": {
-			"textures": "textures/bcc.cook/ingredients/onion_ring.raw" // Make texture file plural?
+			"textures": "textures/bcc.cook/ingredient_icons/onion_ring.raw" // Make texture file plural?
 		},
 		"onion_rings.cooked": {
-			"textures": "textures/bcc.cook/ingredients/onion_ring.cooked" // Make texture file plural?
+			"textures": "textures/bcc.cook/ingredient_icons/onion_ring.cooked" // Make texture file plural?
 		},
 		"pot": {
 			"textures": "textures/items/bcc.cook/pot"
 		},
 		"rice_paper": {
-			"textures": "textures/bcc.cook/ingredients/rice_paper"
+			"textures": "textures/bcc.cook/ingredient_icons/rice_paper"
 		},
 		"rice.cooked": {
-			"textures": "textures/bcc.cook/ingredients/rice.cooked"
+			"textures": "textures/bcc.cook/ingredient_icons/rice.cooked"
 		},
 		"rice.raw": {
-			"textures": "textures/bcc.cook/ingredients/rice.raw"
+			"textures": "textures/bcc.cook/ingredient_icons/rice.raw"
 		},
 		"tapioca_pearls": {
-			"textures": "textures/bcc.cook/ingredients/tapioca_pearls"
+			"textures": "textures/bcc.cook/ingredient_icons/tapioca_pearls"
 		},
 		"tomato": {
-			"textures": "textures/bcc.cook/ingredients/tomato"
+			"textures": "textures/bcc.cook/ingredient_icons/tomato"
 		},
 		"tomato_slice": {
-			"textures": "textures/bcc.cook/ingredients/tomato_slice"
+			"textures": "textures/bcc.cook/ingredient_icons/tomato_slice"
 		}
 	}
 }

@@ -2,13 +2,15 @@
 // Copyright (c) @brodblox09 & Contributors
 // Contributors: @brodblox09
 // See LICENSE.md file in the root folder, licenses/MIT.md, or https://opensource.org/license/mit
+
 {
 	"format_version": "1.21.110",
 	"minecraft:block": {
 		"description": {
-			"identifier": "bcc.cook:brick_counter",
+			"identifier": "bcc.cook:storage_crate.tomato",
 			"menu_category": {
-				"category": "construction"
+				"category": "construction",
+				"group": "bcc.cook:itemGroup.name.storageCrates"
 			},
 			"traits": {
 				"minecraft:placement_direction": {
@@ -18,11 +20,19 @@
 			}
 		},
 		"components": {
-			"minecraft:geometry": "geometry.brick_counter",
+			"minecraft:geometry": "geometry.storage_crate.item",
 			"minecraft:material_instances": {
+				"item": {
+					"texture": "tomato.icon",
+					"render_method": "alpha_test"
+				},
 				"*": {
-					"texture": "brick_counter"
+					"texture": "storage_crate.item",
+					"render_method": "alpha_test"
 				}
+			},
+			"bcc.cook:storage_crate": {
+				"itemId": "bcc.cook:tomato"
 			}
 		},
 		"permutations": [

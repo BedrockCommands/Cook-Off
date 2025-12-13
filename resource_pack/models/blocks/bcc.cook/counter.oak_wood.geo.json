@@ -7,7 +7,7 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.oak_wood_counter",
+				"identifier": "geometry.counter.oak_wood",
 				"texture_width": 16,
 				"texture_height": 16,
 				"visible_bounds_width": 2,
