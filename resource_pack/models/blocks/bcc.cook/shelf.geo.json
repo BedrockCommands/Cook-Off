@@ -1,0 +1,61 @@
+// SPDX-License-Identifier: LicenseRef-BCC-PL-v1.0
+// Copyright (c) @faramir1616 & Contributors
+// Contributers: @faramir1616
+// See LICENSE.md file in the root folder, licenses/BCC-PL-v1.0.md, or https://bedrockcommands.org/legal/bcc-pl-v1.0
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.shelf",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "bb_main",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-8, 14, -2],
+							"size": [16, 2, 10],
+							"uv": {
+								"north": {"uv": [16, 0], "uv_size": [16, 2]},
+								"east": {"uv": [16, 4], "uv_size": [10, 2]},
+								"south": {"uv": [16, 2], "uv_size": [16, 2]},
+								"west": {"uv": [16, 6], "uv_size": [10, 2]},
+								"up": {"uv": [0, 0], "uv_size": [16, 10]},
+								"down": {"uv": [0, 0], "uv_size": [16, 10]}
+							}
+						},
+						{
+							"origin": [-6, 12, 2],
+							"size": [2, 2, 6],
+							"uv": {
+								"north": {"uv": [8, 11], "uv_size": [2, 2]},
+								"east": {"uv": [1, 11], "uv_size": [6, 2]},
+								"south": {"uv": [8, 11], "uv_size": [2, 2]},
+								"west": {"uv": [1, 11], "uv_size": [6, 2]},
+								"down": {"uv": [3, 20], "uv_size": [-2, -6]}
+							}
+						},
+						{
+							"origin": [4, 12, 2],
+							"size": [2, 2, 6],
+							"uv": {
+								"north": {"uv": [8, 11], "uv_size": [2, 2]},
+								"east": {"uv": [1, 11], "uv_size": [6, 2]},
+								"south": {"uv": [8, 11], "uv_size": [2, 2]},
+								"west": {"uv": [1, 11], "uv_size": [6, 2]},
+								"down": {"uv": [3, 20], "uv_size": [-2, -6]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
