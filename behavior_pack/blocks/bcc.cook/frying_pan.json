@@ -10,17 +10,59 @@
 			"identifier": "bcc.cook:frying_pan",
 			"menu_category": {
 				"category": "construction"
+			},
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": [ "minecraft:cardinal_direction" ],
+					"y_rotation_offset": 180
+				}
 			}
 		},
 		"components": {
 			"minecraft:geometry": "geometry.frying_pan",
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "frying_pan"
+					"texture": "frying_pan",
+					"render_method": "alpha_test",
+					"ambient_occlusion": false
 				}
 			},
 			"bcc.cook:frying_pan": {},
-			"tag:bcc.cook:counter_placeable_in_adventure": {}
-		}
+			"tag:bcc.cook:counter_placeable_in_adventure": {},
+			"minecraft:selection_box": {
+				"origin": [ -7, 0, -7 ],
+				"size": [ 14, 2, 14 ]
+			},
+			"minecraft:collision_box": {
+				"origin": [ -7, 0, -7 ],
+				"size": [ 14, 2, 14 ]
+			}
+		},
+		"permutations": [
+			{
+                "condition": "query.block_state('minecraft:cardinal_direction') == 'north'",
+                "components": {
+                    "minecraft:transformation": { "rotation": [0, 0, 0] }
+                }
+            },
+            {
+                "condition": "query.block_state('minecraft:cardinal_direction') == 'east'",
+                "components": {
+                    "minecraft:transformation": { "rotation": [0, -90, 0] }
+                }
+            },
+            {
+                "condition": "query.block_state('minecraft:cardinal_direction') == 'south'",
+                "components": {
+                    "minecraft:transformation": { "rotation": [0, 180, 0] }
+                }
+            },
+            {
+                "condition": "query.block_state('minecraft:cardinal_direction') == 'west'",
+                "components": {
+                    "minecraft:transformation": { "rotation": [0, 90, 0] }
+                }
+            }
+		]
 	}
 }

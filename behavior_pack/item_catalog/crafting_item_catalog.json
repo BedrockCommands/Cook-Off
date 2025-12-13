@@ -1,0 +1,38 @@
+{
+	"format_version": "1.21.110",
+	"minecraft:crafting_items_catalog": {
+		"categories": [
+			{
+				"category_name": "items",
+				"groups": [
+					{
+						"group_identifier": {
+							"icon": "bcc.cook:cabbage",
+							"name": "bcc.cook:itemGroup.name.ingredients"
+						},
+						"items": [] // Required property, but left empty since it can be entered in the indidual ingredient item files instead
+					},
+					{
+						"group_identifier": {
+							"icon": "bcc.cook:get_block_data",
+							"name": "bcc.cook:itemGroup.name.adminTools"
+						},
+						"items": []
+					}
+				]
+			},
+			{
+				"category_name": "construction",
+				"groups": [
+					{
+						"group_identifier": {
+							"icon": "bcc.cook:storage_crate.closed",
+							"name": "bcc.cook:itemGroup.name.storageCrates"
+						},
+						"items": []
+					}
+				]
+			}
+		]
+	}
+}

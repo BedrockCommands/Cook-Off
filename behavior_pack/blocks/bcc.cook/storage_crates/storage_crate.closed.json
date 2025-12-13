@@ -8,16 +8,18 @@
 		"description": {
 			"identifier": "bcc.cook:storage_crate.closed",
 			"menu_category": {
-				"category": "construction"
+				"category": "construction",
+				"group": "bcc.cook:itemGroup.name.storageCrates"
 			}
 		},
 		"components": {
 			"minecraft:geometry": "geometry.storage_crate.closed",
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "storage_crate.closed"
+					"texture": "storage_crate"
 				}
 			}
 		}
+		// Storage crate model for this block looks the same in all valid orientations, so no rotation permutations
 	}
 }

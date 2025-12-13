@@ -19,6 +19,7 @@ import "./items/cancelGame.js";
 import "./items/exitLobby.js";
 import "./items/mapSelector.js";
 import "./items/statsViewer.js";
+import "./items/fireExtinguisher.js";
 
 import "./items/adminTools/getBlockData.js";
 import "./items/adminTools/getItemBlockData.js";

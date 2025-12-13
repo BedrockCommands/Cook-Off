@@ -6,7 +6,11 @@
     "format_version": "1.21.110",
     "minecraft:item": {
         "description": {
-            "identifier": "bcc.cook:tapioca_pearls"
+            "identifier": "bcc.cook:tapioca_pearls",
+			"menu_category": {
+				"category": "items",
+				"group": "bcc.cook:itemGroup.name.ingredients"
+			}
         },
         "components": {
             "minecraft:icon": "tapioca_pearls"
