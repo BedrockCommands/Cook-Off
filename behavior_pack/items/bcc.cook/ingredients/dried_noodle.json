@@ -6,7 +6,11 @@
     "format_version": "1.21.110",
     "minecraft:item": {
         "description": {
-            "identifier": "bcc.cook:dried_noodle"
+            "identifier": "bcc.cook:dried_noodle",
+			"menu_category": {
+				"category": "items",
+				"group": "bcc.cook:itemGroup.name.ingredients"
+			}
         },
         "components": {
             "minecraft:icon": "dried_noodle"

@@ -6,7 +6,11 @@
     "format_version": "1.21.110",
     "minecraft:item": {
         "description": {
-            "identifier": "bcc.cook:cooked_meatballs"
+            "identifier": "bcc.cook:cooked_meatballs",
+			"menu_category": {
+				"category": "items",
+				"group": "bcc.cook:itemGroup.name.ingredients"
+			}
         },
         "components": {
             "minecraft:icon": "cooked_meatballs"

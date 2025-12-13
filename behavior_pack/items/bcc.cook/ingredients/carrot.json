@@ -6,7 +6,11 @@
     "format_version": "1.21.110",
     "minecraft:item": {
         "description": {
-            "identifier": "bcc.cook:carrot"
+            "identifier": "bcc.cook:carrot",
+			"menu_category": {
+				"category": "items",
+				"group": "bcc.cook:itemGroup.name.ingredients"
+			}
         },
         "components": {
             "minecraft:icon": "carrot"
