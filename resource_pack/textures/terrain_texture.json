@@ -45,6 +45,9 @@
 		"stove": {
 			"textures": "textures/blocks/bcc.cook/stove"
 		},
+		"plate": {
+			"textures": "textures/blocks/bcc.cook/plate"
+		},
 		"trash_bin": {
 			"textures": "textures/blocks/bcc.cook/trash_bin"
 		}
