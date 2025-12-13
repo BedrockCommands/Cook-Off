@@ -19,5 +19,6 @@
 				}
 			}
 		}
+		// Storage crate model for this block looks the same in all valid orientations, so no rotation permutations
 	}
 }
