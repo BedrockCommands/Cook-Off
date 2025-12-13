@@ -6,14 +6,15 @@ tile.bcc.cook:oven.name=Oven
 tile.bcc.cook:chopping_board.name=Chopping Board
 tile.bcc.cook:cutting_board.name=Cutting Board
 tile.bcc.cook:pizza_board.name=Pizza Board
-tile.bcc.cook:brick_sink.name=Brick Sink
-tile.bcc.cook:brick_counter.name=Brick Counter
-tile.bcc.cook:brick_serving_station.name=Brick Serving Station
-tile.bcc.cook:oak_wood_counter.name=Oak Wood Counter
-tile.bcc.cook:oak_wood_cabinet.name=Oak Wood Cabinet
+tile.bcc.cook:sink.brick.name=Brick Sink
+tile.bcc.cook:counter.brick.name=Brick Counter
+tile.bcc.cook:serving_station.brick.name=Brick Serving Station
+tile.bcc.cook:counter.oak_wood.name=Oak Wood Counter
+tile.bcc.cook:cabinet.oak_wood.name=Oak Wood Cabinet
 tile.bcc.cook:pot.name=Pot
 tile.bcc.cook:bowl.name=Bowl
 tile.bcc.cook:plate.name=Plate
+tile.bcc.cook:shelf.name=Shelf
 
 ## Storage Crates
 tile.bcc.cook:storage_crate.closed.name=Closed Storage Crate
