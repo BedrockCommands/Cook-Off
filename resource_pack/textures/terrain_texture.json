@@ -21,6 +21,9 @@
 		"brick_sink": {
 			"textures": "textures/blocks/bcc.cook/brick_sink"
 		},
+		"pizza_board": {
+			"textures": "textures/blocks/bcc.cook/pizza_board"
+		},
 		"storage_crate": {
 			"textures": "textures/blocks/bcc.cook/storage_crate"
 		},

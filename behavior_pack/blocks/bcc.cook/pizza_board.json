@@ -6,32 +6,30 @@
 	"format_version": "1.21.110",
 	"minecraft:block": {
 		"description": {
-			"identifier": "bcc.cook:cutting_board",
+			"identifier": "bcc.cook:pizza_board",
 			"menu_category": {
 				"category": "construction"
 			},
 			"traits": {
 				"minecraft:placement_direction": {
-					"enabled_states": [ "minecraft:cardinal_direction" ],
-					"y_rotation_offset": 90
+					"enabled_states": [ "minecraft:cardinal_direction" ]
 				}
 			}
 		},
 		"components": {
-			"minecraft:geometry": "geometry.cutting_board",
+			"minecraft:geometry": "geometry.pizza_board",
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "cutting_board"
+					"texture": "pizza_board"
 				}
 			},
-			"bcc.cook:cutting_board": {},
 			"minecraft:selection_box": {
-				"origin": [ -6, 0, -7.5 ],
-				"size": [ 12, 1, 15 ]
+				"origin": [ -8, 0, -8 ],
+				"size": [ 16, 1, 16 ]
 			},
 			"minecraft:collision_box": {
-				"origin": [ -6, 0, -7.5 ],
-				"size": [ 12, 1, 15 ]
+				"origin": [ -8, 0, -8 ],
+				"size": [ 16, 1, 16 ]
 			}
 		},
 		"permutations": [
