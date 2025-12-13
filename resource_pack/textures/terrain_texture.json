@@ -27,6 +27,9 @@
 		"brick_serving_station": {
 			"textures": "textures/blocks/bcc.cook/brick_serving_station"
 		},
+		"chopping_board": {
+			"textures": "textures/blocks/bcc.cook/chopping_board"
+		},
 		"pizza_board": {
 			"textures": "textures/blocks/bcc.cook/pizza_board"
 		},

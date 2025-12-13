@@ -3,6 +3,7 @@ tile.bcc.cook:trash_bin.name=Trash Bin
 tile.bcc.cook:frying_pan.name=Frying Pan
 tile.bcc.cook:stove.name=Stove
 tile.bcc.cook:oven.name=Oven
+tile.bcc.cook:chopping_board.name=Chopping Board
 tile.bcc.cook:cutting_board.name=Cutting Board
 tile.bcc.cook:pizza_board.name=Pizza Board
 tile.bcc.cook:brick_sink.name=Brick Sink
