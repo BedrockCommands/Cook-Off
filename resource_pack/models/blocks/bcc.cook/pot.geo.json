@@ -1,39 +1,66 @@
 // SPDX-License-Identifier: LicenseRef-BCC-PL-v1.0
-// Copyright (c) @brodblox09 & Contributors
-// Contributers: @brodblox09
+// Copyright (c) @faramir1616 & Contributors
+// Contributers: @faramir1616
 // See LICENSE.md file in the root folder, licenses/BCC-PL-v1.0.md, or https://bedrockcommands.org/legal/bcc-pl-v1.0
-
-/**
- * ------------------- PLACEHOLDER -------------------
- */
-
 {
 	"format_version": "1.12.0",
 	"minecraft:geometry": [
 		{
 			"description": {
 				"identifier": "geometry.pot",
-				"texture_width": 16,
-				"texture_height": 16,
-				"visible_bounds_width": 2,
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 3,
 				"visible_bounds_height": 2.5,
 				"visible_bounds_offset": [0, 0.75, 0]
 			},
 			"bones": [
 				{
-					"name": "bb_main",
+					"name": "pot",
 					"pivot": [0, 0, 0],
 					"cubes": [
 						{
-							"origin": [-8, 0, -8],
-							"size": [16, 16, 16],
+							"origin": [-7, 0, -7],
+							"size": [14, 13, 14],
 							"uv": {
-								"north": {"uv": [0, 0], "uv_size": [16, 16]},
-								"east": {"uv": [0, 0], "uv_size": [16, 16]},
-								"south": {"uv": [0, 0], "uv_size": [16, 16]},
-								"west": {"uv": [0, 0], "uv_size": [16, 16]},
-								"up": {"uv": [16, 16], "uv_size": [-16, -16]},
-								"down": {"uv": [16, 16], "uv_size": [-16, -16]}
+								"north": {"uv": [0, 14], "uv_size": [14, 13]},
+								"east": {"uv": [0, 14], "uv_size": [14, 13]},
+								"south": {"uv": [0, 14], "uv_size": [14, 13]},
+								"west": {"uv": [0, 14], "uv_size": [14, 13]},
+								"up": {"uv": [0, 0], "uv_size": [14, 14]},
+								"down": {"uv": [15, 14], "uv_size": [14, -14]}
+							}
+						},
+						{
+							"origin": [-9, 11, -2],
+							"size": [2, 2, 4],
+							"uv": {
+								"north": {"uv": [16, 20], "uv_size": [2, 2]},
+								"east": {"uv": [19, 15], "uv_size": [4, 2]},
+								"south": {"uv": [16, 15], "uv_size": [2, 2]},
+								"up": {"uv": [18, 19], "uv_size": [-2, -4]},
+								"down": {"uv": [16, 19], "uv_size": [2, -4]}
+							}
+						},
+						{
+							"origin": [7, 11, -2],
+							"size": [2, 2, 4],
+							"uv": {
+								"north": {"uv": [18, 20], "uv_size": [-2, 2]},
+								"south": {"uv": [18, 15], "uv_size": [-2, 2]},
+								"west": {"uv": [23, 15], "uv_size": [-4, 2]},
+								"up": {"uv": [16, 19], "uv_size": [2, -4]},
+								"down": {"uv": [18, 19], "uv_size": [-2, -4]}
+							}
+						},
+						{
+							"origin": [-5, 0, -5],
+							"size": [10, 13, 10],
+							"uv": {
+								"north": {"uv": [22, 19], "uv_size": [10, 13]},
+								"east": {"uv": [22, 19], "uv_size": [10, 13]},
+								"south": {"uv": [22, 19], "uv_size": [10, 13]},
+								"west": {"uv": [22, 19], "uv_size": [10, 13]}
 							}
 						}
 					]
