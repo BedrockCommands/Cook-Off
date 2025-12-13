@@ -18,14 +18,14 @@
 		"pot": {
 			"textures": "textures/blocks/bcc.cook/pot"
 		},
-		"brick_sink": {
-			"textures": "textures/blocks/bcc.cook/brick_sink"
+		"sink.brick": {
+			"textures": "textures/blocks/bcc.cook/sink.brick"
 		},
-		"brick_counter": {
-			"textures": "textures/blocks/bcc.cook/brick_counter"
+		"counter.brick": {
+			"textures": "textures/blocks/bcc.cook/counter.brick"
 		},
-		"brick_serving_station": {
-			"textures": "textures/blocks/bcc.cook/brick_serving_station"
+		"serving_station.brick": {
+			"textures": "textures/blocks/bcc.cook/serving_station.brick"
 		},
 		"counter.oak_wood": {
 			"textures": "textures/blocks/bcc.cook/counter.oak_wood"
