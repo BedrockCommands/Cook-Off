@@ -1,13 +1,109 @@
 {
 	"texture_data": {
+		"boba": {
+			"textures": "textures/bcc.cook/ingredients/boba"
+		},
+		"bottle_of_soy_sauce": {
+			"textures": "textures/bcc.cook/ingredients/bottle_of_soy_sauce"
+		},
+		"bottle_of_vinegar": {
+			"textures": "textures/bcc.cook/ingredients/bottle_of_vinegar"
+		},
+		"burger_buns": {
+			"textures": "textures/bcc.cook/ingredients/burger_buns"
+		},
+		"cabbage": {
+			"textures": "textures/bcc.cook/ingredients/cabbage"
+		},
+		"cabbage_leaf": {
+			"textures": "textures/bcc.cook/ingredients/cabbage_leaf"
+		},
+		"celery": {
+			"textures": "textures/bcc.cook/ingredients/celery"
+		},
+		"cheese": {
+			"textures": "textures/bcc.cook/ingredients/cheese"
+		},
+		"cheese_slice": {
+			"textures": "textures/bcc.cook/ingredients/cheese_slice"
+		},
+		"chopped_garlic": {
+			"textures": "textures/bcc.cook/ingredients/chopped_garlic"
+		},
+		"cooked_beef_patty": {
+			"textures": "textures/bcc.cook/ingredients/cooked_beef_patty"
+		},
+		"cooked_chicken_bits": {
+			"textures": "textures/bcc.cook/ingredients/cooked_chicken_bits"
+		},
+		"cooked_meatballs": {
+			"textures": "textures/bcc.cook/ingredients/cooked_meatballs"
+		},
+		"cooked_noodle": {
+			"textures": "textures/bcc.cook/ingredients/cooked_noodle"
+		},
+		"cooked_onion_rings": {
+			"textures": "textures/bcc.cook/ingredients/cooked_onion_rings"
+		},
+		"cooked_rice": {
+			"textures": "textures/bcc.cook/ingredients/cooked_rice"
+		},
+		"diced_carrot": {
+			"textures": "textures/bcc.cook/ingredients/diced_carrot"
+		},
+		"diced_celery": {
+			"textures": "textures/bcc.cook/ingredients/diced_celery"
+		},
+		"dough": {
+			"textures": "textures/bcc.cook/ingredients/dough"
+		},
+		"dried_noodle": {
+			"textures": "textures/bcc.cook/ingredients/dried_noodle"
+		},
 		"frying_pan": {
 			"textures": "textures/items/bcc.cook/frying_pan"
-    	},
+		},
+		"garlic": {
+			"textures": "textures/bcc.cook/ingredients/garlic"
+		},
+		"lettuce": {
+			"textures": "textures/bcc.cook/ingredients/lettuce"
+		},
+		"lettuce_leaf": {
+			"textures": "textures/bcc.cook/ingredients/lettuce_leaf"
+		},
+		"milk": {
+			"textures": "textures/bcc.cook/ingredients/milk"
+		},
+		"onion": {
+			"textures": "textures/bcc.cook/ingredients/onion"
+		},
+		"onion_rings": {
+			"textures": "textures/bcc.cook/ingredients/onion_rings"
+		},
 		"pot": {
 			"textures": "textures/items/bcc.cook/pot"
-    	},
-		"burger_buns": {
-			"textures": "textures/items/bcc.cook/burger_buns.png"
+		},
+		"raw_beef_patty": {
+			"textures": "textures/bcc.cook/ingredients/raw_beef_patty"
+		},
+		"raw_chicken_bits": {
+			"textures": "textures/bcc.cook/ingredients/raw_chicken_bits"
+		},
+		"raw_meatballs": {
+			"textures": "textures/bcc.cook/ingredients/raw_meatballs"
+		},
+		"raw_rice": {
+			"textures": "textures/bcc.cook/ingredients/raw_rice"
+		},
+		"tapioca_pearls": {
+			"textures": "textures/bcc.cook/ingredients/tapioca_pearls"
+		},
+		"tomato": {
+			"textures": "textures/bcc.cook/ingredients/tomato"
+		},
+		"tomato_slice": {
+			"textures": "textures/bcc.cook/ingredients/tomato_slice"
 		}
 	}
 }

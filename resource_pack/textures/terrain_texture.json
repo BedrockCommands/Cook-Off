@@ -1,31 +1,34 @@
 {
 	"texture_data": {
-		"trash_bin": {
-			"textures": "textures/blocks/bcc.cook/trash_bin"
-		},
-		"frying_pan": {
-			"textures": "textures/blocks/bcc.cook/frying_pan"
-		},
-		"pot": {
-			"textures": "textures/blocks/bcc.cook/pot"
-		},
 		"bowl": {
 			"textures": "textures/blocks/bcc.cook/bowl"
 		},
-		"stove": {
-			"textures": "textures/blocks/bcc.cook/stove"
-		},
-		"oven": {
-			"textures": "textures/blocks/bcc.cook/oven"
+		"burger_buns": {
+			"textures": "textures/items/bcc.cook/burger_buns"
 		},
 		"cutting_board": {
 			"textures": "textures/blocks/bcc.cook/cutting_board"
 		},
+		"frying_pan": {
+			"textures": "textures/blocks/bcc.cook/frying_pan"
+		},
+		"oven": {
+			"textures": "textures/blocks/bcc.cook/oven"
+		},
+		"pot": {
+			"textures": "textures/blocks/bcc.cook/pot"
+		},
 		"sink": {
 			"textures": "textures/blocks/bcc.cook/sink"
-    },
+		},
 		"storage_crate": {
 			"textures": "textures/blocks/bcc.cook/storage_crate"
+		},
+		"stove": {
+			"textures": "textures/blocks/bcc.cook/stove"
+		},
+		"trash_bin": {
+			"textures": "textures/blocks/bcc.cook/trash_bin"
 		}
-  }
+	}
 }
