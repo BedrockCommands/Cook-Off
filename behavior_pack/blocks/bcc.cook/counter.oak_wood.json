@@ -6,7 +6,7 @@
 	"format_version": "1.21.110",
 	"minecraft:block": {
 		"description": {
-			"identifier": "bcc.cook:oak_wood_counter",
+			"identifier": "bcc.cook:counter.oak_wood",
 			"menu_category": {
 				"category": "construction"
 			},
@@ -19,7 +19,7 @@
 		},
 		"components": {
 			"minecraft:geometry": {
-				"identifier": "geometry.oak_wood_counter",
+				"identifier": "geometry.counter.oak_wood",
 				"bone_visibility": {
 					"left6": false,
 					"middle_c5": true,
@@ -28,7 +28,7 @@
 			},
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "oak_wood_counter"
+					"texture": "counter.oak_wood"
 				}
 			}
 		},
