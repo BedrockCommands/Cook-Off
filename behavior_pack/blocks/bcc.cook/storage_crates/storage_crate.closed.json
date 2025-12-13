@@ -8,7 +8,8 @@
 		"description": {
 			"identifier": "bcc.cook:storage_crate.closed",
 			"menu_category": {
-				"category": "construction"
+				"category": "construction",
+				"group": "bcc.cook:itemGroup.name.storageCrates"
 			}
 		},
 		"components": {
