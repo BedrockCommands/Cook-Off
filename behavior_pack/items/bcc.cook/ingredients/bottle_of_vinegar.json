@@ -13,7 +13,8 @@
 			}
         },
         "components": {
-            "minecraft:icon": "bottle_of_vinegar"
+            "minecraft:icon": "bottle_of_vinegar",
+			"minecraft:max_stack_size": 1
         }
     }
 }
