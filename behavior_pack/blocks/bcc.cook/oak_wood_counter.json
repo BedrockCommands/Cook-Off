@@ -10,6 +10,9 @@
 			"menu_category": {
 				"category": "construction"
 			},
+			"states": {
+				"bcc.cook:relative_position": [ "left", "middle", "right" ]
+			},
 			"traits": {
 				"minecraft:placement_direction": {
 					"enabled_states": [ "minecraft:cardinal_direction" ],
@@ -30,9 +33,49 @@
 				"*": {
 					"texture": "oak_wood_counter"
 				}
-			}
+			},
+			"bcc.cook:oak_wood_counter": {}
 		},
 		"permutations": [
+			{
+				"condition": "q.block_state('bcc.cook:relative_position') == 'left'",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.oak_wood_counter",
+						"bone_visibility": {
+							"left6": true,
+							"middle_c5": false,
+							"right6": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('bcc.cook:relative_position') == 'middle'",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.oak_wood_counter",
+						"bone_visibility": {
+							"left6": false,
+							"middle_c5": true,
+							"right6": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('bcc.cook:relative_position') == 'right'",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.oak_wood_counter",
+						"bone_visibility": {
+							"left6": false,
+							"middle_c5": false,
+							"right6": true
+						}
+					}
+				}
+			},
 			{
                 "condition": "query.block_state('minecraft:cardinal_direction') == 'north'",
                 "components": {
