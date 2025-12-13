@@ -3,8 +3,11 @@
 		"bowl": {
 			"textures": "textures/blocks/bcc.cook/bowl"
 		},
-		"burger_buns": {
+		"burger_buns.icon": {
 			"textures": "textures/bcc.cook/ingredients/burger_buns"
+		},
+		"tomato.icon": {
+			"textures": "textures/bcc.cook/ingredients/tomato"
 		},
 		"cabinet.oak_wood": {
 			"textures": "textures/blocks/bcc.cook/cabinet.oak_wood"
@@ -45,8 +48,11 @@
 		"sink.brick": {
 			"textures": "textures/blocks/bcc.cook/sink.brick"
 		},
-		"storage_crate": {
-			"textures": "textures/blocks/bcc.cook/storage_crate"
+		"storage_crate.item": {
+			"textures": "textures/blocks/bcc.cook/storage_crates/storage_crate.item"
+		},
+		"storage_crate.plain": {
+			"textures": "textures/blocks/bcc.cook/storage_crates/storage_crate.plain"
 		},
 		"stove.dark_gray": {
 			"textures": "textures/blocks/bcc.cook/stove.dark_gray"
