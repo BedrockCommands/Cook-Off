@@ -34,14 +34,14 @@
 					"texture": "counter.oak_wood"
 				}
 			},
-			"bcc.cook:oak_wood_counter": {}
+			"bcc.cook:counter.oak_wood": {}
 		},
 		"permutations": [
 			{
 				"condition": "q.block_state('bcc.cook:relative_position') == 'left'",
 				"components": {
 					"minecraft:geometry": {
-						"identifier": "geometry.oak_wood_counter",
+						"identifier": "geometry.counter.oak_wood",
 						"bone_visibility": {
 							"left6": true,
 							"middle_c5": false,
@@ -54,7 +54,7 @@
 				"condition": "q.block_state('bcc.cook:relative_position') == 'middle'",
 				"components": {
 					"minecraft:geometry": {
-						"identifier": "geometry.oak_wood_counter",
+						"identifier": "geometry.counter.oak_wood",
 						"bone_visibility": {
 							"left6": false,
 							"middle_c5": true,
@@ -67,7 +67,7 @@
 				"condition": "q.block_state('bcc.cook:relative_position') == 'right'",
 				"components": {
 					"minecraft:geometry": {
-						"identifier": "geometry.oak_wood_counter",
+						"identifier": "geometry.counter.oak_wood",
 						"bone_visibility": {
 							"left6": false,
 							"middle_c5": false,

@@ -31,7 +31,6 @@ ComponentManager.registerBlockComponent(BlockId.oakWoodCounter, {
 		const blockPermutation = event.brokenBlockPermutation;
 		const dimension = event.dimension;
 		const facingDirection = blockPermutation.getState("minecraft:cardinal_direction") as FacingDirection;
-		console.warn(facingDirection);
 		const axisOffset = axisOffsetMap[facingDirection];
 		updateNeighbors(dimension, blockLocation, axisOffset, 0);
 	}
@@ -94,7 +93,4 @@ function setRelativePosition(block: Block, axisOffset: Vector): void {
 	else if (leftBlock.typeId === BlockId.oakWoodCounter && rightBlock.typeId === BlockId.oakWoodCounter) setBlockState(block, RelativePositionStateName, "middle");
 	else if (leftBlock.typeId !== BlockId.oakWoodCounter && rightBlock.typeId === BlockId.oakWoodCounter) setBlockState(block, RelativePositionStateName, "left");
 	else setBlockState(block, RelativePositionStateName, "middle"); // No neighboring oak wood counters to connect with.
-
-	world.sendMessage("left:" + leftBlock.typeId);
-	world.sendMessage("right:" + rightBlock.typeId);
 }
