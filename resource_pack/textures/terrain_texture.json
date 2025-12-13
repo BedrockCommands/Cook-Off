@@ -30,6 +30,9 @@
 		"oak_wood_counter": {
 			"textures": "textures/blocks/bcc.cook/oak_wood_counter"
 		},
+		"oak_wood_cabinet": {
+			"textures": "textures/blocks/bcc.cook/oak_wood_cabinet"
+		},
 		"chopping_board": {
 			"textures": "textures/blocks/bcc.cook/chopping_board"
 		},
