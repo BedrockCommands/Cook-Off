@@ -7,7 +7,7 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.brick_serving_station",
+				"identifier": "geometry.serving_station.brick",
 				"texture_width": 32,
 				"texture_height": 32,
 				"visible_bounds_width": 2,

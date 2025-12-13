@@ -6,12 +6,9 @@
 	"format_version": "1.21.110",
 	"minecraft:block": {
 		"description": {
-			"identifier": "bcc.cook:stove",
+			"identifier": "bcc.cook:serving_station.brick",
 			"menu_category": {
 				"category": "construction"
-			},
-			"states": {
-				"bcc.cook:on": [ false, true ]
 			},
 			"traits": {
 				"minecraft:placement_direction": {
@@ -21,27 +18,14 @@
 			}
 		},
 		"components": {
-			"minecraft:geometry": "geometry.stove",
+			"minecraft:geometry": "geometry.serving_station.brick",
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "stove.off",
-					"render_method": "alpha_test_single_sided_to_opaque"
+					"texture": "serving_station.brick"
 				}
-			},
-			"bcc.cook:stove": {}
+			}
 		},
 		"permutations": [
-			{
-				"condition": "q.block_state('bcc.cook:on') == true",
-				"components": {
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "stove.on",
-							"render_method": "alpha_test_single_sided_to_opaque"
-						}
-					}
-				}
-			},
 			{
                 "condition": "query.block_state('minecraft:cardinal_direction') == 'north'",
                 "components": {

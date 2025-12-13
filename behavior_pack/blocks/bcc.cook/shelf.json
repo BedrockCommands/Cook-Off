@@ -6,7 +6,7 @@
 	"format_version": "1.21.110",
 	"minecraft:block": {
 		"description": {
-			"identifier": "bcc.cook:brick_serving_station",
+			"identifier": "bcc.cook:shelf",
 			"menu_category": {
 				"category": "construction"
 			},
@@ -18,11 +18,19 @@
 			}
 		},
 		"components": {
-			"minecraft:geometry": "geometry.brick_serving_station",
+			"minecraft:geometry": "geometry.shelf",
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "brick_serving_station"
+					"texture": "shelf"
 				}
+			},
+			"minecraft:selection_box": {
+				"origin": [ -8, 14, -2 ],
+				"size": [ 16, 2, 10 ]
+			},
+			"minecraft:collision_box": {
+				"origin": [ -8, 14, -2 ],
+				"size": [ 16, 2, 10 ]
 			}
 		},
 		"permutations": [
