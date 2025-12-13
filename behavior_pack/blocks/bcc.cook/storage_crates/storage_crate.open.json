@@ -6,13 +6,13 @@
 	"format_version": "1.21.110",
 	"minecraft:block": {
 		"description": {
-			"identifier": "bcc.cook:storage_crate.closed",
+			"identifier": "bcc.cook:storage_crate.open",
 			"menu_category": {
 				"category": "construction"
 			}
 		},
 		"components": {
-			"minecraft:geometry": "geometry.storage_crate.closed",
+			"minecraft:geometry": "geometry.storage_crate.open",
 			"minecraft:material_instances": {
 				"*": {
 					"texture": "storage_crate"

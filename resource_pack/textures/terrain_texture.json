@@ -4,7 +4,7 @@
 			"textures": "textures/blocks/bcc.cook/bowl"
 		},
 		"burger_buns": {
-			"textures": "textures/items/bcc.cook/burger_buns"
+			"textures": "textures/bcc.cook/ingredients/burger_buns"
 		},
 		"cutting_board": {
 			"textures": "textures/blocks/bcc.cook/cutting_board"

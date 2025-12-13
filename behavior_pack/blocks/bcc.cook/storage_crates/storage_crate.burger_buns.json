@@ -13,16 +13,16 @@
 			}
 		},
 		"components": {
-			"minecraft:geometry": "geometry.item_storage_crate",
+			"minecraft:geometry": "geometry.storage_crate.item_frame",
 			"minecraft:material_instances": {
-				"*": {
+				"item": {
 					"texture": "burger_buns"
 				},
 				"*": {
-					"texture": "storage_crate.closed"
+					"texture": "storage_crate"
 				}
 			},
-			"bcc.cook:storage_crate.closed": {
+			"bcc.cook:storage_crate": {
 				"itemId": "bcc.cook:burger_buns"
 			}
 		}
