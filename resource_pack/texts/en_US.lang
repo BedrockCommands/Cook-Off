@@ -9,6 +9,7 @@ tile.bcc.cook:pizza_board.name=Pizza Board
 tile.bcc.cook:brick_sink.name=Brick Sink
 tile.bcc.cook:brick_counter.name=Brick Counter
 tile.bcc.cook:brick_serving_station.name=Brick Serving Station
+tile.bcc.cook:oak_wood_counter.name=Oak Wood Counter
 tile.bcc.cook:pot.name=Pot
 tile.bcc.cook:bowl.name=Bowl
 

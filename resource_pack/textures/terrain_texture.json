@@ -27,6 +27,9 @@
 		"brick_serving_station": {
 			"textures": "textures/blocks/bcc.cook/brick_serving_station"
 		},
+		"oak_wood_counter": {
+			"textures": "textures/blocks/bcc.cook/oak_wood_counter"
+		},
 		"chopping_board": {
 			"textures": "textures/blocks/bcc.cook/chopping_board"
 		},
