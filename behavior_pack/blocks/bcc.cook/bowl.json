@@ -7,13 +7,13 @@
 	"format_version": "1.21.110",
 	"minecraft:block": {
 		"description": {
-			"identifier": "bcc.cook:empty_bowl",
+			"identifier": "bcc.cook:bowl",
 			"menu_category": {
 				"category": "construction"
 			}
 		},
 		"components": {
-			"minecraft:geometry": "geometry.bowl",
+			"minecraft:geometry": "geometry.bowl.empty",
 			"minecraft:material_instances": {
 				"*": {
 					"texture": "bowl"
