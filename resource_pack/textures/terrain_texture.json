@@ -24,6 +24,9 @@
 		"brick_counter": {
 			"textures": "textures/blocks/bcc.cook/brick_counter"
 		},
+		"brick_serving_station": {
+			"textures": "textures/blocks/bcc.cook/brick_serving_station"
+		},
 		"pizza_board": {
 			"textures": "textures/blocks/bcc.cook/pizza_board"
 		},

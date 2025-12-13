@@ -1,0 +1,55 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) @TheeMonster395 & Contributors
+// Contributors: @TheeMonster395
+// See LICENSE.md file in the root folder, licenses/MIT.md, or https://opensource.org/license/mit
+{
+	"format_version": "1.21.110",
+	"minecraft:block": {
+		"description": {
+			"identifier": "bcc.cook:brick_serving_station",
+			"menu_category": {
+				"category": "construction"
+			},
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": [ "minecraft:cardinal_direction" ],
+					"y_rotation_offset": 180
+				}
+			}
+		},
+		"components": {
+			"minecraft:geometry": "geometry.brick_serving_station",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "brick_serving_station"
+				}
+			}
+		},
+		"permutations": [
+			{
+                "condition": "query.block_state('minecraft:cardinal_direction') == 'north'",
+                "components": {
+                    "minecraft:transformation": { "rotation": [0, 0, 0] }
+                }
+            },
+            {
+                "condition": "query.block_state('minecraft:cardinal_direction') == 'east'",
+                "components": {
+                    "minecraft:transformation": { "rotation": [0, -90, 0] }
+                }
+            },
+            {
+                "condition": "query.block_state('minecraft:cardinal_direction') == 'south'",
+                "components": {
+                    "minecraft:transformation": { "rotation": [0, 180, 0] }
+                }
+            },
+            {
+                "condition": "query.block_state('minecraft:cardinal_direction') == 'west'",
+                "components": {
+                    "minecraft:transformation": { "rotation": [0, 90, 0] }
+                }
+            }
+		]
+	}
+}
