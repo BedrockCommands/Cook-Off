@@ -10,6 +10,9 @@
 			"menu_category": {
 				"category": "construction"
 			},
+			"states": {
+				"bcc.cook:relative_position": [ "bottom", "top" ]
+			},
 			"traits": {
 				"minecraft:placement_direction": {
 					"enabled_states": [ "minecraft:cardinal_direction" ],
@@ -18,7 +21,13 @@
 			}
 		},
 		"components": {
-			"minecraft:geometry": "geometry.fridge",
+			"minecraft:geometry": {
+				"identifier": "geometry.fridge",
+				"bone_visibility": {
+					"top": false,
+					"bottom": true
+				}
+			},
 			"minecraft:material_instances": {
 				"*": {
 					"texture": "fridge"
@@ -26,6 +35,18 @@
 			}
 		},
 		"permutations": [
+			{
+				"condition": "q.block_state('bcc.cook:relative_position') == 'top'",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.fridge",
+						"bone_visibility": {
+							"top": true,
+							"bottom": false
+						}
+					}
+				}
+			},
 			{
                 "condition": "query.block_state('minecraft:cardinal_direction') == 'north'",
                 "components": {
