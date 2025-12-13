@@ -11,6 +11,10 @@ export function getOverworld() {
 export function getAllPlayers() {
     return world.getAllPlayers();
 }
+export function setBlockState(block, stateName, value) {
+    const blockPermutation = block.permutation;
+    block.setPermutation(blockPermutation.withState(stateName, value));
+}
 export function permutationWithState(permutation, stateName, value) {
     return permutation.withState(stateName, value);
 }

@@ -32,7 +32,8 @@
 				"*": {
 					"texture": "fridge"
 				}
-			}
+			},
+			"bcc.cook:fridge": {}
 		},
 		"permutations": [
 			{
