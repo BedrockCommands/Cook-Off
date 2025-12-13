@@ -1,7 +1,15 @@
+// SPDX-License-Identifier: LicenseRef-BCC-PL-v1.0
+// Copyright (c) @r_kidds & Contributors
+// Contributers: @r_kidds @brodblox09
+// See LICENSE.md file in the root folder, licenses/BCC-PL-v1.0.md, or https://bedrockcommands.org/legal/bcc-pl-v1.0
+
+
+
+
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"animation.Cerelyli.choppy": {
+		"animation.celery.chop": {
 			"loop": "hold_on_last_frame",
 			"animation_length": 1.25,
 			"bones": {
