@@ -16,6 +16,7 @@ tile.bcc.cook:storage_crate.burger_buns.name=Burger Buns Storage Crate
 ## Items
 item.bcc.cook:frying_pan=Frying Pan
 item.bcc.cook:pot=Pot
+item.bcc.cook:fire_extinguisher=Fire Extinguisher
 
 ## Ingredients
 item.bcc.cook:boba=Boba

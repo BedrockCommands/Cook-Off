@@ -72,6 +72,9 @@
 		"egg.white": {
 			"textures": "textures/bcc.cook/ingredients/egg.white"
 		},
+		"fire_extinguisher": {
+			"textures": "textures/items/bcc.cook/fire_extinguisher"
+		},
 		"frying_pan": {
 			"textures": "textures/items/bcc.cook/frying_pan"
 		},
