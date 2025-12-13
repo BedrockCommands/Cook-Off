@@ -21,6 +21,7 @@ tile.bcc.cook:shelf.name=Shelf
 tile.bcc.cook:storage_crate.closed.name=Closed Storage Crate
 tile.bcc.cook:storage_crate.open.name=Open Storage Crate
 tile.bcc.cook:storage_crate.burger_buns.name=Burger Buns Storage Crate
+tile.bcc.cook:storage_crate.tomato.name=Tomato Storage Crate
 
 ## Items
 item.bcc.cook:frying_pan=Frying Pan

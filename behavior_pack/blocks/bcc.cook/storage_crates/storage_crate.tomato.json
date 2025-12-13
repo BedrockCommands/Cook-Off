@@ -7,7 +7,7 @@
 	"format_version": "1.21.110",
 	"minecraft:block": {
 		"description": {
-			"identifier": "bcc.cook:storage_crate.burger_buns",
+			"identifier": "bcc.cook:storage_crate.tomato",
 			"menu_category": {
 				"category": "construction",
 				"group": "bcc.cook:itemGroup.name.storageCrates"
@@ -23,7 +23,7 @@
 			"minecraft:geometry": "geometry.storage_crate.item",
 			"minecraft:material_instances": {
 				"item": {
-					"texture": "burger_buns.icon",
+					"texture": "tomato.icon",
 					"render_method": "alpha_test"
 				},
 				"*": {
@@ -32,7 +32,7 @@
 				}
 			},
 			"bcc.cook:storage_crate": {
-				"itemId": "bcc.cook:burger_buns"
+				"itemId": "bcc.cook:tomato"
 			}
 		},
 		"permutations": [
