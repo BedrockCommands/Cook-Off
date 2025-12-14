@@ -21,8 +21,8 @@ tile.bcc.cook:shelf.name=Shelf
 tile.bcc.cook:storage_crate.closed.name=Closed Storage Crate
 tile.bcc.cook:storage_crate.open.name=Open Storage Crate
 tile.bcc.cook:storage_crate.beef_patty.raw.name=Raw Beef Patty Storage Crate
-tile.bcc.cook:storage_crate.bottle_of_soy_sauce.name=Bottle of Soy Sauce Storage Crate
-tile.bcc.cook:storage_crate.bottle_of_vinegar.name=Bottle of Vinegar Storage Crate
+tile.bcc.cook:storage_crate.soy_sauce.name=Bottle of Soy Sauce Storage Crate
+tile.bcc.cook:storage_crate.vinegar.name=Bottle of Vinegar Storage Crate
 tile.bcc.cook:storage_crate.burger_buns.name=Burger Buns Storage Crate
 tile.bcc.cook:storage_crate.cabbage.name=Cabbage Storage Crate
 tile.bcc.cook:storage_crate.carrot.name=Carrot Storage Crate
@@ -52,8 +52,8 @@ item.bcc.cook:fire_extinguisher=Fire Extinguisher
 
 ## Ingredients
 item.bcc.cook:boba=Boba
-item.bcc.cook:bottle_of_soy_sauce=Bottle of Soy Sauce
-item.bcc.cook:bottle_of_vinegar=Bottle of Vinegar
+item.bcc.cook:soy_sauce=Bottle of Soy Sauce
+item.bcc.cook:vinegar=Bottle of Vinegar
 item.bcc.cook:burger_buns=Burger Buns
 item.bcc.cook:cabbage=Cabbage
 item.bcc.cook:cabbage_leaf=Cabbage Leaf

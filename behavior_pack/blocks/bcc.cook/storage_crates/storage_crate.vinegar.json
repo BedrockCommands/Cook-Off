@@ -7,7 +7,7 @@
 	"format_version": "1.21.110",
 	"minecraft:block": {
 		"description": {
-			"identifier": "bcc.cook:storage_crate.bottle_of_soy_sauce",
+			"identifier": "bcc.cook:storage_crate.vinegar",
 			"menu_category": {
 				"category": "construction",
 				"group": "bcc.cook:itemGroup.name.storageCrates"
@@ -23,7 +23,7 @@
 			"minecraft:geometry": "geometry.storage_crate.item",
 			"minecraft:material_instances": {
 				"item": {
-					"texture": "bottle_of_soy_sauce.icon",
+					"texture": "vinegar.icon",
 					"render_method": "alpha_test"
 				},
 				"*": {
@@ -32,7 +32,7 @@
 				}
 			},
 			"bcc.cook:storage_crate": {
-				"itemId": "bcc.cook:bottle_of_soy_sauce"
+				"itemId": "bcc.cook:vinegar"
 			}
 		},
 		"permutations": [

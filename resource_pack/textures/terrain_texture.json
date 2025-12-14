@@ -3,11 +3,11 @@
 		"beef_patty.raw.icon": {
 			"textures": "textures/bcc.cook/ingredient_icons/beef_patty.raw"
 		},
-		"bottle_of_soy_sauce.icon": {
-			"textures": "textures/bcc.cook/ingredient_icons/bottle_of_soy_sauce"
+		"soy_sauce.icon": {
+			"textures": "textures/bcc.cook/ingredient_icons/soy_sauce"
 		},
-		"bottle_of_vinegar.icon": {
-			"textures": "textures/bcc.cook/ingredient_icons/bottle_of_vinegar"
+		"vinegar.icon": {
+			"textures": "textures/bcc.cook/ingredient_icons/vinegar"
 		},
 		"bowl": {
 			"textures": "textures/blocks/bcc.cook/bowl"
