@@ -21,7 +21,29 @@ tile.bcc.cook:shelf.name=Shelf
 ## Storage Crates
 tile.bcc.cook:storage_crate.closed.name=Closed Storage Crate
 tile.bcc.cook:storage_crate.open.name=Open Storage Crate
+tile.bcc.cook:storage_crate.beef_patty.raw.name=Raw Beef Patty Storage Crate
+tile.bcc.cook:storage_crate.soy_sauce.name=Bottle of Soy Sauce Storage Crate
+tile.bcc.cook:storage_crate.vinegar.name=Bottle of Vinegar Storage Crate
 tile.bcc.cook:storage_crate.burger_buns.name=Burger Buns Storage Crate
+tile.bcc.cook:storage_crate.cabbage.name=Cabbage Storage Crate
+tile.bcc.cook:storage_crate.carrot.name=Carrot Storage Crate
+tile.bcc.cook:storage_crate.celery.name=Celery Storage Crate
+tile.bcc.cook:storage_crate.cheese.name=Cheese Storage Crate
+tile.bcc.cook:storage_crate.dough.name=Dough Storage Crate
+tile.bcc.cook:storage_crate.egg.brown.name=Brown Egg Storage Crate
+tile.bcc.cook:storage_crate.egg.chocolate.name=Chocolate Egg Storage Crate
+tile.bcc.cook:storage_crate.egg.green.name=Green Egg Storage Crate
+tile.bcc.cook:storage_crate.egg.white.name=White Egg Storage Crate
+tile.bcc.cook:storage_crate.fish_slice.raw.name=Raw Fish Slice Storage Crate
+tile.bcc.cook:storage_crate.garlic.name=Garlic Storage Crate
+tile.bcc.cook:storage_crate.lettuce.name=Lettuce Storage Crate
+tile.bcc.cook:storage_crate.meatballs.raw.name=Raw Meatballs Storage Crate
+tile.bcc.cook:storage_crate.milk.name=Milk Storage Crate
+tile.bcc.cook:storage_crate.noodles.raw.name=Raw Noodles Storage Crate
+tile.bcc.cook:storage_crate.onion.name=Onion Storage Crate
+tile.bcc.cook:storage_crate.rice_paper.name=Rice Paper Storage Crate
+tile.bcc.cook:storage_crate.rice.raw.name=Raw Rice Storage Crate
+tile.bcc.cook:storage_crate.tapioca_pearls.name=Tapioca Pearls Storage Crate
 tile.bcc.cook:storage_crate.tomato.name=Tomato Storage Crate
 
 ## Items
@@ -31,8 +53,8 @@ item.bcc.cook:fire_extinguisher=Fire Extinguisher
 
 ## Ingredients
 item.bcc.cook:boba=Boba
-item.bcc.cook:bottle_of_soy_sauce=Bottle of Soy Sauce
-item.bcc.cook:bottle_of_vinegar=Bottle of Vinegar
+item.bcc.cook:soy_sauce=Bottle of Soy Sauce
+item.bcc.cook:vinegar=Bottle of Vinegar
 item.bcc.cook:burger_buns=Burger Buns
 item.bcc.cook:cabbage=Cabbage
 item.bcc.cook:cabbage_leaf=Cabbage Leaf

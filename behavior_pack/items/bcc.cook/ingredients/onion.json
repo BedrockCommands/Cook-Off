@@ -13,7 +13,8 @@
 			}
         },
         "components": {
-            "minecraft:icon": "onion"
+            "minecraft:icon": "onion",
+			"minecraft:max_stack_size": 1
         }
     }
 }

@@ -1,9 +1,17 @@
+// SPDX-License-Identifier: LicenseRef-BCC-PL-v1.0
+// Copyright (c) @r_kidds & Contributors
+// Contributers: @r_kidds
+// See LICENSE.md file in the root folder, licenses/BCC-PL-v1.0.md, or https://bedrockcommands.org/legal/bcc-pl-v1.0
+
+
+
+
 {
 	"format_version": "1.12.0",
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.Cerelyli",
+				"identifier": "geometry.celery",
 				"texture_width": 32,
 				"texture_height": 32,
 				"visible_bounds_width": 2,

@@ -9,11 +9,11 @@
 		"boba": {
 			"textures": "textures/bcc.cook/ingredient_icons/boba"
 		},
-		"bottle_of_soy_sauce": {
-			"textures": "textures/bcc.cook/ingredient_icons/bottle_of_soy_sauce"
+		"soy_sauce": {
+			"textures": "textures/bcc.cook/ingredient_icons/soy_sauce"
 		},
-		"bottle_of_vinegar": {
-			"textures": "textures/bcc.cook/ingredient_icons/bottle_of_vinegar"
+		"vinegar": {
+			"textures": "textures/bcc.cook/ingredient_icons/vinegar"
 		},
 		"burger_buns": {
 			"textures": "textures/bcc.cook/ingredient_icons/burger_buns"

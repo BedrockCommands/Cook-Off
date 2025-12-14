@@ -13,7 +13,8 @@
 			}
         },
         "components": {
-            "minecraft:icon": "rice.raw"
+            "minecraft:icon": "rice.raw",
+			"minecraft:max_stack_size": 1
         }
     }
 }
