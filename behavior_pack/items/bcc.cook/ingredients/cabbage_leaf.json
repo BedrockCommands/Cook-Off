@@ -13,7 +13,8 @@
 			}
         },
         "components": {
-            "minecraft:icon": "cabbage_leaf"
+            "minecraft:icon": "cabbage_leaf",
+			"minecraft:max_stack_size": 1
         }
     }
 }

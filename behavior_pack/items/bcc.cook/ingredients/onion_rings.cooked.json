@@ -13,7 +13,8 @@
 			}
         },
         "components": {
-            "minecraft:icon": "onion_rings.cooked"
+            "minecraft:icon": "onion_rings.cooked",
+			"minecraft:max_stack_size": 1
         }
     }
 }

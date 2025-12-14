@@ -13,7 +13,8 @@
 			}
         },
         "components": {
-            "minecraft:icon": "carrot"
+            "minecraft:icon": "carrot",
+			"minecraft:max_stack_size": 1
         }
     }
 }

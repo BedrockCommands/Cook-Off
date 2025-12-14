@@ -6,14 +6,15 @@
     "format_version": "1.21.110",
     "minecraft:item": {
         "description": {
-            "identifier": "bcc.cook:noodles.raw",
+            "identifier": "bcc.cook:vinegar",
 			"menu_category": {
 				"category": "items",
 				"group": "bcc.cook:itemGroup.name.ingredients"
 			}
         },
         "components": {
-            "minecraft:icon": "noodles.raw"
+            "minecraft:icon": "vinegar",
+			"minecraft:max_stack_size": 1
         }
     }
 }
