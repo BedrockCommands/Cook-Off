@@ -1,25 +1,28 @@
 ## Blocks
 tile.bcc.cook:trash_bin.name=Trash Bin
 tile.bcc.cook:frying_pan.name=Frying Pan
-tile.bcc.cook:stove.name=Stove
+tile.bcc.cook:stove.dark_gray.name=Dark Gray Stove
+tile.bcc.cook:stove.white.name=White Stove
 tile.bcc.cook:oven.name=Oven
 tile.bcc.cook:chopping_board.name=Chopping Board
 tile.bcc.cook:cutting_board.name=Cutting Board
 tile.bcc.cook:pizza_board.name=Pizza Board
-tile.bcc.cook:brick_sink.name=Brick Sink
-tile.bcc.cook:brick_counter.name=Brick Counter
-tile.bcc.cook:brick_serving_station.name=Brick Serving Station
-tile.bcc.cook:oak_wood_counter.name=Oak Wood Counter
-tile.bcc.cook:oak_wood_cabinet.name=Oak Wood Cabinet
+tile.bcc.cook:sink.brick.name=Brick Sink
+tile.bcc.cook:counter.brick.name=Brick Counter
+tile.bcc.cook:serving_station.brick.name=Brick Serving Station
+tile.bcc.cook:counter.oak_wood.name=Oak Wood Counter
+tile.bcc.cook:cabinet.oak_wood.name=Oak Wood Cabinet
 tile.bcc.cook:pot.name=Pot
 tile.bcc.cook:bowl.name=Bowl
 tile.bcc.cook:plate.name=Plate
 tile.bcc.cook:fridge.name=Fridge
+tile.bcc.cook:shelf.name=Shelf
 
 ## Storage Crates
 tile.bcc.cook:storage_crate.closed.name=Closed Storage Crate
 tile.bcc.cook:storage_crate.open.name=Open Storage Crate
 tile.bcc.cook:storage_crate.burger_buns.name=Burger Buns Storage Crate
+tile.bcc.cook:storage_crate.tomato.name=Tomato Storage Crate
 
 ## Items
 item.bcc.cook:frying_pan=Frying Pan
@@ -60,6 +63,8 @@ item.bcc.cook:onion=Onion
 item.bcc.cook:onion_rings=Onion Rings
 item.bcc.cook:beef_patty.raw=Raw Beef Patty
 item.bcc.cook:chicken_bits.raw=Raw Chicken Bits
+item.bcc.cook:chicken.raw=Raw Chicken
+item.bcc.cook:chicken.cooked=Cooked Chicken
 item.bcc.cook:meatballs.raw=Raw Meatballs
 item.bcc.cook:rice.raw=Raw Rice
 item.bcc.cook:rice_paper=Rice Paper

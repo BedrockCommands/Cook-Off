@@ -3,8 +3,23 @@
 		"bowl": {
 			"textures": "textures/blocks/bcc.cook/bowl"
 		},
-		"burger_buns": {
-			"textures": "textures/bcc.cook/ingredients/burger_buns"
+		"burger_buns.icon": {
+			"textures": "textures/bcc.cook/ingredient_icons/burger_buns"
+		},
+		"tomato.icon": {
+			"textures": "textures/bcc.cook/ingredient_icons/tomato"
+		},
+		"cabinet.oak_wood": {
+			"textures": "textures/blocks/bcc.cook/cabinet.oak_wood"
+		},
+		"chopping_board": {
+			"textures": "textures/blocks/bcc.cook/chopping_board"
+		},
+		"counter.brick": {
+			"textures": "textures/blocks/bcc.cook/counter.brick"
+		},
+		"counter.oak_wood": {
+			"textures": "textures/blocks/bcc.cook/counter.oak_wood"
 		},
 		"cutting_board": {
 			"textures": "textures/blocks/bcc.cook/cutting_board"
@@ -18,38 +33,38 @@
 		"oven": {
 			"textures": "textures/blocks/bcc.cook/oven"
 		},
-		"pot": {
-			"textures": "textures/blocks/bcc.cook/pot"
-		},
-		"brick_sink": {
-			"textures": "textures/blocks/bcc.cook/brick_sink"
-		},
-		"brick_counter": {
-			"textures": "textures/blocks/bcc.cook/brick_counter"
-		},
-		"brick_serving_station": {
-			"textures": "textures/blocks/bcc.cook/brick_serving_station"
-		},
-		"oak_wood_counter": {
-			"textures": "textures/blocks/bcc.cook/oak_wood_counter"
-		},
-		"oak_wood_cabinet": {
-			"textures": "textures/blocks/bcc.cook/oak_wood_cabinet"
-		},
-		"chopping_board": {
-			"textures": "textures/blocks/bcc.cook/chopping_board"
-		},
 		"pizza_board": {
 			"textures": "textures/blocks/bcc.cook/pizza_board"
 		},
-		"storage_crate": {
-			"textures": "textures/blocks/bcc.cook/storage_crate"
-		},
-		"stove": {
-			"textures": "textures/blocks/bcc.cook/stove"
-		},
 		"plate": {
 			"textures": "textures/blocks/bcc.cook/plate"
+		},
+		"pot": {
+			"textures": "textures/blocks/bcc.cook/pot"
+		},
+		"serving_station.brick": {
+			"textures": "textures/blocks/bcc.cook/serving_station.brick"
+		},
+		"shelf": {
+			"textures": "textures/blocks/bcc.cook/shelf"
+		},
+		"sink.brick": {
+			"textures": "textures/blocks/bcc.cook/sink.brick"
+		},
+		"storage_crate.item": {
+			"textures": "textures/blocks/bcc.cook/storage_crates/storage_crate.item"
+		},
+		"storage_crate.plain": {
+			"textures": "textures/blocks/bcc.cook/storage_crates/storage_crate.plain"
+		},
+		"stove.dark_gray": {
+			"textures": "textures/blocks/bcc.cook/stove.dark_gray"
+		},
+		"stove.white.off": {
+			"textures": "textures/blocks/bcc.cook/stove.white.off"
+		},
+		"stove.white.on": {
+			"textures": "textures/blocks/bcc.cook/stove.white.on"
 		},
 		"trash_bin": {
 			"textures": "textures/blocks/bcc.cook/trash_bin"
