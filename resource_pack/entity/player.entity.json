@@ -44,9 +44,14 @@
 			},
 			"animations": {
 				"bcc.cook.third_person": "controller.animation.bcc.cook.third_person",
+
 				"bcc.cook.item": "controller.animation.bcc.cook.item",
 				"bcc.cook.fire_extinguisher.hold": "animation.bcc.cook.player.fire_extinguisher.hold",
 				"bcc.cook.fire_extinguisher.use": "animation.bcc.cook.player.fire_extinguisher.use",
+				
+				"bcc.cook.movement": "controller.animation.bcc.cook.movement",
+				"bcc.cook.walk": "animation.bcc.cook.player.walk",
+				"bcc.cook.run": "animation.bcc.cook.player.run",
 
 				"root": "controller.animation.player.root",
 				"base_controller": "controller.animation.player.base",

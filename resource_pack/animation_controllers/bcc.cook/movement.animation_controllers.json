@@ -1,0 +1,20 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.bcc.cook.movement": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": [
+						{
+							"bcc.cook.walk": "0.1 < query.modified_move_speed && query.modified_move_speed < 0.9"
+						},
+						{
+							"bcc.cook.run": "0.9 <= query.modified_move_speed"
+						}
+					]
+				}
+			}
+		}
+	}
+}

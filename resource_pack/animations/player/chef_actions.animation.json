@@ -1018,7 +1018,7 @@
 				}
 			}
 		},
-		"animation.player.walk": {
+		"animation.bcc.cook.player.walk": {
 			"loop": true,
 			"animation_length": 0.75,
 			"bones": {
@@ -1242,7 +1242,7 @@
 				}
 			}
 		},
-		"animation.player.walk_hold": {
+		"animation.bcc.cook.player.walk_hold": {
 			"loop": true,
 			"animation_length": 0.75,
 			"bones": {
@@ -1506,7 +1506,7 @@
 				}
 			}
 		},
-		"animation.player.run": {
+		"animation.bcc.cook.player.run": {
 			"loop": true,
 			"animation_length": 0.75,
 			"bones": {
@@ -1834,7 +1834,7 @@
 				}
 			}
 		},
-		"animation.player.run2": {
+		"animation.bcc.cook.player.run2": {
 			"loop": true,
 			"animation_length": 0.5,
 			"bones": {
@@ -2146,7 +2146,7 @@
 				}
 			}
 		},
-		"animation.player.run_hold": {
+		"animation.bcc.cook.player.run_hold": {
 			"loop": true,
 			"animation_length": 0.5,
 			"bones": {

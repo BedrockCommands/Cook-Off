@@ -6,7 +6,8 @@
 			"states": {
 				"default": {
 					"animations": [
-						"bcc.cook.item"
+						"bcc.cook.item",
+						"bcc.cook.movement"
 					]
 				}
 			}
