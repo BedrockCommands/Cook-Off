@@ -8,6 +8,9 @@
 					"transitions": [
 						{
 							"fire_extinguisher": "query.is_item_name_any('slot.weapon.mainhand', 'bcc.cook:fire_extinguisher')"
+						},
+						{
+							"plate": "query.is_item_name_any('slot.weapon.mainhand', 'bcc.cook:plate')"
 						}
 					]
 				},
@@ -28,6 +31,16 @@
 					"transitions": [
 						{
 							"none": "!query.is_item_name_any('slot.weapon.mainhand', 'bcc.cook:fire_extinguisher')"
+						}
+					]
+				},
+				"plate": {
+					"animations": [
+						"bcc.cook.plate.hold"
+					],
+					"transitions": [
+						{
+							"none": "!query.is_item_name_any('slot.weapon.mainhand', 'bcc.cook:plate')"
 						}
 					]
 				}
