@@ -12,6 +12,26 @@
 						{
 							"bcc.cook.run": "0.9 <= query.modified_move_speed"
 						}
+					],
+					"transitions": [
+						{
+							"with_item": "query.is_selected_item && !variable.custom_hold_animation"
+						}
+					]
+				},
+				"with_item": {
+					"animations": [
+						{
+							"bcc.cook.walk.with_item": "0.1 < query.modified_move_speed && query.modified_move_speed < 0.9"
+						},
+						{
+							"bcc.cook.run.with_item": "0.9 <= query.modified_move_speed"
+						}
+					],
+					"transitions": [
+						{
+							"default": "!(query.is_selected_item && !variable.custom_hold_animation)"
+						}
 					]
 				}
 			}

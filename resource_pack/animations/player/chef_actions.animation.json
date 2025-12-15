@@ -2,6 +2,10 @@
 // Copyright (c) @Maxed_Out10 & Contributors
 // Contributors: @Maxed_Out10 @FelixChats
 // See LICENSE.md file in the root folder, licenses/BCC-PL-v1.0.md, or https://bedrockcommands.org/legal/bcc-pl-v1.0
+
+
+
+
 {
 	"format_version": "1.8.0",
 	"animations": {
@@ -1242,7 +1246,7 @@
 				}
 			}
 		},
-		"animation.bcc.cook.player.walk_hold": {
+		"animation.bcc.cook.player.walk.with_item": {
 			"loop": true,
 			"animation_length": 0.75,
 			"bones": {
@@ -1818,7 +1822,7 @@
 				}
 			}
 		},
-		"animation.bcc.cook.player.run_hold": {
+		"animation.bcc.cook.player.run.with_item": {
 			"loop": true,
 			"animation_length": 0.5,
 			"bones": {

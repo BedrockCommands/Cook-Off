@@ -23,7 +23,8 @@
 					"variable.is_holding_right = 0.0;",
 					"variable.is_blinking = 0.0;",
 					"variable.last_blink_time = 0.0;",
-					"variable.hand_bob = 0.0;"
+					"variable.hand_bob = 0.0;",
+					"variable.custom_hold_animation = 0.0;"
 				],
 				"pre_animation": [
 					"variable.helmet_layer_visible = !query.has_head_gear;",
@@ -53,6 +54,8 @@
 				"bcc.cook.movement": "controller.animation.bcc.cook.movement",
 				"bcc.cook.walk": "animation.bcc.cook.player.walk",
 				"bcc.cook.run": "animation.bcc.cook.player.run",
+				"bcc.cook.walk.with_item": "animation.bcc.cook.player.walk.with_item",
+				"bcc.cook.run.with_item": "animation.bcc.cook.player.run.with_item",
 
 				"root": "controller.animation.player.root",
 				"base_controller": "controller.animation.player.base",

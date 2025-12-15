@@ -5,6 +5,12 @@
 			"initial_state": "none",
 			"states": {
 				"none": {
+					"on_entry": [
+						"variable.custom_hold_animation = 0.0;"
+					],
+					"on_exit": [
+						"variable.custom_hold_animation = 1.0;"
+					],
 					"transitions": [
 						{
 							"fire_extinguisher": "query.is_item_name_any('slot.weapon.mainhand', 'bcc.cook:fire_extinguisher')"
