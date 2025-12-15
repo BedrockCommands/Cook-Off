@@ -24,7 +24,8 @@
 					"variable.is_blinking = 0.0;",
 					"variable.last_blink_time = 0.0;",
 					"variable.hand_bob = 0.0;",
-					"variable.custom_hold_animation = 0.0;"
+					"variable.custom_hold_animation = 0.0;",
+					"variable.movement_animation_time = 0;"
 				],
 				"pre_animation": [
 					"variable.helmet_layer_visible = !query.has_head_gear;",
@@ -37,7 +38,8 @@
 					"variable.hand_bob = query.life_time < 0.01 ? 0.0 : variable.hand_bob + ((query.is_on_ground && query.is_alive ? math.clamp(math.sqrt(math.pow(query.position_delta(0), 2.0) + math.pow(query.position_delta(2), 2.0)), 0.0, 0.1) : 0.0) - variable.hand_bob) * 0.02;",
 					"variable.map_angle = math.clamp(1 - variable.player_x_rotation / 45.1, 0.0, 1.0);",
 					"variable.item_use_normalized = query.main_hand_item_use_duration / query.main_hand_item_max_duration;",
-					"variable.riding_y_offset = query.is_riding_any_entity_of_type('minecraft:minecart', 'minecraft:boat', 'minecraft:chest_boat', 'minecraft:strider') ? -3.0 : 0.0;"
+					"variable.riding_y_offset = query.is_riding_any_entity_of_type('minecraft:minecart', 'minecraft:boat', 'minecraft:chest_boat', 'minecraft:strider') ? -3.0 : 0.0;",
+					"variable.movement_animation_time = query.modified_distance_moved / 15;"
 				],
 				"animate": [
 					"root"
@@ -52,10 +54,9 @@
 				"bcc.cook.plate.hold": "animation.bcc.cook.player.plate.hold",
 				
 				"bcc.cook.movement": "controller.animation.bcc.cook.movement",
-				"bcc.cook.walk": "animation.bcc.cook.player.walk",
-				"bcc.cook.run": "animation.bcc.cook.player.run",
-				"bcc.cook.walk.with_item": "animation.bcc.cook.player.walk.with_item",
-				"bcc.cook.run.with_item": "animation.bcc.cook.player.run.with_item",
+				"bcc.cook.move.legs": "animation.bcc.cook.player.move.legs",
+				"bcc.cook.move.arms": "animation.bcc.cook.player.move.arms",
+				"bcc.cook.move.arms.with_item": "animation.bcc.cook.player.move.arms.with_item",
 
 				"root": "controller.animation.player.root",
 				"base_controller": "controller.animation.player.base",

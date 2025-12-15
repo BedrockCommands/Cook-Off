@@ -2,35 +2,28 @@
 	"format_version": "1.10.0",
 	"animation_controllers": {
 		"controller.animation.bcc.cook.movement": {
-			"initial_state": "default",
+			"initial_state": "idle",
 			"states": {
-				"default": {
-					"animations": [
-						{
-							"bcc.cook.walk": "0.1 < query.modified_move_speed && query.modified_move_speed < 0.9"
-						},
-						{
-							"bcc.cook.run": "0.9 <= query.modified_move_speed"
-						}
-					],
+				"idle": {
 					"transitions": [
 						{
-							"with_item": "query.is_selected_item && !variable.custom_hold_animation"
+							"moving": "query.modified_move_speed > 0.15"
 						}
 					]
 				},
-				"with_item": {
+				"moving": {
 					"animations": [
+						"bcc.cook.move.legs",
 						{
-							"bcc.cook.walk.with_item": "0.1 < query.modified_move_speed && query.modified_move_speed < 0.9"
+							"bcc.cook.move.arms": "!query.is_selected_item && !variable.custom_hold_animation"
 						},
 						{
-							"bcc.cook.run.with_item": "0.9 <= query.modified_move_speed"
+							"bcc.cook.move.arms.with_item": "query.is_selected_item && !variable.custom_hold_animation"
 						}
 					],
 					"transitions": [
 						{
-							"default": "!(query.is_selected_item && !variable.custom_hold_animation)"
+							"idle": "query.modified_move_speed <= 0.15"
 						}
 					]
 				}
