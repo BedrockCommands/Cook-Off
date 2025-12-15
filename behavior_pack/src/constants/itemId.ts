@@ -37,7 +37,7 @@ export const enum ItemId {
     lettuceLeaf = "bcc.cook:lettuce_leaf",
     milk = "bcc.cook:milk",
     onion = "bcc.cook:onion",
-    onionRings = "bcc.cook:onion_rings",
+    rawOnionRings = "bcc.cook:onion_rings.raw",
     rawBeefPatty = "bcc.cook:beef_patty.raw",
     rawChickenBits = "bcc.cook:chicken_bits.raw",
     rawMeatballs = "bcc.cook:meatballs.raw",

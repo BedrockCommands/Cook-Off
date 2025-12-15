@@ -111,7 +111,7 @@
 		"onion": {
 			"textures": "textures/bcc.cook/ingredient_icons/onion"
 		},
-		"onion_rings": {
+		"onion_rings.raw": {
 			"textures": "textures/bcc.cook/ingredient_icons/onion_ring.raw" // Make texture file plural?
 		},
 		"onion_rings.cooked": {
