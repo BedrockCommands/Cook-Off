@@ -17,17 +17,12 @@
 				"fire_extinguisher": {
 					"animations": [
 						{
-							"bcc.cook.fire_extinguisher.hold": "!variable.using"
+							"bcc.cook.fire_extinguisher.hold": "!query.is_using_item"
 						},
 						{
-							"bcc.cook.fire_extinguisher.use": "variable.using"
+							"bcc.cook.fire_extinguisher.use": "query.is_using_item"
 						}
 					],
-					"variables": {
-						"using": {
-							"input": "( variable.use_item_interval_progress > 0.0 ) || ( variable.use_item_startup_progress > 0.0 )"
-						}
-					},
 					"transitions": [
 						{
 							"none": "!query.is_item_name_any('slot.weapon.mainhand', 'bcc.cook:fire_extinguisher')"
