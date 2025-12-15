@@ -6,14 +6,15 @@
     "format_version": "1.21.110",
     "minecraft:item": {
         "description": {
-            "identifier": "bcc.cook:bottle_of_vinegar",
+            "identifier": "bcc.cook:soy_sauce",
 			"menu_category": {
 				"category": "items",
 				"group": "bcc.cook:itemGroup.name.ingredients"
 			}
         },
         "components": {
-            "minecraft:icon": "bottle_of_vinegar"
+            "minecraft:icon": "soy_sauce",
+			"minecraft:max_stack_size": 1
         }
     }
 }

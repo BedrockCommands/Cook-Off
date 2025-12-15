@@ -1,13 +1,34 @@
 {
 	"texture_data": {
+		"beef_patty.raw.icon": {
+			"textures": "textures/bcc.cook/ingredient_icons/beef_patty.raw"
+		},
+		"soy_sauce.icon": {
+			"textures": "textures/bcc.cook/ingredient_icons/soy_sauce"
+		},
+		"vinegar.icon": {
+			"textures": "textures/bcc.cook/ingredient_icons/vinegar"
+		},
 		"bowl": {
 			"textures": "textures/blocks/bcc.cook/bowl"
 		},
-		"burger_buns": {
-			"textures": "textures/bcc.cook/ingredients/burger_buns"
+		"burger_buns.icon": {
+			"textures": "textures/bcc.cook/ingredient_icons/burger_buns"
+		},
+		"cabbage.icon": {
+			"textures": "textures/bcc.cook/ingredient_icons/cabbage"
 		},
 		"cabinet.oak_wood": {
 			"textures": "textures/blocks/bcc.cook/cabinet.oak_wood"
+		},
+		"carrot.icon": {
+			"textures": "textures/bcc.cook/ingredient_icons/carrot"
+		},
+		"celery.icon": {
+			"textures": "textures/bcc.cook/ingredient_icons/celery"
+		},
+		"cheese.icon": {
+			"textures": "textures/bcc.cook/ingredient_icons/cheese"
 		},
 		"chopping_board": {
 			"textures": "textures/blocks/bcc.cook/chopping_board"
@@ -21,8 +42,44 @@
 		"cutting_board": {
 			"textures": "textures/blocks/bcc.cook/cutting_board"
 		},
+		"dough.icon": {
+			"textures": "textures/bcc.cook/ingredient_icons/dough"
+		},
+		"egg.brown.icon": {
+			"textures": "textures/bcc.cook/ingredient_icons/egg.brown"
+		},
+		"egg.chocolate.icon": {
+			"textures": "textures/bcc.cook/ingredient_icons/egg.chocolate"
+		},
+		"egg.green.icon": {
+			"textures": "textures/bcc.cook/ingredient_icons/egg.green"
+		},
+		"egg.white.icon": {
+			"textures": "textures/bcc.cook/ingredient_icons/egg.white"
+		},
+		"fish_slice.raw.icon": {
+			"textures": "textures/bcc.cook/ingredient_icons/fish_slice.raw"
+		},
 		"frying_pan": {
 			"textures": "textures/blocks/bcc.cook/frying_pan"
+		},
+		"garlic.icon": {
+			"textures": "textures/bcc.cook/ingredient_icons/garlic"
+		},
+		"lettuce.icon": {
+			"textures": "textures/bcc.cook/ingredient_icons/lettuce"
+		},
+		"meatballs.raw.icon": {
+			"textures": "textures/bcc.cook/ingredient_icons/meatballs.raw"
+		},
+		"milk.icon": {
+			"textures": "textures/bcc.cook/ingredient_icons/milk"
+		},
+		"noodles.raw.icon": {
+			"textures": "textures/bcc.cook/ingredient_icons/noodles.raw"
+		},
+		"onion.icon": {
+			"textures": "textures/bcc.cook/ingredient_icons/onion"
 		},
 		"oven": {
 			"textures": "textures/blocks/bcc.cook/oven"
@@ -36,6 +93,12 @@
 		"pot": {
 			"textures": "textures/blocks/bcc.cook/pot"
 		},
+		"rice_paper.icon": {
+			"textures": "textures/bcc.cook/ingredient_icons/rice_paper"
+		},
+		"rice.raw.icon": {
+			"textures": "textures/bcc.cook/ingredient_icons/rice.raw"
+		},
 		"serving_station.brick": {
 			"textures": "textures/blocks/bcc.cook/serving_station.brick"
 		},
@@ -45,17 +108,26 @@
 		"sink.brick": {
 			"textures": "textures/blocks/bcc.cook/sink.brick"
 		},
-		"storage_crate": {
-			"textures": "textures/blocks/bcc.cook/storage_crate"
+		"storage_crate.item": {
+			"textures": "textures/blocks/bcc.cook/storage_crates/storage_crate.item"
 		},
-		"stove": {
-			"textures": "textures/blocks/bcc.cook/stove"
+		"storage_crate.plain": {
+			"textures": "textures/blocks/bcc.cook/storage_crates/storage_crate.plain"
 		},
-		"stove.off": {
-			"textures": "textures/blocks/bcc.cook/stove.off"
+		"stove.dark_gray": {
+			"textures": "textures/blocks/bcc.cook/stove.dark_gray"
 		},
-		"stove.on": {
-			"textures": "textures/blocks/bcc.cook/stove.on"
+		"stove.white.off": {
+			"textures": "textures/blocks/bcc.cook/stove.white.off"
+		},
+		"stove.white.on": {
+			"textures": "textures/blocks/bcc.cook/stove.white.on"
+		},
+		"tapioca_pearls.icon": {
+			"textures": "textures/bcc.cook/ingredient_icons/tapioca_pearls"
+		},
+		"tomato.icon": {
+			"textures": "textures/bcc.cook/ingredient_icons/tomato"
 		},
 		"trash_bin": {
 			"textures": "textures/blocks/bcc.cook/trash_bin"

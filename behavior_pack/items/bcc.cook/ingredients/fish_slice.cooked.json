@@ -13,7 +13,8 @@
 			}
         },
         "components": {
-            "minecraft:icon": "fish_slice.cooked"
+            "minecraft:icon": "fish_slice.cooked",
+			"minecraft:max_stack_size": 1
         }
     }
 }

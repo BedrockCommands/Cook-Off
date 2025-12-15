@@ -13,7 +13,8 @@
 			}
         },
         "components": {
-            "minecraft:icon": "rice.cooked"
+            "minecraft:icon": "rice.cooked",
+			"minecraft:max_stack_size": 1
         }
     }
 }

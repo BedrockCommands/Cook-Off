@@ -2,16 +2,15 @@
 // Copyright (c) @brodblox09 & Contributors
 // Contributors: @brodblox09
 // See LICENSE.md file in the root folder, licenses/MIT.md, or https://opensource.org/license/mit
+
 {
 	"format_version": "1.21.110",
 	"minecraft:block": {
 		"description": {
-			"identifier": "bcc.cook:stove",
+			"identifier": "bcc.cook:storage_crate.vinegar",
 			"menu_category": {
-				"category": "construction"
-			},
-			"states": {
-				"bcc.cook:on": [ false, true ]
+				"category": "construction",
+				"group": "bcc.cook:itemGroup.name.storageCrates"
 			},
 			"traits": {
 				"minecraft:placement_direction": {
@@ -21,27 +20,22 @@
 			}
 		},
 		"components": {
-			"minecraft:geometry": "geometry.stove",
+			"minecraft:geometry": "geometry.storage_crate.item",
 			"minecraft:material_instances": {
+				"item": {
+					"texture": "vinegar.icon",
+					"render_method": "alpha_test"
+				},
 				"*": {
-					"texture": "stove.off",
-					"render_method": "alpha_test_single_sided_to_opaque"
+					"texture": "storage_crate.item",
+					"render_method": "alpha_test"
 				}
 			},
-			"bcc.cook:stove": {}
+			"bcc.cook:storage_crate": {
+				"itemId": "bcc.cook:vinegar"
+			}
 		},
 		"permutations": [
-			{
-				"condition": "q.block_state('bcc.cook:on') == true",
-				"components": {
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "stove.on",
-							"render_method": "alpha_test_single_sided_to_opaque"
-						}
-					}
-				}
-			},
 			{
                 "condition": "query.block_state('minecraft:cardinal_direction') == 'north'",
                 "components": {
