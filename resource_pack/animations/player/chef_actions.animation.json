@@ -361,7 +361,8 @@
 				}
 			}
 		},
-		"animation.bcc.cook.player.using_fire_extinguisher": {
+		"animation.bcc.cook.player.fire_extinguisher.use": {
+			"loop": true,
 			"animation_length": 5.2083,
 			"override_previous_animation": true,
 			"bones": {
@@ -971,7 +972,7 @@
 				}
 			}
 		},
-		"animation.bcc.cook.player.holding_fire_extinguisher": {
+		"animation.bcc.cook.player.fire_extinguisher.hold": {
 			"loop": true,
 			"override_previous_animation": true,
 			"bones": {

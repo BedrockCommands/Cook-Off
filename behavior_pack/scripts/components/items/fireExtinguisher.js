@@ -4,8 +4,8 @@
 // See LICENSE.md file in the root folder, licenses/MIT.md, or https://opensource.org/license/mit
 import { ComponentManager } from "../componentManager";
 ComponentManager.registerItemComponent("bcc.cook:fire_extinguisher" /* ItemId.fireExtinguisher */, {
-    onUse: ({ source }) => {
+    onCompleteUse: ({ source }) => {
         // TODO: implement fire-extinguishing capabilities
         source.sendMessage("You extinguished a fire!");
-    },
+    }
 });

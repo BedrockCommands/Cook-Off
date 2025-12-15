@@ -1,0 +1,37 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.bcc.cook.item": {
+			"initial_state": "none",
+			"states": {
+				"none": {
+					"transitions": [
+						{
+							"fire_extinguisher": "query.is_item_name_any('slot.weapon.mainhand', 'bcc.cook:fire_extinguisher')"
+						}
+					]
+				},
+				"fire_extinguisher": {
+					"animations": [
+						{
+							"fire_extinguisher.hold": "!variable.using"
+						},
+						{
+							"fire_extinguisher.use": "variable.using"
+						}
+					],
+					"variables": {
+						"using": {
+							"input": "( variable.use_item_interval_progress > 0.0 ) || ( variable.use_item_startup_progress > 0.0 )"
+						}
+					},
+					"transitions": [
+						{
+							"none": "!query.is_item_name_any('slot.weapon.mainhand', 'bcc.cook:fire_extinguisher')"
+						}
+					]
+				}
+			}
+		}
+	}
+}
