@@ -197,7 +197,9 @@
 						{
 							"look_at_target": "!query.is_sleeping && !query.is_emoting"
 						},
-						"move.arms",
+						{
+							"move.arms": "!query.is_item_name_any('slot.weapon.mainhand', 'bcc.cook:fire_extinguisher')"
+						},
 						"move.legs",
 						"cape",
 						{
