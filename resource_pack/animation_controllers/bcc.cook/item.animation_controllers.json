@@ -14,10 +14,10 @@
 				"fire_extinguisher": {
 					"animations": [
 						{
-							"fire_extinguisher.hold": "!variable.using"
+							"bcc.cook.fire_extinguisher.hold": "!variable.using"
 						},
 						{
-							"fire_extinguisher.use": "variable.using"
+							"bcc.cook.fire_extinguisher.use": "variable.using"
 						}
 					],
 					"variables": {

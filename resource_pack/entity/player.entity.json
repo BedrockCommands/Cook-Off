@@ -45,8 +45,8 @@
 			"animations": {
 				"bcc.cook.third_person": "controller.animation.bcc.cook.third_person",
 				"bcc.cook.item": "controller.animation.bcc.cook.item",
-				"fire_extinguisher.hold": "animation.bcc.cook.player.fire_extinguisher.hold",
-				"fire_extinguisher.use": "animation.bcc.cook.player.fire_extinguisher.use",
+				"bcc.cook.fire_extinguisher.hold": "animation.bcc.cook.player.fire_extinguisher.hold",
+				"bcc.cook.fire_extinguisher.use": "animation.bcc.cook.player.fire_extinguisher.use",
 
 				"root": "controller.animation.player.root",
 				"base_controller": "controller.animation.player.base",

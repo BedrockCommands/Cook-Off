@@ -201,6 +201,9 @@
 							"move.arms": "!query.is_item_name_any('slot.weapon.mainhand', 'bcc.cook:fire_extinguisher')"
 						},
 						"move.legs",
+						{
+							"bcc.cook.walk": "query.modified_move_speed > 0"
+						},
 						"cape",
 						{
 							"riding.root": "query.is_riding"
