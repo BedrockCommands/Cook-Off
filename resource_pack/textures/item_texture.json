@@ -51,11 +51,11 @@
 		"chopped_garlic": {
 			"textures": "textures/bcc.cook/ingredient_icons/garlic.diced"
 		},
-		"diced_carrot": {
-			"textures": "textures/bcc.cook/ingredient_icons/diced_carrot"
+		"carrot.diced": {
+			"textures": "textures/bcc.cook/ingredient_icons/carrot.diced"
 		},
-		"diced_celery": {
-			"textures": "textures/bcc.cook/ingredient_icons/diced_celery"
+		"celery.diced": {
+			"textures": "textures/bcc.cook/ingredient_icons/celery.diced"
 		},
 		"dough": {
 			"textures": "textures/bcc.cook/ingredient_icons/dough"
