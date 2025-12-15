@@ -17,8 +17,9 @@
 			"minecraft:max_stack_size": 1,
 			"minecraft:tags": {
 				"tags": [
-					"bcc.cook:frying_pan_ingredient",
-					"bcc.cook:pot_ingredient" // Simple Alfredo, Chicken Alfredo
+					"bcc.cook:frying_pan_ingredient", // Grilled Cheese
+					"bcc.cook:pot_ingredient", // Simple Alfredo, Chicken Alfredo
+					"bcc.cook:plate_ingredient" // Cheeseburger
 				]
 			}
         }
