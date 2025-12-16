@@ -12,7 +12,6 @@ import "./blocks/stove.js";
 import "./blocks/oven.js";
 import "./blocks/cutting_board.js";
 import "./blocks/sink.js";
-import "./blocks/fridge.js";
 import "./items/cancelGame.js";
 import "./items/exitLobby.js";
 import "./items/mapSelector.js";
