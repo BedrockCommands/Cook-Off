@@ -1,0 +1,41 @@
+// SPDX-License-Identifier: LicenseRef-BCC-PL-v1.0
+// Copyright (c) @brodblox09 & Contributors
+// Contributors: @brodblox09
+// See LICENSE.md file in the root folder, licenses/BCC-PL-v1.0.md, or https://bedrockcommands.org/legal/bcc-pl-v1.0
+
+
+
+
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.bcc.cook.movement": {
+			"initial_state": "idle",
+			"states": {
+				"idle": {
+					"transitions": [
+						{
+							"moving": "query.modified_move_speed > 0.15"
+						}
+					]
+				},
+				"moving": {
+					"animations": [
+						"bcc.cook.move.legs",
+						{
+							"bcc.cook.move.arms": "!query.is_selected_item && !variable.custom_hold_animation"
+						},
+						{
+							"bcc.cook.move.arms.with_item": "query.is_selected_item && !variable.custom_hold_animation"
+						}
+					],
+					"transitions": [
+						{
+							"idle": "query.modified_move_speed <= 0.15"
+						}
+					]
+				}
+			}
+		}
+	}
+}
