@@ -16,7 +16,8 @@
 			"minecraft:max_stack_size": 1,
 			"minecraft:icon": "frying_pan",
 			"minecraft:block_placer": {
-				"block": "bcc.cook:frying_pan"
+				"block": "bcc.cook:frying_pan",
+				"replace_block_item": true
 			}
 		}
 	}

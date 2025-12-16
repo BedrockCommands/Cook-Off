@@ -14,7 +14,13 @@
         },
         "components": {
             "minecraft:icon": "noodles.cooked",
-			"minecraft:max_stack_size": 1
+			"minecraft:max_stack_size": 1,
+			"minecraft:tags": {
+				"tags": [
+					"bcc.cook:pot_ingredient", // Simple Spaghetti, Simple Alfredo, Chicken Alfredo, Simple Pasta Carbonara, Chicken Pasta Carbonara, Spaghetti Meatballs, Pho
+					"bcc.cook:plate_ingredient" // Vegetable Spring Roll, Fish Spring Roll
+				]
+			}
         }
     }
 }

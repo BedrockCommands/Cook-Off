@@ -14,7 +14,13 @@
         },
         "components": {
             "minecraft:icon": "meatballs.raw",
-			"minecraft:max_stack_size": 1
+			"minecraft:max_stack_size": 1,
+			"minecraft:tags": {
+				"tags": [
+					"bcc.cook:pot_ingredient", // Spaghetti Meatballs
+					"bcc.cook:frying_pan_ingredient" // Pho
+				]
+			}
         }
     }
 }

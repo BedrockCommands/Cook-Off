@@ -14,7 +14,13 @@
         },
         "components": {
             "minecraft:icon": "chicken_bits.raw",
-			"minecraft:max_stack_size": 1
+			"minecraft:max_stack_size": 1,
+			"minecraft:tags": {
+				"tags": [
+					"bcc.cook:frying_pan_ingredient", // Chicken Stir Fry, Chicken Adobe
+					"bcc.cook:pot_ingredient" // Chicken Soup, Chicken Alfredo, Chicken Pasta Carbonara
+				]
+			}
         }
     }
 }
