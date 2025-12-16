@@ -42,6 +42,9 @@
 		"cutting_board": {
 			"textures": "textures/blocks/bcc.cook/cutting_board"
 		},
+		"fridge": {
+			"textures": "textures/blocks/bcc.cook/fridge"
+    },
 		"dough.icon": {
 			"textures": "textures/bcc.cook/ingredient_icons/dough"
 		},

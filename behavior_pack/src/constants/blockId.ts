@@ -14,5 +14,6 @@ export const enum BlockId {
     oven = "bcc.cook:oven",
     cuttingBoard = "bcc.cook:cutting_board",
     sink = "bcc.cook:sink",
+    fridge = "bcc.cook:fridge",
 	oakWoodCounter = "bcc.cook:counter.oak_wood"
 }
