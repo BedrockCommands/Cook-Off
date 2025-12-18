@@ -8,7 +8,7 @@ export const enum ItemId {
     exitLobby = "bcc.cook:exit_lobby",
     mapSelector = "bcc.cook:map_selector",
     statsViewer = "bcc.cook:stats_viewer",
-	fireExtinguisher = "bcc.cook:fire_extinguisher",
+    fireExtinguisher = "bcc.cook:fire_extinguisher",
     getBlockData = "bcc.cook:get_block_data",
     getItemBlockData = "bcc.cook:get_item_block_data",
     boba = "bcc.cook:boba",
@@ -45,4 +45,9 @@ export const enum ItemId {
     tapiocaPearls = "bcc.cook:tapioca_pearls",
     tomato = "bcc.cook:tomato",
     tomatoSlice = "bcc.cook:tomato_slice",
+    ricePaper = "bcc.cook:rice_paper",
+    rawFish = "bcc.cook:raw_fish",
+    cookedFish = "bcc.cook:cooked_fish",
+    peanut = "bcc.cook:peanut",
+    tofuSlice = "bcc.cook:tofu_slice",
 }
