@@ -1,0 +1,59 @@
+// SPDX-License-Identifier: LicenseRef-BCC-PL-v1.0
+// Copyright (c) @brodblox09 & Contributors
+// Contributors: @brodblox09
+// See LICENSE.md file in the root folder, licenses/BCC-PL-v1.0.md, or https://bedrockcommands.org/legal/bcc-pl-v1.0
+
+
+
+
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.bcc.cook.item": {
+			"initial_state": "none",
+			"states": {
+				"none": {
+					"on_entry": [
+						"variable.custom_hold_animation = 0.0;"
+					],
+					"on_exit": [
+						"variable.custom_hold_animation = 1.0;"
+					],
+					"transitions": [
+						{
+							"fire_extinguisher": "query.is_item_name_any('slot.weapon.mainhand', 'bcc.cook:fire_extinguisher')"
+						},
+						{
+							"plate": "query.is_item_name_any('slot.weapon.mainhand', 'bcc.cook:plate')"
+						}
+					]
+				},
+				"fire_extinguisher": {
+					"animations": [
+						{
+							"bcc.cook.fire_extinguisher.hold": "!query.is_using_item"
+						},
+						{
+							"bcc.cook.fire_extinguisher.use": "query.is_using_item"
+						}
+					],
+					"transitions": [
+						{
+							"none": "!query.is_item_name_any('slot.weapon.mainhand', 'bcc.cook:fire_extinguisher')"
+						}
+					]
+				},
+				"plate": {
+					"animations": [
+						"bcc.cook.plate.hold"
+					],
+					"transitions": [
+						{
+							"none": "!query.is_item_name_any('slot.weapon.mainhand', 'bcc.cook:plate')"
+						}
+					]
+				}
+			}
+		}
+	}
+}

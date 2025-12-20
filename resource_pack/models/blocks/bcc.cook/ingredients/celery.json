@@ -1,0 +1,116 @@
+// SPDX-License-Identifier: LicenseRef-BCC-PL-v1.0
+// Copyright (c) @r_kidds & Contributors
+// Contributers: @r_kidds
+// See LICENSE.md file in the root folder, licenses/BCC-PL-v1.0.md, or https://bedrockcommands.org/legal/bcc-pl-v1.0
+
+
+
+
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.celery",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 1.5,
+				"visible_bounds_offset": [0, 0.25, 0]
+			},
+			"bones": [
+				{
+					"name": "Celery",
+					"pivot": [-3, 0, 0]
+				},
+				{
+					"name": "Slice_1",
+					"parent": "Celery",
+					"pivot": [-5, 1, 0],
+					"cubes": [
+						{"origin": [-6, 0, -1], "size": [2, 2, 2], "uv": [20, 12]},
+						{"origin": [-6.01, 0.5, -0.5], "size": [0, 1, 1], "uv": [25, 14]},
+						{"origin": [-5, 0, 0], "size": [1, 1, 1], "inflate": 0.1, "uv": [24, 0]}
+					]
+				},
+				{
+					"name": "bone",
+					"parent": "Slice_1",
+					"pivot": [-6, 1, 0],
+					"cubes": [
+						{"origin": [-7.5, 0, -1], "size": [2, 2, 2], "inflate": -0.09, "uv": [20, 16]}
+					]
+				},
+				{
+					"name": "Slice_2",
+					"parent": "Celery",
+					"pivot": [-3, 1, 0],
+					"cubes": [
+						{"origin": [-4, 0, -1], "size": [1, 2, 2], "uv": [22, 12]},
+						{"origin": [-4, 0, 0], "size": [1, 1, 1], "inflate": 0.101, "uv": [23, 0]}
+					]
+				},
+				{
+					"name": "Slice_3",
+					"parent": "Celery",
+					"pivot": [-2, 1, 0],
+					"cubes": [
+						{"origin": [-3, 0, -1], "size": [1, 2, 2], "uv": [10, 17]},
+						{"origin": [-3, 1, -1], "size": [1, 1, 1], "inflate": 0.1, "uv": [20, 20]},
+						{"origin": [-3, 0, 0], "size": [1, 1, 1], "inflate": 0.1, "uv": [8, 21]}
+					]
+				},
+				{
+					"name": "Slice_4",
+					"parent": "Celery",
+					"pivot": [-1, 1, 0],
+					"cubes": [
+						{"origin": [-2, 0, -1], "size": [1, 2, 2], "uv": [11, 17]},
+						{"origin": [-2, 1, -1], "size": [1, 1, 1], "inflate": 0.101, "uv": [21, 20]},
+						{"origin": [-2, 0, 0], "size": [1, 1, 1], "inflate": 0.101, "uv": [9, 21]}
+					]
+				},
+				{
+					"name": "Slice_5",
+					"parent": "Celery",
+					"pivot": [0, 1, 0],
+					"cubes": [
+						{"origin": [-1, 0, -1], "size": [1, 2, 2], "uv": [12, 17]},
+						{"origin": [-1, 1, -1], "size": [1, 1, 1], "inflate": 0.1, "uv": [22, 20]},
+						{"origin": [-1, 0, 0], "size": [1, 1, 1], "inflate": 0.1, "uv": [10, 21]}
+					]
+				},
+				{
+					"name": "Slice_6",
+					"parent": "Celery",
+					"pivot": [1, 1, 0],
+					"cubes": [
+						{"origin": [0, 0, 0], "size": [1, 1, 1], "inflate": 0.101, "uv": [16, 21]},
+						{"origin": [0, 0, -1], "size": [1, 2, 2], "uv": [4, 17]},
+						{"origin": [0, 1, -1], "size": [1, 1, 1], "inflate": 0.102, "uv": [1, 21]}
+					]
+				},
+				{
+					"name": "Slice_7",
+					"parent": "Celery",
+					"pivot": [-3, 0, 0],
+					"cubes": [
+						{"origin": [1, 0, -1], "size": [2, 2, 2], "uv": [1, 17]},
+						{"origin": [1, 1, -1], "size": [2, 1, 1], "inflate": 0.1, "uv": [1, 21]}
+					]
+				},
+				{
+					"name": "Leaves",
+					"parent": "Slice_7",
+					"pivot": [4, 1, 0],
+					"cubes": [
+						{"origin": [3, -1, -1], "size": [5, 5, 0], "uv": [0, 12]},
+						{"origin": [3, 2, -3], "size": [5, 0, 6], "uv": [0, 0]},
+						{"origin": [3, 0, -3], "size": [5, 0, 6], "uv": [0, 6]},
+						{"origin": [3, -1, 1], "size": [5, 5, 0], "uv": [10, 12]}
+					]
+				}
+			]
+		}
+	]
+}

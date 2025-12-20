@@ -1,0 +1,25 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) @jeanmajid & Contributors
+// Contributors: @jeanmajid
+// See LICENSE.md file in the root folder, licenses/MIT.md, or https://opensource.org/license/mit
+{
+    "format_version": "1.21.110",
+    "minecraft:item": {
+        "description": {
+            "identifier": "bcc.cook:fish_slice.cooked",
+			"menu_category": {
+				"category": "items",
+				"group": "bcc.cook:itemGroup.name.ingredients"
+			}
+        },
+        "components": {
+            "minecraft:icon": "fish_slice.cooked",
+			"minecraft:max_stack_size": 1,
+			"minecraft:tags": {
+				"tags": [
+					"bcc.cook:plate_ingredient" // Fish Spring Roll
+				]
+			}
+        }
+    }
+}

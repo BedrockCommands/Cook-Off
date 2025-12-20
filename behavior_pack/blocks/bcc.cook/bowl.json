@@ -1,0 +1,26 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) @brodblox09 & Contributors
+// Contributors: @brodblox09
+// See LICENSE.md file in the root folder, licenses/MIT.md, or https://opensource.org/license/mit
+
+{
+	"format_version": "1.21.110",
+	"minecraft:block": {
+		"description": {
+			"identifier": "bcc.cook:bowl",
+			"menu_category": {
+				"category": "construction"
+			}
+		},
+		"components": {
+			"minecraft:geometry": "geometry.bowl.empty",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "bowl"
+				}
+			},
+			"bcc.cook:bowl": {},
+			"tag:bcc.cook:counter_placeable_in_adventure": {}
+		}
+	}
+}

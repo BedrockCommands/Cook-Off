@@ -6,10 +6,20 @@
     "format_version": "1.21.110",
     "minecraft:item": {
         "description": {
-            "identifier": "bcc.cook:milk"
+            "identifier": "bcc.cook:milk",
+			"menu_category": {
+				"category": "items",
+				"group": "bcc.cook:itemGroup.name.ingredients"
+			}
         },
         "components": {
-            "minecraft:icon": "milk"
+            "minecraft:icon": "milk",
+			"minecraft:max_stack_size": 1,
+			"minecraft:tags": {
+				"tags": [
+					"bcc.cook:pot_ingredient" // Simple Alfredo, Chicken Alfredo, Simple Pasta Carbonara, Chicken Pasta Carbonara
+				]
+			}
         }
     }
 }
