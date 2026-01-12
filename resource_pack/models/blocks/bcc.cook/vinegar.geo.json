@@ -1,9 +1,17 @@
+// SPDX-License-Identifier: LicenseRef-BCC-PL-v1.0
+// Copyright (c) @bellarmina & Contributors
+// Contributers: @bellarmina
+// See LICENSE.md file in the root folder, licenses/BCC-PL-v1.0.md, or https://bedrockcommands.org/legal/bcc-pl-v1.0
+
+
+
+
 {
 	"format_version": "1.21.20",
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.unknown",
+				"identifier": "geometry.vinegar",
 				"texture_width": 64,
 				"texture_height": 64,
 				"visible_bounds_width": 2,

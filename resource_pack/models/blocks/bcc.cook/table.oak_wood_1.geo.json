@@ -2,12 +2,16 @@
 // Copyright (c) @hi_rynnn & Contributors
 // Contributers: @hi_rynnn
 // See LICENSE.md file in the root folder, licenses/BCC-PL-v1.0.md, or https://bedrockcommands.org/legal/bcc-pl-v1.0
+
+
+
+
 {
 	"format_version": "1.12.0",
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.table_oak_wood",
+				"identifier": "geometry.table.oak_wood_1",
 				"texture_width": 34,
 				"texture_height": 34,
 				"visible_bounds_width": 2,

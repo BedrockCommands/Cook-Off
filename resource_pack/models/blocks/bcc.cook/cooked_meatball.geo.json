@@ -1,9 +1,17 @@
+// SPDX-License-Identifier: LicenseRef-BCC-PL-v1.0
+// Copyright (c) @bellarmina & Contributors
+// Contributers: @bellarmina
+// See LICENSE.md file in the root folder, licenses/BCC-PL-v1.0.md, or https://bedrockcommands.org/legal/bcc-pl-v1.0
+
+
+
+
 {
 	"format_version": "1.21.20",
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.unknown",
+				"identifier": "geometry.cooked_meatball",
 				"texture_width": 32,
 				"texture_height": 32,
 				"visible_bounds_width": 2,
