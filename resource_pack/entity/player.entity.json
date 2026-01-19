@@ -42,15 +42,23 @@
                     "variable.riding_y_offset = query.is_riding_any_entity_of_type('minecraft:minecart', 'minecraft:boat', 'minecraft:chest_boat', 'minecraft:strider') ? -3.0 : 0.0;",
                     "variable.movement_animation_time = query.modified_distance_moved / 15;"
                 ],
+                "variables": {
+                    "variable.fp_melee_spear_use_attachable_rotation_z": "public",
+                    "variable.tp_melee_spear_use_attachable_rotation_z": "public",
+                    "variable.fp_melee_spear_attack_attachable_rotation_z": "public",
+                    "variable.tp_melee_spear_attack_attachable_position_z": "public",
+                    "variable.attack_time": "public",
+                    "variable.item_use_normalized": "public"
+                },
                 "animate": [
                     // "root",
                     { "bcc.cook.third_person": "!variable.is_first_person" },
-					{ "bcc.cook.first_person": "variable.is_first_person" }
+                    { "bcc.cook.first_person": "variable.is_first_person" }
                 ]
             },
             "animations": {
                 "bcc.cook.third_person": "controller.animation.bcc.cook.third_person",
-				"bcc.cook.first_person": "controller.animation.bcc.cook.first_person",
+                "bcc.cook.first_person": "controller.animation.bcc.cook.first_person",
 
                 "bcc.cook.item": "controller.animation.bcc.cook.item",
                 "bcc.cook.fire_extinguisher.hold": "animation.bcc.cook.player.fire_extinguisher.hold",
