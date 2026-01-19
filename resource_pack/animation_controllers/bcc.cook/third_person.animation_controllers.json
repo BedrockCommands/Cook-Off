@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: LicenseRef-BCC-PL-v1.0
 // Copyright (c) @jeanmajid & Contributors
-// Contributors: @jeanmajid @GronedyDork
+// Contributors: @jeanmajid @FelixChats
 // See LICENSE.md file in the root folder, licenses/BCC-PL-v1.0.md, or https://bedrockcommands.org/legal/bcc-pl-v1.0
 
 
@@ -14,9 +14,9 @@
 					"animations": [
 						"bcc.cook.item",
 						"bcc.cook.movement",
-						// {
-						// 	"look_at_target": "!query.is_sleeping && !query.is_emoting"
-						// },
+						{
+							"look_at_target": "!query.is_sleeping && !query.is_emoting"
+						},
 						"cape",
 						{
 							"riding.root": "query.is_riding"
