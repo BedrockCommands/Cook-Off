@@ -14,9 +14,9 @@
 					"animations": [
 						"bcc.cook.item",
 						"bcc.cook.movement",
-						// {
-						// 	"look_at_target": "!query.is_sleeping && !query.is_emoting"
-						// },
+						{
+							"look_at_target": "!query.is_sleeping && !query.is_emoting"
+						},
 						"cape",
 						{
 							"riding.root": "query.is_riding"
