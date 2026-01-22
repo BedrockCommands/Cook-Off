@@ -1,9 +1,17 @@
+// SPDX-License-Identifier: LicenseRef-BCC-PL-v1.0
+// Copyright (c) @itzbeasty & Contributors
+// Contributers: @itzbeasty
+// See LICENSE.md file in the root folder, licenses/BCC-PL-v1.0.md, or https://bedrockcommands.org/legal/bcc-pl-v1.0
+
+
+
+
 {
 	"format_version": "1.12.0",
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.burger_1b",
+				"identifier": "geometry.buns_lettuce",
 				"texture_width": 32,
 				"texture_height": 32,
 				"visible_bounds_width": 3,
@@ -24,24 +32,24 @@
 							"origin": [-5, 2, -5],
 							"size": [10, 3, 10],
 							"uv": {
-								"north": {"uv": [22, 10], "uv_size": [10, 3]},
-								"east": {"uv": [22, 13], "uv_size": [10, 3]},
-								"south": {"uv": [22, 16], "uv_size": [10, 3]},
-								"west": {"uv": [22, 19], "uv_size": [10, 3]},
-								"up": {"uv": [12, 0], "uv_size": [10, 10]},
-								"down": {"uv": [12, 20], "uv_size": [10, -10]}
+								"north": {"uv": [0, 30], "uv_size": [10, 3]},
+								"east": {"uv": [10, 32], "uv_size": [10, 3]},
+								"south": {"uv": [32, 22], "uv_size": [10, 3]},
+								"west": {"uv": [32, 25], "uv_size": [10, 3]},
+								"up": {"uv": [12, 22], "uv_size": [10, 10]},
+								"down": {"uv": [22, 32], "uv_size": [10, -10]}
 							}
 						},
 						{
 							"origin": [-5, 0, -5],
 							"size": [10, 2, 10],
 							"uv": {
-								"north": {"uv": [22, 22], "uv_size": [10, 2]},
-								"east": {"uv": [0, 24], "uv_size": [10, 2]},
-								"south": {"uv": [22, 24], "uv_size": [10, 2]},
-								"west": {"uv": [0, 26], "uv_size": [10, 2]},
-								"up": {"uv": [12, 20], "uv_size": [10, 10]},
-								"down": {"uv": [22, 10], "uv_size": [10, -10]}
+								"north": {"uv": [31, 32], "uv_size": [10, 2]},
+								"east": {"uv": [0, 33], "uv_size": [10, 2]},
+								"south": {"uv": [8, 49], "uv_size": [10, 2]},
+								"west": {"uv": [18, 49], "uv_size": [10, 2]},
+								"up": {"uv": [23, 0], "uv_size": [10, 10]},
+								"down": {"uv": [23, 20], "uv_size": [10, -10]}
 							}
 						}
 					]
@@ -61,8 +69,8 @@
 								"east": {"uv": [0, 0], "uv_size": [12, 0]},
 								"south": {"uv": [0, 0], "uv_size": [12, 0]},
 								"west": {"uv": [0, 0], "uv_size": [12, 0]},
-								"up": {"uv": [12, 12], "uv_size": [-12, -12]},
-								"down": {"uv": [12, 24], "uv_size": [-12, -12]}
+								"up": {"uv": [0, 0], "uv_size": [12, 12]},
+								"down": {"uv": [0, 24], "uv_size": [12, -12]}
 							}
 						},
 						{

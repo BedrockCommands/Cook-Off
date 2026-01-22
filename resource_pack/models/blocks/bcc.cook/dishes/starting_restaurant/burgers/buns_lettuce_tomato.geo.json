@@ -1,9 +1,17 @@
+// SPDX-License-Identifier: LicenseRef-BCC-PL-v1.0
+// Copyright (c) @itzbeasty & Contributors
+// Contributers: @itzbeasty
+// See LICENSE.md file in the root folder, licenses/BCC-PL-v1.0.md, or https://bedrockcommands.org/legal/bcc-pl-v1.0
+
+
+
+
 {
 	"format_version": "1.12.0",
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.burger_3b",
+				"identifier": "geometry.buns_lettuce_tomato",
 				"texture_width": 64,
 				"texture_height": 64,
 				"visible_bounds_width": 3,
@@ -132,69 +140,6 @@
 								"west": {"uv": [0, 0], "uv_size": [12, 0]},
 								"up": {"uv": [0, 0], "uv_size": [12, 12]},
 								"down": {"uv": [0, 24], "uv_size": [12, -12]}
-							}
-						}
-					]
-				},
-				{
-					"name": "cheese",
-					"parent": "burger",
-					"pivot": [0, -2, 0],
-					"cubes": [
-						{
-							"origin": [-2, 2.5, -6],
-							"size": [4, 0.25, 4],
-							"pivot": [0, 2.5, -4],
-							"rotation": [27.23631, -41.64114, -18.88172],
-							"uv": {
-								"north": {"uv": [6, 29], "uv_size": [4, 1]},
-								"east": {"uv": [33, 4], "uv_size": [4, 1]},
-								"south": {"uv": [33, 5], "uv_size": [4, 1]},
-								"west": {"uv": [33, 6], "uv_size": [4, 1]},
-								"up": {"uv": [6, 24], "uv_size": [4, 4]},
-								"down": {"uv": [33, 4], "uv_size": [4, -4]}
-							}
-						},
-						{
-							"origin": [-2, 2.5, 2],
-							"size": [4, 0.25, 4],
-							"pivot": [0, 2.625, 4],
-							"rotation": [-152.76369, 41.64114, -161.11828],
-							"uv": {
-								"north": {"uv": [6, 29], "uv_size": [4, 1]},
-								"east": {"uv": [33, 4], "uv_size": [4, 1]},
-								"south": {"uv": [33, 5], "uv_size": [4, 1]},
-								"west": {"uv": [33, 6], "uv_size": [4, 1]},
-								"up": {"uv": [6, 24], "uv_size": [4, 4]},
-								"down": {"uv": [33, 4], "uv_size": [4, -4]}
-							}
-						},
-						{
-							"origin": [2, 2.5, -2],
-							"size": [4, 0.25, 4],
-							"pivot": [4, 2.625, 0],
-							"rotation": [-180, -45, -160],
-							"uv": {
-								"north": {"uv": [6, 29], "uv_size": [4, 1]},
-								"east": {"uv": [33, 4], "uv_size": [4, 1]},
-								"south": {"uv": [33, 5], "uv_size": [4, 1]},
-								"west": {"uv": [33, 6], "uv_size": [4, 1]},
-								"up": {"uv": [6, 24], "uv_size": [4, 4]},
-								"down": {"uv": [33, 4], "uv_size": [4, -4]}
-							}
-						},
-						{
-							"origin": [-6, 2.5, -2],
-							"size": [4, 0.25, 4],
-							"pivot": [-4, 2.625, 0],
-							"rotation": [0, 45, -20],
-							"uv": {
-								"north": {"uv": [6, 29], "uv_size": [4, 1]},
-								"east": {"uv": [33, 4], "uv_size": [4, 1]},
-								"south": {"uv": [33, 5], "uv_size": [4, 1]},
-								"west": {"uv": [33, 6], "uv_size": [4, 1]},
-								"up": {"uv": [6, 24], "uv_size": [4, 4]},
-								"down": {"uv": [33, 4], "uv_size": [4, -4]}
 							}
 						}
 					]
