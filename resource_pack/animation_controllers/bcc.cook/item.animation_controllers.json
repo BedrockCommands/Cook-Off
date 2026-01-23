@@ -26,7 +26,8 @@
 						{
 							"plate": "query.is_item_name_any('slot.weapon.mainhand', 'bcc.cook:plate')"
 						}
-					]
+					],
+                    "blend_transition": 0.3
 				},
 				"fire_extinguisher": {
 					"animations": [
@@ -41,7 +42,8 @@
 						{
 							"none": "!query.is_item_name_any('slot.weapon.mainhand', 'bcc.cook:fire_extinguisher')"
 						}
-					]
+					],
+                    "blend_transition": 0.3
 				},
 				"plate": {
 					"animations": [
@@ -51,7 +53,8 @@
 						{
 							"none": "!query.is_item_name_any('slot.weapon.mainhand', 'bcc.cook:plate')"
 						}
-					]
+					],
+                    "blend_transition": 0.3
 				}
 			}
 		}
