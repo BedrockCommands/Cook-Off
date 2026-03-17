@@ -1,0 +1,77 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) @brodblox09 & Contributors
+// Contributors: @brodblox09
+// See LICENSE.md file in the root folder, licenses/MIT.md, or https://opensource.org/license/mit
+{
+	"format_version": "1.21.110",
+	"minecraft:block": {
+		"description": {
+			"identifier": "bcc.cook:fridge",
+			"menu_category": {
+				"category": "construction"
+			},
+			"states": {
+				"bcc.cook:relative_position": [ "bottom", "top" ]
+			},
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": [ "minecraft:cardinal_direction" ],
+					"y_rotation_offset": 180
+				}
+			}
+		},
+		"components": {
+			"minecraft:geometry": {
+				"identifier": "geometry.fridge",
+				"bone_visibility": {
+					"top": false,
+					"bottom": true
+				}
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "fridge"
+				}
+			},
+			"bcc.cook:fridge": {}
+		},
+		"permutations": [
+			{
+				"condition": "q.block_state('bcc.cook:relative_position') == 'top'",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.fridge",
+						"bone_visibility": {
+							"top": true,
+							"bottom": false
+						}
+					}
+				}
+			},
+			{
+                "condition": "query.block_state('minecraft:cardinal_direction') == 'north'",
+                "components": {
+                    "minecraft:transformation": { "rotation": [0, 0, 0] }
+                }
+            },
+            {
+                "condition": "query.block_state('minecraft:cardinal_direction') == 'east'",
+                "components": {
+                    "minecraft:transformation": { "rotation": [0, -90, 0] }
+                }
+            },
+            {
+                "condition": "query.block_state('minecraft:cardinal_direction') == 'south'",
+                "components": {
+                    "minecraft:transformation": { "rotation": [0, 180, 0] }
+                }
+            },
+            {
+                "condition": "query.block_state('minecraft:cardinal_direction') == 'west'",
+                "components": {
+                    "minecraft:transformation": { "rotation": [0, 90, 0] }
+                }
+            }
+		]
+	}
+}

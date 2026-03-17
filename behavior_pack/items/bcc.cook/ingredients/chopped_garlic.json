@@ -13,7 +13,8 @@
 			}
         },
         "components": {
-            "minecraft:icon": "chopped_garlic"
+            "minecraft:icon": "chopped_garlic",
+			"minecraft:max_stack_size": 1
         }
     }
 }

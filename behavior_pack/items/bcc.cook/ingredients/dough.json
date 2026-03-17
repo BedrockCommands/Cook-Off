@@ -13,7 +13,8 @@
 			}
         },
         "components": {
-            "minecraft:icon": "dough"
+            "minecraft:icon": "dough",
+			"minecraft:max_stack_size": 1
         }
     }
 }

@@ -38,7 +38,7 @@ class FryingPanCustomComponent extends PickupableBlockDataCustomComponent<Frying
 
 	addSelectedItemToFryingPan = (block: Block, selectedSlot: ContainerSlot) => {
 		const selectedItem = selectedSlot.getItem();
-		if (selectedItem === undefined || !selectedItem.hasTag("bcc.cook:fryable")) return;
+		if (selectedItem === undefined || !selectedItem.hasTag("bcc.cook:frying_pan_ingredient")) return;
 		const blockData = this.getBlockData(block);
 		blockData.items.push(selectedItem.typeId);
 		this.setBlockData(block, blockData);

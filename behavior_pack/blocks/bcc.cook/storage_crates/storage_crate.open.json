@@ -16,7 +16,7 @@
 			"minecraft:geometry": "geometry.storage_crate.open",
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "storage_crate"
+					"texture": "storage_crate.plain"
 				}
 			}
 		}

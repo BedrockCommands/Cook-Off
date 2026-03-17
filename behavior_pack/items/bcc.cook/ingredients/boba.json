@@ -13,7 +13,8 @@
 			}
         },
         "components": {
-            "minecraft:icon": "boba"
+            "minecraft:icon": "boba",
+			"minecraft:max_stack_size": 1
         }
     }
 }

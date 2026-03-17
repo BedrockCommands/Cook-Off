@@ -13,7 +13,8 @@
 			}
         },
         "components": {
-            "minecraft:icon": "egg.green"
+            "minecraft:icon": "egg.green",
+			"minecraft:max_stack_size": 1
         }
     }
 }

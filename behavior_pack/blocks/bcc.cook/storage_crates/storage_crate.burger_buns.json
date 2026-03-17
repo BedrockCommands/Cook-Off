@@ -20,13 +20,15 @@
 			}
 		},
 		"components": {
-			"minecraft:geometry": "geometry.storage_crate.item_frame",
+			"minecraft:geometry": "geometry.storage_crate.item",
 			"minecraft:material_instances": {
 				"item": {
-					"texture": "burger_buns"
+					"texture": "burger_buns.icon",
+					"render_method": "alpha_test"
 				},
 				"*": {
-					"texture": "storage_crate"
+					"texture": "storage_crate.item",
+					"render_method": "alpha_test"
 				}
 			},
 			"bcc.cook:storage_crate": {

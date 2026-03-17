@@ -13,7 +13,8 @@
 			}
         },
         "components": {
-            "minecraft:icon": "celery"
+            "minecraft:icon": "celery",
+			"minecraft:max_stack_size": 1
         }
     }
 }

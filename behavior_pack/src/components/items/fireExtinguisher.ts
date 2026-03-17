@@ -7,8 +7,8 @@ import { ItemId } from "../../constants/itemId";
 import { ComponentManager } from "../componentManager";
 
 ComponentManager.registerItemComponent(ItemId.fireExtinguisher, {
-    onUse: ({ source }) => {
+    onCompleteUse: ({ source }) => {
         // TODO: implement fire-extinguishing capabilities
         source.sendMessage("You extinguished a fire!");
-    },
+    }
 });

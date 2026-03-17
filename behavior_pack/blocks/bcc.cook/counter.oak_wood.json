@@ -1,0 +1,105 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) @brodblox09 & Contributors
+// Contributors: @brodblox09
+// See LICENSE.md file in the root folder, licenses/MIT.md, or https://opensource.org/license/mit
+{
+	"format_version": "1.21.110",
+	"minecraft:block": {
+		"description": {
+			"identifier": "bcc.cook:counter.oak_wood",
+			"menu_category": {
+				"category": "construction"
+			},
+			"states": {
+				"bcc.cook:relative_position": [ "left", "middle", "right" ]
+			},
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": [ "minecraft:cardinal_direction" ],
+					"y_rotation_offset": 180
+				}
+			}
+		},
+		"components": {
+			"minecraft:geometry": {
+				"identifier": "geometry.counter.oak_wood",
+				"bone_visibility": {
+					"left6": false,
+					"middle_c5": true,
+					"right6": false
+				}
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "counter.oak_wood"
+				}
+			},
+			"bcc.cook:counter.oak_wood": {}
+		},
+		"permutations": [
+			{
+				"condition": "q.block_state('bcc.cook:relative_position') == 'left'",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.counter.oak_wood",
+						"bone_visibility": {
+							"left6": true,
+							"middle_c5": false,
+							"right6": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('bcc.cook:relative_position') == 'middle'",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.counter.oak_wood",
+						"bone_visibility": {
+							"left6": false,
+							"middle_c5": true,
+							"right6": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('bcc.cook:relative_position') == 'right'",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.counter.oak_wood",
+						"bone_visibility": {
+							"left6": false,
+							"middle_c5": false,
+							"right6": true
+						}
+					}
+				}
+			},
+			{
+                "condition": "query.block_state('minecraft:cardinal_direction') == 'north'",
+                "components": {
+                    "minecraft:transformation": { "rotation": [0, 0, 0] }
+                }
+            },
+            {
+                "condition": "query.block_state('minecraft:cardinal_direction') == 'east'",
+                "components": {
+                    "minecraft:transformation": { "rotation": [0, -90, 0] }
+                }
+            },
+            {
+                "condition": "query.block_state('minecraft:cardinal_direction') == 'south'",
+                "components": {
+                    "minecraft:transformation": { "rotation": [0, 180, 0] }
+                }
+            },
+            {
+                "condition": "query.block_state('minecraft:cardinal_direction') == 'west'",
+                "components": {
+                    "minecraft:transformation": { "rotation": [0, 90, 0] }
+                }
+            }
+		]
+	}
+}

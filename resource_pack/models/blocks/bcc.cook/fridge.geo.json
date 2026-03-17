@@ -1,7 +1,11 @@
 // SPDX-License-Identifier: LicenseRef-BCC-PL-v1.0
 // Copyright (c) @hi_rynnn & Contributors
-// Contributers: @hi_rynnn
+// Contributors: @hi_rynnn
 // See LICENSE.md file in the root folder, licenses/BCC-PL-v1.0.md, or https://bedrockcommands.org/legal/bcc-pl-v1.0
+
+
+
+
 {
 	"format_version": "1.12.0",
 	"minecraft:geometry": [
@@ -16,7 +20,7 @@
 			},
 			"bones": [
 				{
-					"name": "bawah2",
+					"name": "bottom",
 					"pivot": [0, 0, 0],
 					"rotation": [0, -90, 0],
 					"cubes": [
@@ -47,7 +51,7 @@
 					]
 				},
 				{
-					"name": "atas2",
+					"name": "top",
 					"pivot": [0, 0, -8],
 					"rotation": [0, -90, 0],
 					"cubes": [
