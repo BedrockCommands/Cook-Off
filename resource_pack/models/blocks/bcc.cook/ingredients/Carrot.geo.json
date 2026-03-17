@@ -1,0 +1,79 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.unknown",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 1.5,
+				"visible_bounds_offset": [0, 0.25, 0]
+			},
+			"bones": [
+				{
+					"name": "Carrot",
+					"pivot": [-1, 1, 0],
+					"rotation": [0, 90, 0]
+				},
+				{
+					"name": "Slice",
+					"parent": "Carrot",
+					"pivot": [-1, 2.5, 3],
+					"cubes": [
+						{"origin": [-3.5, 0, 1], "size": [5, 5, 2], "uv": [12, 6]}
+					]
+				},
+				{
+					"name": "Slice2",
+					"parent": "Carrot",
+					"pivot": [-1, 2.5, 1],
+					"cubes": [
+						{"origin": [-3.5, 0, -1], "size": [5, 5, 2], "uv": [12, 13]}
+					]
+				},
+				{
+					"name": "Slice3",
+					"parent": "Carrot",
+					"pivot": [-1, 2.5, -1],
+					"cubes": [
+						{"origin": [-3.5, 0, -2], "size": [5, 5, 1], "uv": [14, 20]}
+					]
+				},
+				{
+					"name": "Slice4",
+					"parent": "Carrot",
+					"pivot": [-1, 2.5, -2],
+					"cubes": [
+						{"origin": [-3.5, 0, -3], "size": [5, 5, 1], "uv": [24, 0]}
+					]
+				},
+				{
+					"name": "Slice5",
+					"parent": "Carrot",
+					"pivot": [-1, 2.5, -3],
+					"cubes": [
+						{"origin": [-3, 0.5, -4], "size": [4, 4, 1], "uv": [26, 6]}
+					]
+				},
+				{
+					"name": "Stub",
+					"parent": "Carrot",
+					"pivot": [-1, 2.5, -4],
+					"cubes": [
+						{"origin": [-3, 0.5, -6.6], "size": [4, 4, 3], "inflate": -0.3, "uv": [0, 20]}
+					]
+				},
+				{
+					"name": "Leaves",
+					"parent": "Carrot",
+					"pivot": [-1, 2.5, 3],
+					"cubes": [
+						{"origin": [-1, -0.5, 3], "size": [0, 6, 8], "uv": [20, 19]},
+						{"origin": [-4, 2.5, 3], "size": [6, 0, 8], "uv": [-8, 27]}
+					]
+				}
+			]
+		}
+	]
+}
