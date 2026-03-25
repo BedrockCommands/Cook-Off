@@ -1,12 +1,12 @@
 {
 	"format_version": "1.14.0",
 	"sound_definitions": {
-		"bcc.cook:hub_music": {
+		"bcc.cook:music.mexican_restaurant": {
 			"min_distance": 9999999,
 			"category": "music",
 			"sounds": [
 				{
-					"name": "sounds/bcc.cook/hub_music",
+					"name": "sounds/bcc.cook/music/mexican_restaurant",
 					"load_on_low_memory": false
 				}
 			]

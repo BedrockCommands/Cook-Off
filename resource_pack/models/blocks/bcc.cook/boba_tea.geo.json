@@ -1,0 +1,45 @@
+// SPDX-License-Identifier: LicenseRef-BCC-PL-v1.0
+// Copyright (c) @siwudot & Contributors
+// Contributers: @siwudot
+// See LICENSE.md file in the root folder, licenses/BCC-PL-v1.0.md, or https://bedrockcommands.org/legal/bcc-pl-v1.0
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.boba_tea",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "bone",
+					"pivot": [4, 0, -4]
+				},
+				{
+					"name": "jar",
+					"parent": "bone",
+					"pivot": [4, 0, -4],
+					"cubes": [
+						{"origin": [-5, 0, -5], "size": [10, 9, 10], "uv": [0, 0]},
+						{"origin": [-4, 1, -4], "size": [8, 7, 8], "uv": [0, 30]},
+						{"origin": [-4, 9, -4], "size": [8, 3, 8], "uv": [32, 30]},
+						{"origin": [-5, 11, -5], "size": [10, 1, 10], "uv": [0, 19]}
+					]
+				},
+				{
+					"name": "handletop",
+					"parent": "bone",
+					"pivot": [4, 9, -4],
+					"cubes": [
+						{"origin": [-3, 9, -3], "size": [6, 3, 6], "uv": [40, 9]},
+						{"origin": [-4, 12, -4], "size": [8, 1, 8], "uv": [40, 0]}
+					]
+				}
+			]
+		}
+	]
+}
