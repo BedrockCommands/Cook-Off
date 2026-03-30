@@ -4,8 +4,8 @@ import { setBlockState } from "../../utils/general";
 const axisOffsetMap = {
     "north": new Vector(-1, 0, 0),
     "south": new Vector(1, 0, 0),
-    "east": new Vector(0, 0, 1),
-    "west": new Vector(0, 0, -1)
+    "east": new Vector(0, 0, -1),
+    "west": new Vector(0, 0, 1)
 };
 const RelativePositionStateName = "bcc.cook:relative_position";
 var FacingDirection;

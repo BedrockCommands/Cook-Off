@@ -1,4 +1,4 @@
-import { Block, Dimension, world } from "@minecraft/server";
+import { Block, Dimension } from "@minecraft/server";
 import { BlockId } from "../../constants/blockId";
 import { Vector } from "../../utils/vector";
 import { ComponentManager } from "../componentManager";
@@ -8,8 +8,8 @@ import { BlockStateSuperset } from "@minecraft/vanilla-data";
 const axisOffsetMap = {
 	"north": new Vector(-1, 0, 0),
 	"south": new Vector(1, 0, 0),
-	"east": new Vector(0, 0, 1),
-	"west": new Vector(0, 0, -1)
+	"east": new Vector(0, 0, -1),
+	"west": new Vector(0, 0, 1)
 };
 const RelativePositionStateName = "bcc.cook:relative_position" as keyof BlockStateSuperset;
 

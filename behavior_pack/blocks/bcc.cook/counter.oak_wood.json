@@ -38,7 +38,7 @@
 		},
 		"permutations": [
 			{
-				"condition": "q.block_state('bcc.cook:relative_position') == 'right'",
+				"condition": "q.block_state('bcc.cook:relative_position') == 'left'",
 				"components": {
 					"minecraft:geometry": {
 						"identifier": "geometry.counter.oak_wood",
@@ -64,7 +64,7 @@
 				}
 			},
 			{
-				"condition": "q.block_state('bcc.cook:relative_position') == 'left'",
+				"condition": "q.block_state('bcc.cook:relative_position') == 'right'",
 				"components": {
 					"minecraft:geometry": {
 						"identifier": "geometry.counter.oak_wood",
