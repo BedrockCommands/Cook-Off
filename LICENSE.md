@@ -44,7 +44,7 @@ This License ensures that Creative Assets released through the Bedrock Commands 
     - (b) **License:** Creative Assets are licensed to downstream users under this License (BCC-PL), with the BCC-PL header included where technically feasible.
 
 - **2.4 “Bedrock Commands Community Discord” or “BCC”**
-    - Refers to the informal online community hosted on Discord, at the server with ID `924894457894174740`, which collaboratively organizes and contributes to the Project via the GitHub organization `@BedrockCommands`. The term is used solely for purposes of attribution and community identity. It does not represent a legal entity and holds no ownership, enforcement rights, or responsibilities under this License.
+    - Refers to the informal online community hosted on Discord, at the server with ID `1480315514709348424`, which collaboratively organizes and contributes to the Project via the GitHub organization `@BedrockCommands`. The term is used solely for purposes of attribution and community identity. It does not represent a legal entity and holds no ownership, enforcement rights, or responsibilities under this License.
 
 - **2.5 “Project Licensing Representative” or "PLR"**
     - (a) Refers to the individual currently authorized to manage all rights and legal matters for the Project, initially designated as the Discord user `@.zruby` (`711962234431078490`). All legal authority for licensing, enforcement, and intellectual property management under this License is exercised by the Project Licensing Representative on behalf of all Contributors, pursuant to mutual agreement as formalized in the [BCC Contributor License Agreement (BCC-CLA)](https://bedrockcommands.org/legal/bcc-cla-v1.0).
@@ -66,7 +66,7 @@ This License ensures that Creative Assets released through the Bedrock Commands 
     - Written authorization—either signed or otherwise electronically confirmed—by the Project Licensing Representative that specifically permits a particular use otherwise prohibited under this License (BCC-PL), the [BCC Contributor License Agreement (BCC-CLA)](https://bedrockcommands.org/legal/bcc-cla-v1.0), or both. Requests for Explicit Permission must be sent to **bedrockcommandscommunity@gmail.com** or the current contacts provided on the Project’s official channels. The Project Licensing Representative or Authorized Staff may respond within thirty (30) calendar days; failure to respond does not imply permission.
 
 - **2.10 "Authorized Staff"**
-    - Any BCC project director, coordinator, department lead, or moderator appointed by the Project Licensing Representative to act on their behalf under this License, as expressly designated through verifiable Discord role assignments in the Bedrock Commands Community Discord (Server ID: `924894457894174740`).
+    - Any BCC project director, coordinator, department lead, or moderator appointed by the Project Licensing Representative to act on their behalf under this License, as expressly designated through verifiable Discord role assignments in the Bedrock Commands Community Discord (Server ID: `1480315514709348424`).
 
 ---
 
@@ -179,7 +179,7 @@ This License ensures that Creative Assets released through the Bedrock Commands 
 
 - The term **“Bedrock Commands Community”** is used solely for attribution and community identity purposes. It is not a registered trademark, nor does it represent a legal entity. Its appearance in connection with redistributed versions of the Project does not imply legal ownership, formal endorsement, or representation unless explicitly stated by the Project Licensing Representative.
 - Misrepresentation of the Project’s origin, authorship, or affiliation using this identifier is prohibited.
-- The Discord server officially representing the Bedrock Commands Community for the purposes of this License is identified by server ID `924894457894174740`. The official GitHub organization for publishing and managing the Project is `@BedrockCommands`.
+- The Discord server officially representing the Bedrock Commands Community for the purposes of this License is identified by server ID `1480315514709348424`. The official GitHub organization for publishing and managing the Project is `@BedrockCommands`.
 - No other server, GitHub account, group, or entity is authorized to represent or act on behalf of BCC unless explicitly designated by the Project Licensing Representative.
 
 ---
@@ -198,7 +198,7 @@ This License ensures that Creative Assets released through the Bedrock Commands 
 - The following are the currently designated official publication channels of the Bedrock Commands Community Discord:
     - **Website:** [https://bedrockcommands.org](https://bedrockcommands.org)
     - **GitHub Organization:** [https://github.com/BedrockCommands](https://github.com/BedrockCommands)
-    - **Discord Server ID:** `924894457894174740` (official Bedrock Commands Community Discord server)
+    - **Discord Server ID:** `1480315514709348424` (official Bedrock Commands Community Discord server)
 - These links and identifiers are provided for clarity and verification. The Project Licensing Representative or Authorized Staff may update this list as needed by publishing notice through these official channels.
 
 ---
