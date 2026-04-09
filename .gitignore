@@ -10,3 +10,6 @@ node_modules
 
 # user specific config file
 config.json
+
+# scripts build artifacts
+behavior_pack/scripts
